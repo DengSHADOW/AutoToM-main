@@ -1,0 +1,8 @@
+Generate opposite sentence(s) given the original sentence: [Given Sentence]
+If the sentence is about a person in a specific location, generate an additional sentence where the person is not in that location, e.g., "... is not in ...".
+Otherwise, if it's about an object in location A (A is in the information), then for every other possible location(s) B(s) in the information, generate an opposite sentence for that location, e.g., "... is in B", and include in the list. Respond with two sentences if there are only two possible locations; respond with more sentences if there are more possible locations in the information.
+If it's about object, you should keep the rest of original sentence unchanged, e.g., original: "The tomato is in the bottle in the sunroom", for all other possible locations in ["drawer", ...] your generated sentence should keep "the sunroom", like "The tomato is in the drawer in the sunroom."
+If A is not in the information, just generate the regular opposite "... is not in ..."
+Respond in the format of a list: ["Given Sentence", "Generated Sentence"] or ["Given Sentence", "Generated Sentence 1", "Generated Sentence 2", ..]
+[Information]
+Response: 

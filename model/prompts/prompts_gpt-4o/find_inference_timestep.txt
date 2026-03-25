@@ -1,0 +1,5 @@
+Find a sentence in the story based on the given sentence. Which timestamp is the given sentence referring to? Use the original wording in the story.
+Respond only with a sentence in the story in the original wording.
+[Story]
+[Choice]
+Response:

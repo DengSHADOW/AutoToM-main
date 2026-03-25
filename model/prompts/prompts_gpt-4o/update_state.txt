@@ -1,0 +1,9 @@
+Determine if the old state will be affected by the change, then extract key information in change and rephrase it as a state sentence.
+State refers to the physical condition of something or a specific world state caused by an event that has occurred or caused by an action of an agent. This also includes the location of an agent if they are moving to a new location. Only use verbs when necessary. Use more logical words, e.g. "not in" is better than "outside".
+An agent's utterance do not affect state.
+The updated state must ensure that it includes both the old state and the information about the change. Try to merge information if possible, e.g., if 'A is in B' and 'B is in C', try to output 'A is in B in C'. But do not merge "A is in C", "B is in C" to "A and B is in C". 
+If there is nothing changed then the updated state is the same as the old state again.
+Only output seperate sentences containing the updated state. Do not explain in any way. Make sure to include every information in the change.
+[Old_State]
+[Change]
+Updated State:

@@ -1,0 +1,11 @@
+Determine if the observation of [Character] is clearly stated in the story.
+Observation refers to the main character's perception of an event; it is only considered clearly stated when the protagonist's perception is explicitly mentioned, like if they visually see something, visually notice something or hear something, or any other state that can be perceived by the agent with but not limited to their 5 senses.
+A character's utterance does not mean that their observation is clearly stated, because they might lie.
+Answer in the form of a list. The first element of the list contains the option A or B. A means clearly stated, and B means not clearly stated.
+If the answer is A, include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. 
+Otherwise the second element can be an empty string. Do not write anything else.
+Example 1: ["A", "evidence sentence."]
+Example 2: ["B", ""]
+
+[Story]
+Answer: 

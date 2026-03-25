@@ -1,0 +1,10 @@
+Propose [num] hypotheses for the action performed by [Character] in the story aligned with the context of: [Context]. Make sure that it is not any of the hypotheses in [Wrong Hypotheses], if it is then propose new hypotheses that are very different. 
+Given information: [Information]
+
+The hypotheses do not require reasoning or consideration of whether they are likely to occur. The only limitation is that they must be relevant to the information already provided.
+Usually, actions are performed after an event happens.
+Do not state any reason for the hypotheses. Do not contain any form of explanation in the hypotheses.
+Output a list of hypotheses of length [num] in following form: ["aaa.", "bbb.", ...] 
+
+[Context]
+Action Hypotheses:

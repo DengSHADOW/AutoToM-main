@@ -1,0 +1,7 @@
+Think about all the entities in the sentence. If all the entities in the sentence do not appear in the given information, they're unrelated. 
+If any one of the entities in the sentence appear in the given information, they're related. Respond with a letter 'A' or 'B'.
+Given information: [Information]
+Sentence: [Sentence]
+If any one of the entities in the sentence appear in the given information, they're related.
+A) Related.
+B) Unrelated.

@@ -1,0 +1,8 @@
+numpy
+openai
+opencv_python
+pandas
+Pillow
+scipy
+torch
+transformers

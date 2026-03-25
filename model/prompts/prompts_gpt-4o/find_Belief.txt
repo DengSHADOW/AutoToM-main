@@ -1,0 +1,10 @@
+Determine if the belief of [Character] is clearly stated in the story.
+Usually, belief is one's understanding of the state of the world or the state of others. An subjective attitude towards things does not count as belief. An action or utterance of the agent does not count as belief. Words like "know" or "believe" could be hints for belief.
+Answer in the form of a list. The first element of the list contains the option A or B. A means clearly stated, and B means not clearly stated.
+If the answer is A, include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. 
+Otherwise the second element can be an empty string. Do not write anything else.
+Example 1: ["A", "evidence sentence."]
+Example 2: ["B", ""]
+
+[Story]
+Answer: 

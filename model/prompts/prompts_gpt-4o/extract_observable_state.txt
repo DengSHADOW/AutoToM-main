@@ -1,0 +1,6 @@
+Here are some state sentences. Extract every sentence that is depicting states in [inf_agent]'s location, including agents' location sentences in [inf_agent]'s location.
+If an object is in another object in [inf_agent]'s location, it should be included.
+State sentences: [State]
+The output format should be ["aaa", "bbb", ...]. No explanation is needed.
+If [inf_agent]'s location is not clear, output an empty list.
+Extraction:

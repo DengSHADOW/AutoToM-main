@@ -1,0 +1,10 @@
+Propose [num] hypotheses for the goal of [Character].
+The goal refers to [Character]'s intentions.
+Do not provide any explanation for the hypotheses. Do not propose any sentence that's not depicting the goal, like action or belief of [Character].
+The wording for hypotheses cannot be speculative.
+The proposed goal does not have to be too specific, e.g., Andy wants to help others; Andy wants to hinder others; Andy is indifferent towards other's goals, etc.
+Given information: [Information]
+Ensure that the hypotheses align with the given information perfectly. It means that proposed [Character]'s goal matches what's contained in the information.
+Output the hypotheses in the following form: ["aaa."]
+
+goal Hypotheses: []

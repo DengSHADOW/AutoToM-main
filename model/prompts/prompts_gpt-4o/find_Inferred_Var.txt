@@ -1,0 +1,6 @@
+Choose the variable that best summarizes the information of differences that the choices contain.
+
+Only output the variable.
+Variables include: [Variables]
+[Choices]
+Variable: 

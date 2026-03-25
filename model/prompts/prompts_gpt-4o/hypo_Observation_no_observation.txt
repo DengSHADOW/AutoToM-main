@@ -1,0 +1,7 @@
+Given information: [Information]
+Character's name: [Character]
+Summarize the key object or event in the information, and write a sentence about the character.
+The sentence should be about the character's observation, like if the character does not see something or does not perceive something through other senses. Be concise.
+In the sentence, the character should have no observations of the key object or event.
+Output the sentence in the following form: ["aaa."]
+Sentence: []

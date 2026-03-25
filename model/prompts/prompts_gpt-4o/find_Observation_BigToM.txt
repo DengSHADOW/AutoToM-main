@@ -1,0 +1,40 @@
+Determine if the observation of [Character] that is clearly stated in the story. 
+
+In the context, there is an initial state of the object and an action that will change the state of it. 
+Identify both the initial state and the final state of the object. 
+
+Only look at the story after the final state of the object to determine if it has an observation. 
+If there is not a sentence that explicitly says that [Character] perceives or [Character] does not perceive then the observation is not explicitly stated, and you should output "". 
+It is not an observation if [Character] has to actively do an action or to actively go find more information to perceive. 
+
+If the observation of [Character] is explictly stated that [Character] does not observe something then that counts as an observation and should be outputted. 
+
+If there are no observations in the story explicitly stated, e.g. it does not say [Character] does not observe ... and it does not say [Character] observes ... then output "[Character]'s observations are unknown". 
+
+Answer in the form of a list. The first element of the list contains the option A. 
+If the answer is A, include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. You can rewrite the sentences to define the observation. Remember, this is the only sentence with the most updated observation if observation changes or all the sentences if observation remains the same. Otherwise the second element can be an empty string. Do not write anything else.
+Strictly output the answer in this format: ["A", "evidence sentence."]
+
+Example 1: No observation in story. 
+Story: Bob is a student in college. Bob wants to go to the library.
+Answer: ["A", "Bob's observations are unkown."]
+
+Example 2:
+Story: Bob is a student in college. Bob wants to go to the library. Bob does not see that the library is closed. 
+Answer: ["A", "Bob does not see that the library is closed. "]
+
+
+Example 3: Include the entire sentence that the observation is a part of. 
+Story: Bob is in the kitchen. He pours juice in the glass and he sees the glass is dirty. 
+Answer: ["A", "He pours juice in the glass and he sees the glass is dirty."]
+
+Example 4: 
+Story: Bob is in the kitchen. He sees the glass is clean. Alice replaces the clean glass with a dirty glass. Bob does not see Alice switching the glass. He pours juice in the glass. He sees the glass is dirty. 
+Answer: ["A", "Bob does not see Alice switching the glass. Bob sees that the glass with the juice is dirty."]
+
+Example 5: 
+Story: Alice is in the kitchen. Alice sees an email that school is canceled tomorrow. Alice sees that the email was a mistake.  
+Answer: ["A", "Alice is in the kitchen. Alice sees that the email sent out about school being canceled tomorrow was a mistake."]
+
+Story: [Story]
+Answer: 

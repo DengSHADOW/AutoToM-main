@@ -1,0 +1,10 @@
+Determine if the goal of [Character] is clearly stated in the story.
+Usually, goal refers to a person's goals or intentions regarding a particular event. Moreover, a sentence that shows a person has been trying to do something, or summarizes their efforts of doing something should always be considered a goal. Helping others to achieve their goals also counts as a person's goal.
+Answer in the form of a list. The first element of the list contains the option A or B. A means clearly stated, and B means not clearly stated.
+If the answer is A, include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. 
+Otherwise the second element can be an empty string. Do not write anything else.
+Example 1: ["A", "evidence sentence."]
+Example 2: ["B", ""]
+
+[Story]
+Answer: 

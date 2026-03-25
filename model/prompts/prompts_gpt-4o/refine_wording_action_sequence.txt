@@ -1,0 +1,5 @@
+Here is an action/utterance of [Inferred_agent]: [Sentence]
+If it is a full sentence, output the same thing as the input. Do not modify the original punctuation.
+If it is not in full sentence, rephrase it so it has [Inferred_agent]. Make sure that it is grammatically correct, without losing any information. Do not change the original wording.
+Just output a sentence without explanation.
+Output:

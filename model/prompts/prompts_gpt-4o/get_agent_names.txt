@@ -1,0 +1,4 @@
+Extract the names of all the characters from the story and question. Provide only the names or roles, without any additional information. Do not answer the question.
+Your response should be a list containing the names, like ['name1', 'name2']
+[Story]
+Response: 

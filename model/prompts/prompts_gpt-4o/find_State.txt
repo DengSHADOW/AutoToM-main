@@ -1,0 +1,13 @@
+Determine if the story contains the objective state(s) of an object or an event.
+State refers to the physical condition of something or the state of the world.
+No actions of agents should be involved in the state but it can be the result of an action of an agent. For example, "A entered B" is not a state, while "A is in B" is a state.
+An objective state statement should not include personal perspectives but should be objective. If a person's perception is involved, it is no longer considered an objective state.
+Answer in the form of a list. The first element of the list contains the option A or B. A means clearly stated, and B means not clearly stated.
+If the answer is A, include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. 
+If there are multiple sentences, include them all in the second element of the list.
+Otherwise the second element can be an empty string. Do not write anything else.
+Example 1: ["A", "evidence sentence(s)."]
+Example 2: ["B", ""]
+
+[Story]
+Answer: 

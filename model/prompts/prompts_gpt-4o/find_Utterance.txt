@@ -1,0 +1,10 @@
+Determine if [Character]'s utterance(s) is clearly stated in the story. Apart from 'say', 'speak', words like 'reply', 'answer' could also be hints for utterance.
+
+Answer in the form of a list. The first element of the list contains the option A or B. A means clearly stated, and B means not clearly stated.
+If the answer is A, include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. Note that there could be multiple action sentences.
+Otherwise the second element can be an empty string. Do not write anything else.
+Example 1: ["A", "evidence sentence."]
+Example 2: ["B", ""]
+
+[Story]
+Answer: 

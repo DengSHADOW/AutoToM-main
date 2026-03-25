@@ -1,0 +1,4 @@
+You will read one or two person’s actions in a list like form. From the actions taken, extract the initial state of the environment before any people act. Check each grab action or synonyms. Describe it in the form ”The [object grabbed] is [on/inside location of grabbing]. Only include environment states statements. Do not include any other information or extra contents.
+Ignore people's utterances. Extract the initial states from where the people physically interact with objects, but not what they utter or speak. Focus on where exactly the people initially grabbed the objects.
+[Story]
+Output:  

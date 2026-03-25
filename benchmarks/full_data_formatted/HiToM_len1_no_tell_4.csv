@@ -1,0 +1,352 @@
+story,question,gt_answer,answer_choices
+"1 Carter, Isabella, Chloe, Jack and Lily entered the sunroom.
+2 The tomato is in the green_treasure_chest.
+The green_treasure_chest is in the sunroom.
+3 Carter moved the tomato to the red_drawer.
+The red_drawer is in the sunroom.
+4 Carter exited the sunroom.
+5 Isabella moved the tomato to the blue_bathtub.
+The blue_bathtub is in the sunroom.
+6 Isabella exited the sunroom.
+7 Chloe moved the tomato to the green_bathtub.
+The green_bathtub is in the sunroom.
+8 Chloe exited the sunroom.
+9 Jack moved the tomato to the red_bottle.
+The red_bottle is in the sunroom.
+10 Jack exited the sunroom.
+11 Lily made no movements and stayed in the sunroom for 1 minute.
+12 Lily exited the sunroom.
+13 Carter, Isabella, Chloe, Jack and Lily entered the waiting_room.",Where does Jack think Isabella thinks Lily thinks Chloe thinks the tomato is?,blue_bathtub,"['red_suitcase', 'blue_container', 'red_crate', 'green_container', 'blue_cupboard', 'green_bathtub', 'green_treasure_chest', 'red_drawer', 'red_bottle', 'blue_bathtub', 'green_cupboard', 'blue_envelope', 'red_box', 'green_pantry', 'blue_suitcase']"
+"1 Isabella, Nathan, Lily, Emma and Elizabeth entered the staircase.
+2 The tangerine is in the blue_basket.
+The blue_basket is in the staircase.
+3 Isabella made no movements and stayed in the staircase for 1 minute.
+4 Isabella exited the staircase.
+5 Nathan moved the tangerine to the red_box.
+The red_box is in the staircase.
+6 Emma dislikes the plum.
+7 Nathan exited the staircase.
+8 Lily made no movements and stayed in the staircase for 1 minute.
+9 Lily exited the staircase.
+10 Emma made no movements and stayed in the staircase for 1 minute.
+11 Emma exited the staircase.
+12 Emma dislikes the strawberry.
+13 Elizabeth moved the tangerine to the blue_basket.
+The blue_basket is in the staircase.
+14 Elizabeth exited the staircase.
+15 Isabella, Nathan, Lily, Emma and Elizabeth entered the waiting_room.",Where does Lily think Nathan thinks Isabella thinks Elizabeth thinks the tangerine is?,blue_basket,"['red_treasure_chest', 'blue_envelope', 'blue_cupboard', 'green_cupboard', 'green_envelope', 'red_envelope', 'red_container', 'blue_bathtub', 'green_drawer', 'red_bathtub', 'red_drawer', 'blue_basket', 'red_bottle', 'green_treasure_chest', 'red_box']"
+"1 Nathan, Chloe, Mila, Amelia and Benjamin entered the hall.
+2 The grapefruit is in the blue_bottle.
+The blue_bottle is in the hall.
+3 Nathan made no movements and stayed in the hall for 1 minute.
+4 Nathan exited the hall.
+5 Chloe moved the grapefruit to the red_bottle.
+The red_bottle is in the hall.
+6 Chloe exited the hall.
+7 Mila made no movements and stayed in the hall for 1 minute.
+8 Mila exited the hall.
+9 Amelia made no movements and stayed in the hall for 1 minute.
+10 Mila saw a dog.
+11 Amelia exited the hall.
+12 Benjamin made no movements and stayed in the hall for 1 minute.
+13 Benjamin exited the hall.
+14 Nathan, Chloe, Mila, Amelia and Benjamin entered the waiting_room.",Where does Chloe think Mila thinks Nathan thinks Benjamin thinks the grapefruit is?,blue_bottle,"['red_bathtub', 'blue_envelope', 'red_box', 'blue_pantry', 'blue_suitcase', 'red_crate', 'blue_container', 'green_drawer', 'red_drawer', 'blue_bathtub', 'blue_bottle', 'red_bottle', 'red_envelope', 'blue_box', 'green_cupboard']"
+"1 Mia, Benjamin, Elizabeth, Oliver and Liam entered the TV_room.
+2 The green_pepper is in the blue_box.
+The blue_box is in the TV_room.
+3 Mia made no movements and stayed in the TV_room for 1 minute.
+4 Mia exited the TV_room.
+5 Benjamin made no movements and stayed in the TV_room for 1 minute.
+6 Benjamin exited the TV_room.
+7 Oliver saw a mouse.
+8 Elizabeth moved the green_pepper to the red_box.
+The red_box is in the TV_room.
+9 Elizabeth exited the TV_room.
+10 Oliver moved the green_pepper to the green_container.
+The green_container is in the TV_room.
+11 Oliver exited the TV_room.
+12 Liam made no movements and stayed in the TV_room for 1 minute.
+13 Liam exited the TV_room.
+14 Mia, Benjamin, Elizabeth, Oliver and Liam entered the waiting_room.",Where does Liam think Benjamin thinks Oliver thinks Elizabeth thinks the green_pepper is?,blue_box,"['blue_bottle', 'blue_pantry', 'green_treasure_chest', 'blue_bathtub', 'blue_envelope', 'red_container', 'blue_box', 'green_container', 'red_treasure_chest', 'red_box', 'red_cupboard', 'blue_treasure_chest', 'blue_basket', 'blue_cupboard', 'red_bottle']"
+"1 Jacob, Carter, Isla, Ella and Gracie entered the laundry.
+2 Carter likes the blue_container.
+3 The turnip is in the red_bottle.
+The red_bottle is in the laundry.
+4 Jacob made no movements and stayed in the laundry for 1 minute.
+5 Jacob exited the laundry.
+6 Carter made no movements and stayed in the laundry for 1 minute.
+7 Carter exited the laundry.
+8 Isla made no movements and stayed in the laundry for 1 minute.
+9 Isla exited the laundry.
+10 Ella moved the turnip to the blue_basket.
+The blue_basket is in the laundry.
+11 Ella exited the laundry.
+12 Gracie moved the turnip to the red_bottle.
+The red_bottle is in the laundry.
+13 Gracie exited the laundry.
+14 Jacob, Carter, Isla, Ella and Gracie entered the waiting_room.",Where does Carter think Gracie thinks Jacob thinks Isla thinks the turnip is?,red_bottle,"['red_bottle', 'blue_bottle', 'red_cupboard', 'blue_basket', 'red_suitcase', 'red_crate', 'green_envelope', 'green_drawer', 'blue_treasure_chest', 'blue_drawer', 'blue_container', 'blue_pantry', 'red_envelope', 'green_container', 'blue_cupboard']"
+"1 Elizabeth, Carter, Isla, Benjamin and Nathan entered the laundry.
+2 The lettuce is in the red_bottle.
+The red_bottle is in the laundry.
+3 Elizabeth moved the lettuce to the red_treasure_chest.
+The red_treasure_chest is in the laundry.
+4 Elizabeth exited the laundry.
+5 Carter moved the lettuce to the green_drawer.
+The green_drawer is in the laundry.
+6 Carter exited the laundry.
+7 Isla moved the lettuce to the green_bathtub.
+The green_bathtub is in the laundry.
+8 Isla exited the laundry.
+9 Benjamin made no movements and stayed in the laundry for 1 minute.
+10 Benjamin exited the laundry.
+11 Isla dislikes the grapes.
+12 Nathan made no movements and stayed in the laundry for 1 minute.
+13 Nathan exited the laundry.
+14 Elizabeth, Carter, Isla, Benjamin and Nathan entered the waiting_room.",Where does Isla think Nathan thinks Elizabeth thinks Benjamin thinks the lettuce is?,red_treasure_chest,"['green_bathtub', 'red_bottle', 'red_treasure_chest', 'green_drawer', 'blue_drawer', 'blue_box', 'blue_envelope', 'green_envelope', 'red_crate', 'green_bucket', 'red_box', 'blue_bottle', 'green_bottle', 'blue_pantry', 'red_envelope']"
+"1 Jacob, William, Alexander, Lily and Jackson entered the office.
+2 The pear is in the green_pantry.
+The green_pantry is in the office.
+3 Jacob moved the pear to the blue_box.
+The blue_box is in the office.
+4 Lily saw a monkey.
+5 Jacob exited the office.
+6 William made no movements and stayed in the office for 1 minute.
+7 William exited the office.
+8 Alexander moved the pear to the blue_basket.
+The blue_basket is in the office.
+9 Alexander exited the office.
+10 Jackson likes the red_bathtub.
+11 Lily moved the pear to the green_bucket.
+The green_bucket is in the office.
+12 Lily exited the office.
+13 Jackson made no movements and stayed in the office for 1 minute.
+14 Jackson exited the office.
+15 Jacob, William, Alexander, Lily and Jackson entered the waiting_room.",Where does Jacob think Lily thinks Jackson thinks Alexander thinks the pear is?,blue_box,"['blue_bottle', 'green_container', 'red_bathtub', 'red_suitcase', 'red_envelope', 'green_pantry', 'blue_basket', 'blue_box', 'green_bucket', 'red_treasure_chest', 'green_bottle', 'blue_pantry', 'green_drawer', 'green_treasure_chest', 'red_crate']"
+"1 Benjamin, Isabella, Sophia, Ella and Oliver entered the garage.
+2 The celery is in the red_suitcase.
+The red_suitcase is in the garage.
+3 Benjamin moved the celery to the red_bottle.
+The red_bottle is in the garage.
+4 Benjamin exited the garage.
+5 Isabella moved the celery to the red_box.
+The red_box is in the garage.
+6 Oliver saw a mouse.
+7 Isabella exited the garage.
+8 Sophia made no movements and stayed in the garage for 1 minute.
+9 Sophia exited the garage.
+10 Ella moved the celery to the blue_cupboard.
+The blue_cupboard is in the garage.
+11 Ella exited the garage.
+12 Oliver moved the celery to the red_suitcase.
+The red_suitcase is in the garage.
+13 Oliver exited the garage.
+14 Benjamin, Isabella, Sophia, Ella and Oliver entered the waiting_room.",Where does Oliver think Sophia thinks Benjamin thinks Isabella thinks the celery is?,red_bottle,"['green_pantry', 'blue_drawer', 'blue_bathtub', 'green_envelope', 'green_bucket', 'red_cupboard', 'red_suitcase', 'red_bottle', 'blue_cupboard', 'red_box', 'red_treasure_chest', 'red_drawer', 'blue_suitcase', 'green_treasure_chest', 'green_container']"
+"1 Noah, Aiden, Aria, Isabella and Isla entered the back_yard.
+2 The melon is in the blue_basket.
+The blue_basket is in the back_yard.
+3 Noah made no movements and stayed in the back_yard for 1 minute.
+4 Noah exited the back_yard.
+5 Noah dislikes the tangerine.
+6 Aiden moved the melon to the green_container.
+The green_container is in the back_yard.
+7 Aiden exited the back_yard.
+8 Aria moved the melon to the blue_envelope.
+The blue_envelope is in the back_yard.
+9 Aria exited the back_yard.
+10 Isabella moved the melon to the green_pantry.
+The green_pantry is in the back_yard.
+11 Isabella exited the back_yard.
+12 Isla moved the melon to the blue_basket.
+The blue_basket is in the back_yard.
+13 Isla exited the back_yard.
+14 Noah, Aiden, Aria, Isabella and Isla entered the waiting_room.",Where does Isabella think Aiden thinks Noah thinks Isla thinks the melon is?,blue_basket,"['red_container', 'red_bottle', 'green_envelope', 'red_drawer', 'green_treasure_chest', 'blue_basket', 'green_container', 'green_pantry', 'blue_envelope', 'blue_bottle', 'blue_pantry', 'red_box', 'blue_box', 'red_treasure_chest', 'blue_cupboard']"
+"1 Nathan, Mason, Emma, Ethan and Gracie entered the dining_room.
+2 The pear is in the red_drawer.
+The red_drawer is in the dining_room.
+3 Nathan made no movements and stayed in the dining_room for 1 minute.
+4 Nathan exited the dining_room.
+5 Mason moved the pear to the green_cupboard.
+The green_cupboard is in the dining_room.
+6 Mason exited the dining_room.
+7 Ethan likes the red_drawer.
+8 Emma moved the pear to the green_treasure_chest.
+The green_treasure_chest is in the dining_room.
+9 Mason saw a mouse.
+10 Emma exited the dining_room.
+11 Ethan moved the pear to the blue_bathtub.
+The blue_bathtub is in the dining_room.
+12 Ethan exited the dining_room.
+13 Gracie made no movements and stayed in the dining_room for 1 minute.
+14 Gracie exited the dining_room.
+15 Nathan, Mason, Emma, Ethan and Gracie entered the waiting_room.",Where does Emma think Nathan thinks Mason thinks Ethan thinks the pear is?,red_drawer,"['blue_bottle', 'blue_pantry', 'blue_cupboard', 'blue_drawer', 'red_treasure_chest', 'green_cupboard', 'red_drawer', 'blue_container', 'blue_bathtub', 'green_treasure_chest', 'blue_envelope', 'red_box', 'blue_treasure_chest', 'red_crate', 'green_bucket']"
+"1 Oliver, James, Mia, Benjamin and Jacob entered the patio.
+2 Benjamin likes the green_envelope.
+3 The asparagus is in the red_drawer.
+The red_drawer is in the patio.
+4 Oliver made no movements and stayed in the patio for 1 minute.
+5 Oliver exited the patio.
+6 James moved the asparagus to the blue_suitcase.
+The blue_suitcase is in the patio.
+7 James exited the patio.
+8 Mia moved the asparagus to the blue_envelope.
+The blue_envelope is in the patio.
+9 Mia exited the patio.
+10 Benjamin made no movements and stayed in the patio for 1 minute.
+11 Benjamin exited the patio.
+12 Jacob moved the asparagus to the red_drawer.
+The red_drawer is in the patio.
+13 Jacob exited the patio.
+14 Oliver, James, Mia, Benjamin and Jacob entered the waiting_room.",Where does James think Oliver thinks Jacob thinks Benjamin thinks the asparagus is?,red_drawer,"['green_bottle', 'green_bathtub', 'blue_basket', 'green_treasure_chest', 'red_envelope', 'green_envelope', 'red_drawer', 'blue_drawer', 'blue_suitcase', 'blue_envelope', 'red_container', 'red_crate', 'green_container', 'red_treasure_chest', 'red_bathtub']"
+"1 Carter saw a mouse.
+2 Amelia, Carter, Liam, Gracie and Jackson entered the kitchen.
+3 The apple is in the red_box.
+The red_box is in the kitchen.
+4 Amelia made no movements and stayed in the kitchen for 1 minute.
+5 Amelia exited the kitchen.
+6 Carter moved the apple to the blue_basket.
+The blue_basket is in the kitchen.
+7 Carter exited the kitchen.
+8 Liam made no movements and stayed in the kitchen for 1 minute.
+9 Liam exited the kitchen.
+10 Gracie made no movements and stayed in the kitchen for 1 minute.
+11 Gracie exited the kitchen.
+12 Jackson moved the apple to the red_box.
+The red_box is in the kitchen.
+13 Jackson exited the kitchen.
+14 Amelia, Carter, Liam, Gracie and Jackson entered the waiting_room.",Where does Jackson think Amelia thinks Gracie thinks Liam thinks the apple is?,red_box,"['red_bottle', 'blue_pantry', 'red_treasure_chest', 'red_drawer', 'green_container', 'green_treasure_chest', 'blue_drawer', 'red_cupboard', 'green_envelope', 'blue_container', 'green_pantry', 'red_box', 'blue_suitcase', 'blue_basket', 'red_bathtub']"
+"1 Amelia, Logan, Aria, Oliver and Chloe entered the cellar.
+2 The celery is in the red_container.
+The red_container is in the cellar.
+3 Amelia made no movements and stayed in the cellar for 1 minute.
+4 Amelia exited the cellar.
+5 Logan moved the celery to the blue_treasure_chest.
+The blue_treasure_chest is in the cellar.
+6 Logan exited the cellar.
+7 Aria made no movements and stayed in the cellar for 1 minute.
+8 Aria exited the cellar.
+9 Oliver made no movements and stayed in the cellar for 1 minute.
+10 Oliver exited the cellar.
+11 Chloe moved the celery to the red_container.
+The red_container is in the cellar.
+12 Chloe exited the cellar.
+13 Amelia, Logan, Aria, Oliver and Chloe entered the waiting_room.",Where does Aria think Amelia thinks Oliver thinks Logan thinks the celery is?,red_container,"['blue_suitcase', 'blue_box', 'red_bathtub', 'red_bottle', 'green_pantry', 'red_crate', 'green_bucket', 'green_treasure_chest', 'blue_container', 'red_envelope', 'red_container', 'blue_treasure_chest', 'green_drawer', 'blue_envelope', 'blue_bathtub']"
+"1 Carter, Isabella, Jackson, Ethan and Charlotte entered the crawlspace.
+2 The cabbage is in the blue_basket.
+The blue_basket is in the crawlspace.
+3 Carter made no movements and stayed in the crawlspace for 1 minute.
+4 Carter exited the crawlspace.
+5 Isabella made no movements and stayed in the crawlspace for 1 minute.
+6 Isabella exited the crawlspace.
+7 Jackson made no movements and stayed in the crawlspace for 1 minute.
+8 Jackson exited the crawlspace.
+9 Ethan moved the cabbage to the green_drawer.
+The green_drawer is in the crawlspace.
+10 Ethan exited the crawlspace.
+11 Charlotte made no movements and stayed in the crawlspace for 1 minute.
+12 Charlotte exited the crawlspace.
+13 Carter, Isabella, Jackson, Ethan and Charlotte entered the waiting_room.",Where does Charlotte think Carter thinks Jackson thinks Ethan thinks the cabbage is?,blue_basket,"['green_bottle', 'green_bucket', 'red_suitcase', 'red_drawer', 'blue_treasure_chest', 'green_drawer', 'blue_basket', 'green_envelope', 'blue_pantry', 'blue_cupboard', 'red_crate', 'blue_container', 'blue_suitcase', 'green_treasure_chest', 'green_bathtub']"
+"1 Alexander, Ella, Ethan, Chloe and Mia entered the front_yard.
+2 The beans is in the blue_drawer.
+The blue_drawer is in the front_yard.
+3 Alexander moved the beans to the green_drawer.
+The green_drawer is in the front_yard.
+4 Alexander exited the front_yard.
+5 Ella made no movements and stayed in the front_yard for 1 minute.
+6 Ella exited the front_yard.
+7 Ethan made no movements and stayed in the front_yard for 1 minute.
+8 Ethan exited the front_yard.
+9 Chloe lost his phone.
+10 Chloe made no movements and stayed in the front_yard for 1 minute.
+11 Chloe exited the front_yard.
+12 Mia moved the beans to the blue_drawer.
+The blue_drawer is in the front_yard.
+13 Mia exited the front_yard.
+14 Alexander, Ella, Ethan, Chloe and Mia entered the waiting_room.",Where does Alexander think Chloe thinks Ethan thinks Mia thinks the beans is?,green_drawer,"['blue_drawer', 'red_container', 'green_drawer', 'blue_container', 'red_bottle', 'red_drawer', 'green_treasure_chest', 'blue_bathtub', 'green_pantry', 'green_container', 'green_bottle', 'red_crate', 'blue_box', 'red_box', 'red_treasure_chest']"
+"1 Logan, Jackson, William, Isla and Gracie entered the lounge.
+2 The beans is in the blue_cupboard.
+The blue_cupboard is in the lounge.
+3 Logan moved the beans to the blue_envelope.
+The blue_envelope is in the lounge.
+4 Logan exited the lounge.
+5 Jackson made no movements and stayed in the lounge for 1 minute.
+6 Jackson exited the lounge.
+7 William moved the beans to the green_bottle.
+The green_bottle is in the lounge.
+8 William exited the lounge.
+9 Isla made no movements and stayed in the lounge for 1 minute.
+10 Logan dislikes the peas.
+11 Isla exited the lounge.
+12 Isla saw a cat.
+13 Gracie made no movements and stayed in the lounge for 1 minute.
+14 Gracie exited the lounge.
+15 Logan, Jackson, William, Isla and Gracie entered the waiting_room.",Where does Logan think William thinks Gracie thinks Isla thinks the beans is?,blue_envelope,"['blue_cupboard', 'green_bottle', 'green_pantry', 'red_envelope', 'blue_envelope', 'red_drawer', 'blue_drawer', 'blue_pantry', 'red_treasure_chest', 'green_container', 'red_cupboard', 'green_drawer', 'red_bathtub', 'red_container', 'red_crate']"
+"1 Alexander, Amelia, Nathan, Oliver and Elizabeth entered the master_bedroom.
+2 The cherry is in the green_bucket.
+The green_bucket is in the master_bedroom.
+3 Alexander moved the cherry to the blue_drawer.
+The blue_drawer is in the master_bedroom.
+4 Alexander exited the master_bedroom.
+5 Amelia made no movements and stayed in the master_bedroom for 1 minute.
+6 Amelia exited the master_bedroom.
+7 Nathan moved the cherry to the red_envelope.
+The red_envelope is in the master_bedroom.
+8 Nathan exited the master_bedroom.
+9 Oliver moved the cherry to the red_bathtub.
+The red_bathtub is in the master_bedroom.
+10 Oliver exited the master_bedroom.
+11 Elizabeth moved the cherry to the green_bucket.
+The green_bucket is in the master_bedroom.
+12 Elizabeth exited the master_bedroom.
+13 Alexander, Amelia, Nathan, Oliver and Elizabeth entered the waiting_room.",Where does Oliver think Nathan thinks Elizabeth thinks Amelia thinks the cherry is?,blue_drawer,"['blue_box', 'blue_bathtub', 'blue_basket', 'blue_container', 'green_bathtub', 'green_container', 'green_bucket', 'blue_drawer', 'red_envelope', 'red_bathtub', 'blue_cupboard', 'green_drawer', 'green_envelope', 'red_container', 'blue_pantry']"
+"1 Nathan, Mia, Benjamin, Isabella and Elizabeth entered the bedroom.
+2 The melon is in the red_container.
+The red_container is in the bedroom.
+3 Nathan moved the melon to the green_bathtub.
+The green_bathtub is in the bedroom.
+4 Nathan exited the bedroom.
+5 Mia made no movements and stayed in the bedroom for 1 minute.
+6 Mia exited the bedroom.
+7 Benjamin made no movements and stayed in the bedroom for 1 minute.
+8 Benjamin exited the bedroom.
+9 Isabella moved the melon to the red_envelope.
+The red_envelope is in the bedroom.
+10 Isabella exited the bedroom.
+11 Elizabeth made no movements and stayed in the bedroom for 1 minute.
+12 Elizabeth exited the bedroom.
+13 Nathan, Mia, Benjamin, Isabella and Elizabeth entered the waiting_room.",Where does Elizabeth think Mia thinks Benjamin thinks Isabella thinks the melon is?,green_bathtub,"['green_cupboard', 'red_cupboard', 'blue_drawer', 'red_treasure_chest', 'blue_cupboard', 'blue_box', 'blue_envelope', 'blue_suitcase', 'blue_basket', 'green_bucket', 'red_container', 'red_envelope', 'green_bathtub', 'red_box', 'red_bottle']"
+"1 Sophia, Gracie, Liam, Mia and Aria entered the sunroom.
+2 The peach is in the green_envelope.
+The green_envelope is in the sunroom.
+3 Sophia made no movements and stayed in the sunroom for 1 minute.
+4 Sophia exited the sunroom.
+5 Gracie moved the peach to the red_bathtub.
+The red_bathtub is in the sunroom.
+6 Gracie exited the sunroom.
+7 Liam made no movements and stayed in the sunroom for 1 minute.
+8 Sophia likes the red_bathtub.
+9 Liam exited the sunroom.
+10 Mia made no movements and stayed in the sunroom for 1 minute.
+11 Mia exited the sunroom.
+12 Aria moved the peach to the green_envelope.
+The green_envelope is in the sunroom.
+13 Aria exited the sunroom.
+14 Sophia, Gracie, Liam, Mia and Aria entered the waiting_room.",Where does Aria think Gracie thinks Liam thinks Sophia thinks the peach is?,green_envelope,"['red_box', 'blue_bottle', 'green_cupboard', 'blue_envelope', 'red_drawer', 'green_envelope', 'red_treasure_chest', 'blue_bathtub', 'green_pantry', 'red_bathtub', 'red_suitcase', 'blue_cupboard', 'green_treasure_chest', 'red_bottle', 'red_crate']"
+"1 Nathan, Gracie, James, Emma and Lily entered the office.
+2 The green_pepper is in the green_pantry.
+The green_pantry is in the office.
+3 Nathan moved the green_pepper to the green_container.
+The green_container is in the office.
+4 Nathan exited the office.
+5 Gracie made no movements and stayed in the office for 1 minute.
+6 Gracie exited the office.
+7 James made no movements and stayed in the office for 1 minute.
+8 Emma likes the green_container.
+9 James exited the office.
+10 Emma moved the green_pepper to the red_container.
+The red_container is in the office.
+11 Nathan dislikes the green_pepper.
+12 Emma exited the office.
+13 Lily moved the green_pepper to the green_pantry.
+The green_pantry is in the office.
+14 Lily exited the office.
+15 Nathan, Gracie, James, Emma and Lily entered the waiting_room.",Where does Gracie think Emma thinks James thinks Nathan thinks the green_pepper is?,green_container,"['red_bottle', 'green_bottle', 'blue_treasure_chest', 'green_drawer', 'blue_envelope', 'red_treasure_chest', 'green_treasure_chest', 'red_box', 'blue_pantry', 'red_envelope', 'green_pantry', 'red_container', 'green_container', 'blue_box', 'blue_drawer']"

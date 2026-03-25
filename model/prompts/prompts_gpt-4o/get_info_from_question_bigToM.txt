@@ -1,0 +1,4 @@
+If there is any assumed information in the question given (a conditional clause starting with specific words like 'if' is contained), rewrite it as a declarative sentence. The question itself cannot be assumed information. Do not include any questions in the extra information.
+Otherwise, output 'NONE'.
+Question: [Question]
+Extra Information: 

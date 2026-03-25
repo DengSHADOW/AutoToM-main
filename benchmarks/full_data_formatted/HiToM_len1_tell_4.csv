@@ -1,0 +1,424 @@
+story,question,gt_answer,answer_choices
+"1 Oliver, James, Amelia, Mia and Alexander entered the garage.
+2 The watermelon is in the green_bottle.
+The green_bottle is in the garage.
+3 James lost his phone.
+4 Oliver moved the watermelon to the red_bathtub.
+The red_bathtub is in the garage.
+5 Oliver exited the garage.
+6 James moved the watermelon to the green_bucket.
+The green_bucket is in the garage.
+7 James exited the garage.
+8 Amelia moved the watermelon to the green_pantry.
+The green_pantry is in the garage.
+9 Amelia saw a dog.
+10 Amelia exited the garage.
+11 Mia moved the watermelon to the blue_basket.
+The blue_basket is in the garage.
+12 Alexander dislikes the grapefruit.
+13 Mia exited the garage.
+14 Alexander made no movements and stayed in the garage for 1 minute.
+15 Alexander exited the garage.
+16 Oliver, James, Amelia, Mia and Alexander entered the waiting_room.
+17 Amelia privately told Oliver that the watermelon is in the green_pantry now.
+The green_pantry now is in the garage.",Where does Mia think Oliver thinks Alexander thinks Amelia thinks the watermelon is?,red_bathtub,"['blue_pantry', 'green_envelope', 'blue_bottle', 'red_drawer', 'blue_suitcase', 'green_bucket', 'green_bottle', 'green_pantry', 'blue_basket', 'red_bathtub', 'red_cupboard', 'red_container', 'red_box', 'red_treasure_chest', 'blue_envelope']"
+"1 Ethan, Aiden, Carter, Mason and Oliver entered the kitchen.
+2 The melon is in the blue_bottle.
+The blue_bottle is in the kitchen.
+3 Ethan made no movements and stayed in the kitchen for 1 minute.
+4 Ethan exited the kitchen.
+5 Aiden moved the melon to the blue_suitcase.
+The blue_suitcase is in the kitchen.
+6 Aiden exited the kitchen.
+7 Carter made no movements and stayed in the kitchen for 1 minute.
+8 Carter dislikes the banana.
+9 Carter exited the kitchen.
+10 Mason moved the melon to the red_envelope.
+The red_envelope is in the kitchen.
+11 Mason exited the kitchen.
+12 Oliver made no movements and stayed in the kitchen for 1 minute.
+13 Oliver exited the kitchen.
+14 Ethan, Aiden, Carter, Mason and Oliver entered the waiting_room.
+15 Carter publicly claimed that melon is in the red_envelope now.
+The red_envelope now is in the kitchen.
+16 Oliver privately told Carter that the melon is in the blue_bottle now.
+The blue_bottle now is in the kitchen.",Where does Carter think Oliver thinks Aiden thinks Ethan thinks the melon is?,blue_bottle,"['blue_bottle', 'blue_suitcase', 'red_box', 'red_bathtub', 'red_envelope', 'blue_treasure_chest', 'red_drawer', 'red_container', 'blue_container', 'green_bucket', 'green_pantry', 'blue_basket', 'red_suitcase', 'red_bottle', 'green_bathtub']"
+"1 Carter, Lily, Emma, Amelia and Isabella entered the crawlspace.
+2 The watermelon is in the blue_cupboard.
+The blue_cupboard is in the crawlspace.
+3 Carter made no movements and stayed in the crawlspace for 1 minute.
+4 Carter exited the crawlspace.
+5 Lily moved the watermelon to the blue_box.
+The blue_box is in the crawlspace.
+6 Lily exited the crawlspace.
+7 Emma made no movements and stayed in the crawlspace for 1 minute.
+8 Emma exited the crawlspace.
+9 Amelia moved the watermelon to the red_crate.
+The red_crate is in the crawlspace.
+10 Amelia exited the crawlspace.
+11 Isabella moved the watermelon to the blue_cupboard.
+The blue_cupboard is in the crawlspace.
+12 Isabella exited the crawlspace.
+13 Carter, Lily, Emma, Amelia and Isabella entered the waiting_room.
+14 Emma privately told Carter that the watermelon is in the red_crate now.
+The red_crate now is in the crawlspace.",Where does Isabella think Carter thinks Amelia thinks Emma thinks the watermelon is?,blue_cupboard,"['green_drawer', 'red_box', 'red_bottle', 'red_bathtub', 'red_treasure_chest', 'blue_bottle', 'green_bottle', 'blue_pantry', 'red_container', 'green_treasure_chest', 'blue_box', 'blue_cupboard', 'blue_treasure_chest', 'blue_drawer', 'red_crate']"
+"1 Sophia saw a cat.
+2 Jacob, Mila, Isabella, Sophia and Liam entered the basement.
+3 The beans is in the green_bucket.
+The green_bucket is in the basement.
+4 Jacob made no movements and stayed in the basement for 1 minute.
+5 Jacob exited the basement.
+6 Mila made no movements and stayed in the basement for 1 minute.
+7 Mila exited the basement.
+8 Isabella moved the beans to the red_treasure_chest.
+The red_treasure_chest is in the basement.
+9 Isabella exited the basement.
+10 Sophia moved the beans to the red_container.
+The red_container is in the basement.
+11 Sophia exited the basement.
+12 Liam made no movements and stayed in the basement for 1 minute.
+13 Liam exited the basement.
+14 Jacob, Mila, Isabella, Sophia and Liam entered the waiting_room.
+15 Isabella publicly claimed that beans is in the green_bathtub now.
+The green_bathtub now is in the basement.
+16 Liam privately told Isabella that the beans is in the green_cupboard now.
+The green_cupboard now is in the basement.",Where does Liam think Mila thinks Jacob thinks Sophia thinks the beans is?,green_bucket,"['red_crate', 'blue_box', 'red_box', 'blue_container', 'red_bathtub', 'red_treasure_chest', 'green_bucket', 'green_cupboard', 'green_bathtub', 'red_container', 'blue_bottle', 'green_treasure_chest', 'red_cupboard', 'green_drawer', 'blue_cupboard']"
+"1 Jackson, Alexander, Jack, Emma and Mason entered the laundry.
+2 The persimmon is in the blue_container.
+The blue_container is in the laundry.
+3 Jackson made no movements and stayed in the laundry for 1 minute.
+4 Jackson exited the laundry.
+5 Alexander moved the persimmon to the green_drawer.
+The green_drawer is in the laundry.
+6 Alexander exited the laundry.
+7 Jack moved the persimmon to the green_envelope.
+The green_envelope is in the laundry.
+8 Jack exited the laundry.
+9 Emma moved the persimmon to the red_suitcase.
+The red_suitcase is in the laundry.
+10 Emma exited the laundry.
+11 Mason moved the persimmon to the blue_container.
+The blue_container is in the laundry.
+12 Mason exited the laundry.
+13 Jackson, Alexander, Jack, Emma and Mason entered the waiting_room.
+14 Jack publicly claimed that persimmon is in the green_envelope now.
+The green_envelope now is in the laundry.
+15 Mason privately told Jack that the persimmon is in the red_suitcase now.
+The red_suitcase now is in the laundry.",Where does Jack think Alexander thinks Mason thinks Jackson thinks the persimmon is?,blue_container,"['red_suitcase', 'blue_container', 'green_envelope', 'blue_suitcase', 'green_drawer', 'green_treasure_chest', 'blue_bathtub', 'green_cupboard', 'red_box', 'green_bottle', 'red_bottle', 'red_treasure_chest', 'green_bathtub', 'blue_cupboard', 'green_pantry']"
+"1 Charlotte lost his phone.
+2 Amelia, Aria, Charlotte, Emma and Isabella entered the master_bedroom.
+3 The radish is in the blue_container.
+The blue_container is in the master_bedroom.
+4 Amelia moved the radish to the red_drawer.
+The red_drawer is in the master_bedroom.
+5 Amelia exited the master_bedroom.
+6 Aria moved the radish to the green_container.
+The green_container is in the master_bedroom.
+7 Aria exited the master_bedroom.
+8 Charlotte moved the radish to the red_cupboard.
+The red_cupboard is in the master_bedroom.
+9 Charlotte exited the master_bedroom.
+10 Emma moved the radish to the green_pantry.
+The green_pantry is in the master_bedroom.
+11 Emma exited the master_bedroom.
+12 Isabella moved the radish to the blue_container.
+The blue_container is in the master_bedroom.
+13 Isabella exited the master_bedroom.
+14 Amelia, Aria, Charlotte, Emma and Isabella entered the waiting_room.
+15 Charlotte privately told Amelia that the radish is in the green_pantry now.
+The green_pantry now is in the master_bedroom.",Where does Isabella think Emma thinks Charlotte thinks Amelia thinks the radish is?,red_drawer,"['red_cupboard', 'blue_container', 'green_pantry', 'green_container', 'red_drawer', 'green_bottle', 'red_bathtub', 'blue_bottle', 'red_treasure_chest', 'green_drawer', 'green_treasure_chest', 'blue_envelope', 'blue_suitcase', 'red_suitcase', 'blue_drawer']"
+"1 Elizabeth, Gracie, Liam, Jack and Lily entered the staircase.
+2 The melon is in the green_pantry.
+The green_pantry is in the staircase.
+3 Elizabeth made no movements and stayed in the staircase for 1 minute.
+4 Elizabeth likes the red_crate.
+5 Elizabeth exited the staircase.
+6 Gracie moved the melon to the red_crate.
+The red_crate is in the staircase.
+7 Elizabeth saw a cat.
+8 Gracie exited the staircase.
+9 Liam moved the melon to the green_bathtub.
+The green_bathtub is in the staircase.
+10 Liam exited the staircase.
+11 Jack made no movements and stayed in the staircase for 1 minute.
+12 Jack exited the staircase.
+13 Lily moved the melon to the green_pantry.
+The green_pantry is in the staircase.
+14 Liam saw a dog.
+15 Lily exited the staircase.
+16 Elizabeth, Gracie, Liam, Jack and Lily entered the waiting_room.
+17 Liam publicly claimed that melon is in the red_crate now.
+The red_crate now is in the staircase.
+18 Lily privately told Liam that the melon is in the red_box now.
+The red_box now is in the staircase.",Where does Gracie think Jack thinks Lily thinks Elizabeth thinks the melon is?,green_pantry,"['red_crate', 'green_pantry', 'red_bottle', 'green_bathtub', 'red_box', 'blue_bathtub', 'blue_pantry', 'green_bottle', 'blue_envelope', 'red_treasure_chest', 'red_cupboard', 'blue_bottle', 'red_suitcase', 'blue_drawer', 'blue_suitcase']"
+"1 Isabella, Ethan, William, Liam and Amelia entered the basement.
+2 The peach is in the red_crate.
+The red_crate is in the basement.
+3 Isabella moved the peach to the red_bathtub.
+The red_bathtub is in the basement.
+4 Isabella exited the basement.
+5 Amelia saw a cat.
+6 Ethan made no movements and stayed in the basement for 1 minute.
+7 Ethan exited the basement.
+8 William made no movements and stayed in the basement for 1 minute.
+9 Isabella likes the red_bathtub.
+10 William exited the basement.
+11 Liam moved the peach to the green_bottle.
+The green_bottle is in the basement.
+12 Liam exited the basement.
+13 Amelia made no movements and stayed in the basement for 1 minute.
+14 Amelia exited the basement.
+15 Isabella, Ethan, William, Liam and Amelia entered the waiting_room.
+16 William publicly claimed that peach is in the blue_suitcase now.
+The blue_suitcase now is in the basement.
+17 Amelia privately told William that the peach is in the green_bottle now.
+The green_bottle now is in the basement.",Where does Liam think Isabella thinks Ethan thinks Amelia thinks the peach is?,red_bathtub,"['red_drawer', 'green_bathtub', 'red_cupboard', 'blue_basket', 'blue_cupboard', 'blue_treasure_chest', 'blue_container', 'blue_box', 'blue_drawer', 'red_envelope', 'red_crate', 'red_bathtub', 'blue_suitcase', 'green_bottle', 'green_drawer']"
+"1 Liam, Noah, Benjamin, Mila and Emma entered the porch.
+2 The watermelon is in the red_envelope.
+The red_envelope is in the porch.
+3 Liam made no movements and stayed in the porch for 1 minute.
+4 Liam exited the porch.
+5 Noah made no movements and stayed in the porch for 1 minute.
+6 Noah exited the porch.
+7 Benjamin moved the watermelon to the green_envelope.
+The green_envelope is in the porch.
+8 Benjamin exited the porch.
+9 Mila moved the watermelon to the blue_envelope.
+The blue_envelope is in the porch.
+10 Mila exited the porch.
+11 Emma moved the watermelon to the red_envelope.
+The red_envelope is in the porch.
+12 Emma exited the porch.
+13 Liam, Noah, Benjamin, Mila and Emma entered the waiting_room.
+14 Benjamin privately told Liam that the watermelon is in the green_drawer now.
+The green_drawer now is in the porch.",Where does Benjamin think Emma thinks Mila thinks Noah thinks the watermelon is?,red_envelope,"['blue_suitcase', 'green_container', 'red_container', 'green_bathtub', 'blue_treasure_chest', 'blue_drawer', 'red_treasure_chest', 'red_crate', 'red_bathtub', 'green_cupboard', 'green_envelope', 'red_envelope', 'green_bucket', 'green_drawer', 'blue_envelope']"
+"1 Ethan lost his watch.
+2 Ethan, Jack, Lily, Liam and Sophia entered the laundry.
+3 The lettuce is in the green_bottle.
+The green_bottle is in the laundry.
+4 Ethan moved the lettuce to the red_bottle.
+The red_bottle is in the laundry.
+5 Ethan exited the laundry.
+6 Jack moved the lettuce to the blue_suitcase.
+The blue_suitcase is in the laundry.
+7 Jack exited the laundry.
+8 Lily made no movements and stayed in the laundry for 1 minute.
+9 Lily exited the laundry.
+10 Liam made no movements and stayed in the laundry for 1 minute.
+11 Liam exited the laundry.
+12 Sophia made no movements and stayed in the laundry for 1 minute.
+13 Sophia exited the laundry.
+14 Ethan, Jack, Lily, Liam and Sophia entered the waiting_room.
+15 Lily privately told Ethan that the lettuce is in the red_bottle now.
+The red_bottle now is in the laundry.",Where does Sophia think Jack thinks Ethan thinks Lily thinks the lettuce is?,red_bottle,"['blue_bottle', 'blue_box', 'green_envelope', 'blue_basket', 'green_bucket', 'red_bathtub', 'green_bottle', 'blue_suitcase', 'green_pantry', 'red_bottle', 'red_envelope', 'red_drawer', 'blue_cupboard', 'red_cupboard', 'green_bathtub']"
+"1 Mila, Sophia, Elizabeth, Lily and Chloe entered the playroom.
+2 Lily dislikes the asparagus.
+3 The asparagus is in the red_drawer.
+The red_drawer is in the playroom.
+4 Mila made no movements and stayed in the playroom for 1 minute.
+5 Mila exited the playroom.
+6 Sophia moved the asparagus to the blue_pantry.
+The blue_pantry is in the playroom.
+7 Sophia exited the playroom.
+8 Elizabeth made no movements and stayed in the playroom for 1 minute.
+9 Elizabeth exited the playroom.
+10 Lily moved the asparagus to the green_cupboard.
+The green_cupboard is in the playroom.
+11 Lily exited the playroom.
+12 Chloe made no movements and stayed in the playroom for 1 minute.
+13 Chloe exited the playroom.
+14 Mila, Sophia, Elizabeth, Lily and Chloe entered the waiting_room.
+15 Elizabeth privately told Mila that the asparagus is in the red_drawer now.
+The red_drawer now is in the playroom.",Where does Chloe think Mila thinks Elizabeth thinks Lily thinks the asparagus is?,red_drawer,"['red_drawer', 'green_cupboard', 'red_container', 'green_container', 'blue_pantry', 'red_bathtub', 'green_envelope', 'red_envelope', 'blue_bottle', 'blue_envelope', 'red_bottle', 'red_crate', 'blue_suitcase', 'green_bottle', 'blue_bathtub']"
+"1 Amelia, Jack, Charlotte, Logan and Isla entered the basement.
+2 The lemon is in the green_drawer.
+The green_drawer is in the basement.
+3 Amelia likes the green_container.
+4 Amelia made no movements and stayed in the basement for 1 minute.
+5 Amelia exited the basement.
+6 Jack moved the lemon to the blue_drawer.
+The blue_drawer is in the basement.
+7 Amelia lost his watch.
+8 Jack exited the basement.
+9 Charlotte moved the lemon to the green_container.
+The green_container is in the basement.
+10 Charlotte exited the basement.
+11 Logan moved the lemon to the red_envelope.
+The red_envelope is in the basement.
+12 Logan exited the basement.
+13 Isla made no movements and stayed in the basement for 1 minute.
+14 Isla exited the basement.
+15 Amelia, Jack, Charlotte, Logan and Isla entered the waiting_room.
+16 Charlotte privately told Amelia that the lemon is in the blue_drawer now.
+The blue_drawer now is in the basement.",Where does Amelia think Isla thinks Logan thinks Charlotte thinks the lemon is?,green_drawer,"['blue_suitcase', 'blue_cupboard', 'red_treasure_chest', 'green_pantry', 'blue_envelope', 'red_crate', 'red_suitcase', 'green_bucket', 'red_container', 'blue_treasure_chest', 'green_drawer', 'blue_drawer', 'red_envelope', 'blue_bottle', 'green_container']"
+"1 Ella, Isabella, Aria, Nathan and Alexander entered the closet.
+2 The melon is in the red_bathtub.
+The red_bathtub is in the closet.
+3 Ella moved the melon to the red_cupboard.
+The red_cupboard is in the closet.
+4 Ella exited the closet.
+5 Ella dislikes the celery.
+6 Isabella moved the melon to the blue_drawer.
+The blue_drawer is in the closet.
+7 Isabella exited the closet.
+8 Aria made no movements and stayed in the closet for 1 minute.
+9 Aria exited the closet.
+10 Nathan made no movements and stayed in the closet for 1 minute.
+11 Nathan exited the closet.
+12 Alexander moved the melon to the red_bathtub.
+The red_bathtub is in the closet.
+13 Alexander exited the closet.
+14 Ella, Isabella, Aria, Nathan and Alexander entered the waiting_room.
+15 Aria publicly claimed that melon is in the blue_bathtub now.
+The blue_bathtub now is in the closet.
+16 Alexander privately told Aria that the melon is in the red_cupboard now.
+The red_cupboard now is in the closet.",Where does Ella think Aria thinks Nathan thinks Alexander thinks the melon is?,red_cupboard,"['red_bathtub', 'red_cupboard', 'blue_drawer', 'blue_bathtub', 'green_bathtub', 'blue_bottle', 'blue_container', 'blue_suitcase', 'blue_pantry', 'blue_cupboard', 'red_treasure_chest', 'green_pantry', 'green_bottle', 'red_crate', 'green_container']"
+"1 Nathan, Isla, James, Noah and Jackson entered the hallway.
+2 The tangerine is in the green_pantry.
+The green_pantry is in the hallway.
+3 Noah lost his watch.
+4 Nathan moved the tangerine to the blue_bottle.
+The blue_bottle is in the hallway.
+5 Nathan exited the hallway.
+6 Noah lost his watch.
+7 Isla moved the tangerine to the red_treasure_chest.
+The red_treasure_chest is in the hallway.
+8 Isla exited the hallway.
+9 James moved the tangerine to the green_container.
+The green_container is in the hallway.
+10 James exited the hallway.
+11 Noah moved the tangerine to the blue_suitcase.
+The blue_suitcase is in the hallway.
+12 Noah exited the hallway.
+13 Jackson made no movements and stayed in the hallway for 1 minute.
+14 Jackson exited the hallway.
+15 Nathan, Isla, James, Noah and Jackson entered the waiting_room.
+16 James privately told Nathan that the tangerine is in the blue_suitcase now.
+The blue_suitcase now is in the hallway.",Where does Noah think James thinks Nathan thinks Isla thinks the tangerine is?,blue_bottle,"['green_bathtub', 'red_suitcase', 'blue_basket', 'blue_cupboard', 'red_bottle', 'green_pantry', 'red_treasure_chest', 'green_container', 'blue_suitcase', 'blue_bottle', 'green_drawer', 'green_treasure_chest', 'green_bucket', 'red_box', 'blue_container']"
+"1 Liam, Aiden, William, Sophia and Elizabeth entered the closet.
+2 The asparagus is in the green_envelope.
+The green_envelope is in the closet.
+3 Liam made no movements and stayed in the closet for 1 minute.
+4 Liam exited the closet.
+5 Aiden made no movements and stayed in the closet for 1 minute.
+6 Aiden exited the closet.
+7 William moved the asparagus to the blue_box.
+The blue_box is in the closet.
+8 William exited the closet.
+9 Aiden likes the blue_cupboard.
+10 Sophia moved the asparagus to the green_cupboard.
+The green_cupboard is in the closet.
+11 Sophia exited the closet.
+12 Sophia lost his gloves.
+13 Elizabeth moved the asparagus to the green_envelope.
+The green_envelope is in the closet.
+14 Elizabeth exited the closet.
+15 Liam lost his phone.
+16 Liam, Aiden, William, Sophia and Elizabeth entered the waiting_room.
+17 William publicly claimed that asparagus is in the green_cupboard now.
+The green_cupboard now is in the closet.
+18 Elizabeth privately told William that the asparagus is in the blue_box now.
+The blue_box now is in the closet.",Where does Aiden think Elizabeth thinks Liam thinks William thinks the asparagus is?,green_envelope,"['green_envelope', 'blue_envelope', 'blue_box', 'green_bucket', 'green_cupboard', 'red_envelope', 'blue_bottle', 'red_crate', 'blue_container', 'green_container', 'green_bottle', 'red_drawer', 'blue_cupboard', 'red_suitcase', 'blue_pantry']"
+"1 Elizabeth, Mason, Charlotte, Lily and Carter entered the office.
+2 The potato is in the green_container.
+The green_container is in the office.
+3 Elizabeth moved the potato to the blue_basket.
+The blue_basket is in the office.
+4 Elizabeth exited the office.
+5 Mason moved the potato to the green_bucket.
+The green_bucket is in the office.
+6 Mason exited the office.
+7 Charlotte made no movements and stayed in the office for 1 minute.
+8 Charlotte exited the office.
+9 Lily made no movements and stayed in the office for 1 minute.
+10 Lily exited the office.
+11 Carter made no movements and stayed in the office for 1 minute.
+12 Carter exited the office.
+13 Elizabeth, Mason, Charlotte, Lily and Carter entered the waiting_room.
+14 Charlotte privately told Elizabeth that the potato is in the blue_basket now.
+The blue_basket now is in the office.",Where does Lily think Mason thinks Carter thinks Charlotte thinks the potato is?,green_bucket,"['green_bathtub', 'blue_cupboard', 'red_container', 'green_drawer', 'green_pantry', 'green_container', 'red_envelope', 'green_bucket', 'blue_basket', 'red_crate', 'blue_bathtub', 'green_envelope', 'blue_container', 'green_bottle', 'green_treasure_chest']"
+"1 Charlotte, Mila, Sophia, Jackson and Carter entered the cellar.
+2 The radish is in the red_envelope.
+The red_envelope is in the cellar.
+3 Charlotte made no movements and stayed in the cellar for 1 minute.
+4 Charlotte exited the cellar.
+5 Mila moved the radish to the red_bottle.
+The red_bottle is in the cellar.
+6 Sophia lost his phone.
+7 Mila exited the cellar.
+8 Sophia made no movements and stayed in the cellar for 1 minute.
+9 Charlotte likes the blue_drawer.
+10 Sophia exited the cellar.
+11 Jackson made no movements and stayed in the cellar for 1 minute.
+12 Jackson exited the cellar.
+13 Carter made no movements and stayed in the cellar for 1 minute.
+14 Carter exited the cellar.
+15 Charlotte, Mila, Sophia, Jackson and Carter entered the waiting_room.
+16 Sophia publicly claimed that radish is in the red_bottle now.
+The red_bottle now is in the cellar.
+17 Carter privately told Sophia that the radish is in the red_crate now.
+The red_crate now is in the cellar.",Where does Mila think Jackson thinks Charlotte thinks Carter thinks the radish is?,red_envelope,"['blue_envelope', 'green_container', 'blue_pantry', 'blue_drawer', 'blue_bathtub', 'red_envelope', 'red_crate', 'blue_cupboard', 'red_container', 'red_bottle', 'green_drawer', 'blue_suitcase', 'green_bathtub', 'red_treasure_chest', 'green_cupboard']"
+"1 Ella, Mia, Isabella, Jackson and James entered the attic.
+2 The tomato is in the green_bottle.
+The green_bottle is in the attic.
+3 Mia saw a dog.
+4 Ella made no movements and stayed in the attic for 1 minute.
+5 Ella exited the attic.
+6 Mia moved the tomato to the blue_cupboard.
+The blue_cupboard is in the attic.
+7 Mia exited the attic.
+8 Isabella made no movements and stayed in the attic for 1 minute.
+9 Isabella exited the attic.
+10 Isabella likes the red_drawer.
+11 Jackson moved the tomato to the blue_bathtub.
+The blue_bathtub is in the attic.
+12 Jackson exited the attic.
+13 James made no movements and stayed in the attic for 1 minute.
+14 Jackson dislikes the tomato.
+15 James exited the attic.
+16 Ella, Mia, Isabella, Jackson and James entered the waiting_room.
+17 Isabella publicly claimed that tomato is in the green_envelope now.
+The green_envelope now is in the attic.
+18 James privately told Isabella that the tomato is in the blue_bathtub now.
+The blue_bathtub now is in the attic.",Where does Jackson think Mia thinks Ella thinks James thinks the tomato is?,green_bottle,"['red_envelope', 'red_drawer', 'blue_suitcase', 'green_bucket', 'blue_treasure_chest', 'green_bottle', 'green_pantry', 'blue_cupboard', 'blue_bathtub', 'green_envelope', 'red_treasure_chest', 'green_container', 'red_bottle', 'blue_drawer', 'red_container']"
+"1 Oliver lost his phone.
+2 Isla, Ethan, Noah, James and Oliver entered the pantry.
+3 The melon is in the red_cupboard.
+The red_cupboard is in the pantry.
+4 Isla moved the melon to the red_bottle.
+The red_bottle is in the pantry.
+5 Isla exited the pantry.
+6 James saw a monkey.
+7 Ethan made no movements and stayed in the pantry for 1 minute.
+8 Ethan exited the pantry.
+9 Noah made no movements and stayed in the pantry for 1 minute.
+10 Noah exited the pantry.
+11 James moved the melon to the red_drawer.
+The red_drawer is in the pantry.
+12 James exited the pantry.
+13 Oliver moved the melon to the red_cupboard.
+The red_cupboard is in the pantry.
+14 Oliver exited the pantry.
+15 Isla, Ethan, Noah, James and Oliver entered the waiting_room.
+16 Oliver saw a mouse.
+17 Noah privately told Isla that the melon is in the red_cupboard now.
+The red_cupboard now is in the pantry.",Where does Isla think Oliver thinks Ethan thinks Noah thinks the melon is?,red_bottle,"['blue_envelope', 'green_bottle', 'red_bathtub', 'blue_drawer', 'green_bathtub', 'blue_container', 'green_container', 'blue_bathtub', 'blue_suitcase', 'red_container', 'green_pantry', 'red_cupboard', 'green_cupboard', 'red_bottle', 'red_drawer']"
+"1 Elizabeth, Noah, Lily, Logan and Carter entered the bathroom.
+2 The watermelon is in the red_bottle.
+The red_bottle is in the bathroom.
+3 Elizabeth made no movements and stayed in the bathroom for 1 minute.
+4 Elizabeth exited the bathroom.
+5 Noah made no movements and stayed in the bathroom for 1 minute.
+6 Noah exited the bathroom.
+7 Lily made no movements and stayed in the bathroom for 1 minute.
+8 Lily exited the bathroom.
+9 Logan made no movements and stayed in the bathroom for 1 minute.
+10 Logan exited the bathroom.
+11 Carter moved the watermelon to the red_bottle.
+The red_bottle is in the bathroom.
+12 Carter exited the bathroom.
+13 Elizabeth, Noah, Lily, Logan and Carter entered the waiting_room.
+14 Lily publicly claimed that watermelon is in the green_envelope now.
+The green_envelope now is in the bathroom.
+15 Carter privately told Lily that the watermelon is in the green_cupboard now.
+The green_cupboard now is in the bathroom.",Where does Carter think Logan thinks Noah thinks Lily thinks the watermelon is?,red_bottle,"['red_cupboard', 'red_treasure_chest', 'blue_drawer', 'red_container', 'red_crate', 'red_bottle', 'green_cupboard', 'green_envelope', 'red_box', 'blue_suitcase', 'green_bathtub', 'blue_bathtub', 'green_pantry', 'blue_envelope', 'green_treasure_chest']"

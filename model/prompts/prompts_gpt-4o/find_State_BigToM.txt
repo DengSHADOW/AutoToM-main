@@ -1,0 +1,24 @@
+Determine the final objective state(s) of an object or an event in the story. 
+State refers to the physical condition of an object or the state of the world. This includes the final location of the objects and agents. If the location is not explicitly stated then you cannot assume it. 
+No actions of agents should be involved in the state but it can be the result of an action of an agent. 
+An objective state statement should not include personal perspectives but should be objective. If a person's perception is involved, it is no longer considered an objective state.
+
+Answer in the form of a list. The first element of the list contains the option A.
+Include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. You can rewrite the sentences to define the state. Do not output anything else other than the format in the example output. You must return an output and cannot output an empty string.
+Strictly output the answer in this format: ["A", "evidence sentence."]
+
+Example 1: 
+Story: Bob is in the kitchen. He pours juice in the glass. He sees the glass is dirty. 
+Answer: ["A", "Bob is in the kitchen. There is juice in the glass. The glass is dirty."]
+
+Example 2: 
+Story: Alice is in the kitchen. Alice fills up her bag with apples. Alice is excited to eat an apple. 
+Answer: ["A", "Alice is in the kitchen. Alice fills up her bag with apples."]
+
+Example 3: 
+Story: Alice is in the kitchen. Alice fills up her bag with apples. Alice is excited to eat an apple. Bob puts the apples in the bag in a box. 
+Answer: ["A", "Alice is in the kitchen. There are apples in a box."]
+
+
+Story: [Story]
+Answer: 

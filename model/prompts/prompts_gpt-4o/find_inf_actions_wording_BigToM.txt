@@ -1,0 +1,14 @@
+Story: [Story]
+Given the list of phrases clearly stated in the story without changing the original wording: [bare_actions]. 
+
+For each phrase in the list, if they are part of a longer sentence or a compound sentence in the story, include the entire sentence verbatim without altering its wording. 
+Even if the phrase is a standalone sentence but if it is a part of the sentence in the story then still extract the entire story. 
+The output format should be: ["aaa.", "bbb.", ...], ["aaa.", "bbb.", ...], and should be the same length as the list [bare_actions]. Output only this list.
+
+
+Example 1: 
+Story: Alice sees an apple, and Alice washes it. 
+Actions: ["Alice washes it."]
+Extraction: [Alice sees an apple and Alice washes it.]
+
+Output: 

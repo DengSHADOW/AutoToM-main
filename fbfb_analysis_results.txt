@@ -1,0 +1,99 @@
+======================================================================
+BigToM Forward Belief False-Belief (fbfb) - Full Analysis
+======================================================================
+Total questions with results : 200/200  (all 200 complete)
+Correct                      : 191 (95.5%)
+Wrong                        : 9 (4.5%)
+
+Confidence analysis:
+  Avg P(correct answer) when model is RIGHT : 0.718
+  Avg P(correct answer) when model is WRONG : 0.298
+
+Distribution of P(correct answer) among 9 wrong cases:
+  <0.10        :  2 cases  ||
+  0.10-0.30    :  3 cases  |||
+  0.30-0.50    :  2 cases  ||
+  >0.50        :  2 cases  ||
+
+Cost / time:
+  Avg cost per question : $0.0339
+  Avg time per question : 22.0s
+
+======================================================================
+Error Classification
+======================================================================
+All 9 wrong cases were reviewed manually.
+
+  Information asymmetry (true state contaminates belief) :  3 / 9
+  Benchmark inconsistency (story or GT label is suspect) :  2 / 9
+  Indeterminate / 50-50 (model cannot determine belief)  :  2 / 9
+  Observation interpretation error                       :  1 / 9
+  Possible metrics bug (choices index mismatch)          :  1 / 9
+
+Pattern: Unlike bbfb (100% information asymmetry), fbfb errors are
+mixed. AutoToM mostly handles 'agent does not observe' correctly in
+forward inference, but still fails when the true-state signal is very
+strong (Q8, Q71, Q114) or when the story/label is ambiguous.
+
+======================================================================
+All 9 Wrong Cases (sorted by P(correct answer) ascending)
+======================================================================
+
+[01/9]  idx=0  P(correct)=0.029  probs=[0.971, 0.029]
+  Story    : Noor is working as a barista at a busy coffee shop. Noor wants to make a delicious cappuccino for a customer who asked for oat milk. Noor grabs a milk pitcher and fills it with oat milk. A coworker who didn't hear the customer's request swaps the oat milk in the pitcher with almond milk while Noor is attending to another task. Noor sees her coworker swapping the milk.
+  Question : Does Noor believe the milk pitcher contains oat milk or almond milk?
+  GT       : Noor believes the milk pitcher contains oat milk.
+  Predicted: Noor believes the milk pitcher contains almond milk.
+
+[02/9]  idx=71  P(correct)=0.055  probs=[0.055, 0.945]
+  Story    : Mei is a professional photographer exploring the countryside of Japan. She wants to capture the perfect shot of Mount Fuji at sunset. Mei sets up her tripod and camera, pointing it toward the mountain, where the clouds are just starting to clear. Suddenly, a thick fog rolls in, completely obscuring the view of the mountain. Mei does not notice the fog covering Mount Fuji.
+  Question : Does Mei believe the clouds around Mount Fuji are clearing up or that it's covered by fog?
+  GT       : Mei believes the clouds around Mount Fuji are clearing up.
+  Predicted: Mei believes Mount Fuji is covered by fog.
+
+[03/9]  idx=8  P(correct)=0.245  probs=[0.245, 0.755]
+  Story    : Farhan is a street food vendor in a bustling market in Istanbul. Farhan wants to prepare a delicious chicken shawarma wrap for a customer who asked for extra garlic sauce. Farhan takes a bottle of garlic sauce from the shelf and pours it onto the shawarma wrap. His assistant, who is busy preparing a different wrap, accidentally swaps the garlic sauce with a bottle of hot sauce, and Farhan unknowingly pours the hot sauce onto the shawarma wrap. Farhan does not notice the sauce swap.
+  Question : Does Farhan believe the sauce he poured is garlic sauce or hot sauce?
+  GT       : Farhan believes the sauce he poured is garlic sauce.
+  Predicted: Farhan believes the sauce he poured is hot sauce.
+
+[04/9]  idx=9  P(correct)=0.275  probs=[0.725, 0.275]
+  Story    : Abhay is a young farmer in a small Indian village. He wants to water his crops with the water stored in a large clay pot. Abhay checks the water level and sees that the pot is full. Unbeknownst to him, a hole in the bottom of the pot has caused the water to leak out, leaving the pot empty. Abhay does not notice the hole and the water leaking out.
+  Question : Does Abhay believe the pot is full of water or empty?
+  GT       : Abhay believes the pot is full of water.
+  Predicted: Abhay believes the pot is empty.
+
+[05/9]  idx=150  P(correct)=0.298  probs=[0.702, 0.298]
+  Story    : Yael is in a small bookstore browsing through the science fiction section. Yael wants to find a book with a thrilling plot to read during her upcoming vacation. He notices the book cover of a novel displaying an intriguing scene of a futuristic cityscape. A customer accidentally places a book with a similar cover, but a bland storyline, in the spot where the thrilling novel was, after browsing it. Yael does not notice the customer putting the book back in the wrong spot.
+  Question : Does Yael believe the book with the intriguing cover has a thrilling plot or a bland storyline?
+  GT       : Yael believes the book with the intriguing cover has a bland storyline.
+  Predicted: Yael believes the book with the intriguing cover has a thrilling plot.
+
+[06/9]  idx=114  P(correct)=0.367  probs=[0.633, 0.367]
+  Story    : Rashida is a professional baker, preparing for a prestigious baking competition. She wants to create a perfect chocolate soufflé for the judges. Rashida stes her oven to preheat at 350°F. However, a power outage occurs and the oven's temperature drops rapidly. Rashida does not notice the power outage.
+  Question : Does Rashida believe her oven is preheating at 350°F or not heating at all?
+  GT       : Rashida believes her oven is preheating at 350°F.
+  Predicted: Rashida believes her oven is not heating at all.
+
+[07/9]  idx=19  P(correct)=0.414  probs=[0.414, 0.586]
+  Story    : Jia is a botanist visiting a beautiful botanical garden in China. Jia wants to identify a rare orchid species she's been researching for years. Jia sees a group of orchids in full bloom that she thinks could be the species she's looking for. A sudden gust of wind blows through the garden, causing some petals from a nearby tree to fall and cover the orchids, making them look like a completely different species. Jia does not notice the gust of wind or the petals covering the orchids.
+  Question : Does Jia believe the orchids are the rare species she's been researching or a different species?
+  GT       : Jia believes the orchids are a different species.
+  Predicted: Jia believes the orchids could still be the rare species she's been researching.
+
+[08/9]  idx=6  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Kofi is a chef at a popular Ghanaian restaurant. Kofi wants to prepare a traditional groundnut soup for the dinner menu. Kofi adds a small container of peanut butter to the soup pot on the stove. An apprentice chef, mistakenly thinking it was a seasoning paste, removes the peanut butter from the soup and replaces it with tomato paste. Kofi does not notice the apprentice chef swapping the ingredients.
+  Question : Does Kofi believe the soup contains peanut butter or tomato paste?
+  GT       : Kofi believes the soup contains peanut butter.
+  Predicted: Kofi believes the soup contains tomato paste.
+
+[09/9]  idx=69  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Amina is an archaeologist from Egypt, working on an excavation site near the Great Pyramids. Amina hopes to discover ancient artifacts that will provide valuable insights into Egyptian history. Amina unearths a clay tablet covered with hieroglyphs that appear to be in excellent condition. A sudden sandstorm sweeps through the excavation site, eroding the surface of the clay tablet and making the hieroglyphs difficult to decipher. Amina does not witness the sandstorm or its impact on the clay tablet.
+  Question : Does Amina believe the clay tablet is well-preserved and contains important information or that it is eroded and difficult to decipher?
+  GT       : Amina believes the clay tablet is well-preserved and contains important information.
+  Predicted: Amina believes the clay tablet is eroded and difficult to decipher.
+
+======================================================================
+All 191 Correct Cases - idx list
+======================================================================
+[1, 2, 3, 4, 5, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 70, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199]

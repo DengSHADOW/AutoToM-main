@@ -1,0 +1,7 @@
+results/
+model/__pycache__/
+.DS_Store
+model/.env
+cache/
+__pycache__/
+*.pyc

@@ -1,0 +1,11 @@
+Propose [num] hypotheses for [Character]'s observation of the world.
+The observation refers to [Character]'s current perception of events or the world state. It is only considered clearly stated when [Character]'s perception is explicitly mentioned, like if [Character] see something or perceive something through other senses. Do not be speculative.
+Do not provide any explanation for the hypotheses. Do not propose any sentence that's not depicting the observation, like action or belief of [Character].
+The wording for hypotheses cannot be speculative.
+If the information contains "not", make sure the verb for perception (e.g., "see", 'perceives') goes before "not" in the hypotheses. e.g., use 'sees that A is not in B' instead of 'does not see that A is in B'
+Otherwise, do not include "not" in your hypotheses, and make sure the verb for perception goes first, e.g., 'sees that A is in B'.
+Given information: [Information]
+Ensure that the hypotheses align with the given information perfectly. It means that when the person has the observation the person will act according to the given information.
+First, list out all entities in the given information. Then, formulate hypotheses using all entities. Make sure the hypotheses starts with [Character].
+Output the hypotheses in the following form: ["aaa."]
+Observation Hypotheses: []

@@ -1,0 +1,12 @@
+First determine the observation of [Character] is explicitly mentioned in the given context, this will be in the rough format of [Character] observes ... or [Character] does not observe ... 
+If the observation is explicitly mentioned, determine what the object the observation is about without including any information about the state or any adjectives. 
+
+In the context, there is an initial state of the object and an action that will change the state of it. 
+Identify both the initial state and the final state of the object. 
+Based on both the initial and final state of the object, propose a hypothesis for each in the format of [Character] believes ... 
+However, do not mention anything about the action that changes the state of the object, e.g. only describe the state or adjective of the object before and after. 
+
+Output in this format: ["Belief About Initial State", "Belief About Final State"] for a list length of [num] so that only [num] hypotheses are proposed.
+
+[Context]
+Belief Hypotheses: 

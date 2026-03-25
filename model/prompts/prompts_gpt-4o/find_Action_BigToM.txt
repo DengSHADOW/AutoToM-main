@@ -1,0 +1,19 @@
+Determine if [Character]'s action(s) is clearly stated in the story.
+Actions of [Inferred_agent] are defined as events that will change the world state or the state of an object, e.g. if [Inferred_agent]'s action will not change the state of the main object in the story then it does not count as an action. 
+In the context, there is an initial state of the object and an action that will change the state of it. 
+Identify both the initial state and the final state of the object. 
+If the action of [Inferred_agent] is done after the final state of the object then it counts as an action. 
+If the action of [Inferred_agent] is done before the final state of the object then it does not counts as an action.
+
+Actions of [Inferred_agent] where [Inferred_agent] will not change the state of an object do not count as an action.
+Actions of [Inferred_agent] where [Inferred_agent] will plan to do something or wants to do something is not an action. 
+Actions of [Inferred_agent] where [Inferred_agent] will perceive something, such as gaining knowledge of an event or state of the world through observations is not an action unless they are actively looking for more information and will change the state of the object, e.g. reading or seeing or hearing is not an action but searching for or looking for is an action. 
+
+Answer in the form of a list. The first element of the list contains the option A or B. A means clearly stated, and B means not clearly stated.
+If the answer is A, include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. Note that there could be multiple action sentences.
+Otherwise the second element can be an empty string. Do not write anything else.
+Example 1: ["A", "evidence sentence."]
+Example 2: ["B", ""]
+
+[Story]
+Answer: 

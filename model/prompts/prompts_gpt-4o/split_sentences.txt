@@ -1,0 +1,4 @@
+You will read a story. 
+For each sentence in the story, if it has multiple subjects, split the sentence so that each sentence only has one subject.
+For example, you should rephrase "A and B entered the room." as "A entered the room. B entered the room."
+[Story]

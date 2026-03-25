@@ -1,0 +1,4 @@
+Find the name of the character that we need to infer about in the question and choices. Only output the name. Do not answer the question.
+[Question]
+[Choices]
+Character name:

@@ -1,0 +1,33 @@
+Given the observation of [Character], determine if more information is needed to make sure that the observation is not too vague.
+If it says that [Character]'s observations are not known, do not add any information. Only output ["B", ""]. 
+
+This means all the adjectives of the objects mentioned in [Character]'s observation and not the agents.
+This information can only be what was stated in the story before [Character]'s observation. 
+Also make sure that if the observation was part of a sentence, include the entire sentence that the observation is a part of. 
+Be clear about the details of the observation so that the observation is complete and not too general if details are provided. Combine entire or portions of sentences if you need to to include all the details of observations available in the story.
+
+Answer in the form of a list. The first element of the list contains the option A. A means there is additional information needed and B means there is no additional information needed.
+If the answer is A, include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. Also make sure to include the observation originally given.
+Otherwise the second element can be an empty string. Do not write anything else.
+Example 1: ["A", "evidence sentence."]
+Example 2: ["B", ""]
+
+Example 1: More information needed about the observation.
+Story: Alice is in the kitchen. Alice sees an email that school is canceled tomorrow. Alice sees that the email was a mistake.  
+Observation: Alice sees that the email.  
+Answer: ["A", "Alice sees an email that school is canceled tomorrow.  Alice sees that the email was a mistake."]
+
+Example 2: More information needed about the observation. 
+Story: Bob wants to buy a red apple. The store worker changed the red apples with the green apples. Bob sees this change. 
+Observation: Bob sees this change.  
+Answer: ["A", "The store worker changed the red apples with the green apples. Bob sees this change."]
+
+Example 3: No more information is needed 
+Story: Bob wants to buy a red apple. Bob sees the red apples. 
+Observation: Bob sees the red apples.   
+Answer: ["A", "Bob sees the red apples."]
+
+Story: [Story]
+Character: [Character]
+Observation: [Observation]
+Answer: 

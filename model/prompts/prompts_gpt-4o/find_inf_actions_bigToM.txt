@@ -1,0 +1,32 @@
+Extract the actions of [Inferred_agent] in the story verbatim without changing any of the original words, pluralizing the words, adding in [Inferred_agent] or any other name, replacing any of the words, replacing pronouns with names or replacing any names with pronouns. Actions of [Inferred_agent] are defined as events that will change the world state, e.g., [Inferred_agent] moving to a new location is an action but [Inferred_agent] being at a location is not an action. If [Inferred_agent] say something, the whole sentence (with 'replied', 'said') is seen as an action.
+
+In the context, there is an initial state of the object and an action that will change the state of it. 
+Identify both the initial state and the final state of the object. 
+If the action of [Inferred_agent] is done after the final state of the object then it counts as an action. 
+If the action of [Inferred_agent] is done before the final state of the object then it does not counts as an action. 
+
+Actions of [Inferred_agent] are defined as events that will change the initially described state of an object as described by its adjective described in the story, e.g. if [Inferred_agent]'s action will not change the state of the main object in the story then it does not count as an action. For example, wanting to do something or wanting to do an action is not an action. 
+Actions of [Inferred_agent] where [Inferred_agent] gains more information, sees something or learns something does not count as an action.  
+Actions of [Inferred_agent] where [Inferred_agent] will not change the state of an object do not count as an action.
+Actions of [Inferred_agent] where [Inferred_agent] will plan to do something or wants to do something is not an action but if [Inferred_agent] has completed one action and is in the process of completing another action then this still counts as an action. 
+Actions of [Inferred_agent] where [Inferred_agent] will perceive something, such as gaining knowledge of an event or state of the world through observations is not an action unless they are actively looking for more information and will change the state of the object. 
+Actions of [Inferred_agent] where [Inferred_agent] does not perceive something is also not an action. 
+
+Do not change the names of any of the agents, if there is not a name and only a pronoun then just leave the pronoun. There can more than one agent or more than just the inferred agent. 
+If the action is part of the sentence then extract the entire sentence , without changing any of the original words, such as pluralizing the words, replacing any of the words, replacing pronouns with names or replacing any names with pronouns, and do not add any words.
+If there are multiple actions in a sentence then they should be extracted as one single action, without changing any of the original words, such as pluralizing the words, replacing any of the words, replacing pronouns with names or replacing any names with pronouns, and do not add any words.
+Do not insert actions or pronouns or other words that are not explicitly stated in the text. Do not separate the objects in the same action.
+Do not add any pronouns. Keep the commas, if any.
+Only actions that have already occurred at the time can be considered clearly stated. Again, only extract actions performed by [Inferred_agent].
+The output format should be: ["aaa.", "bbb.", ...]. Output only this list.
+
+Example 1:
+Story: Alice sees an apple and washes the apple. 
+Extraction: [Alice sees an apple and washes the apple] 
+
+Example 2: 
+Story: Alice sees an apple. She pours water in the glass. She pours it out and pours juice in it. 
+Extraction: [She pours it out and pours juice in it. ]
+
+[Story]
+Extraction:

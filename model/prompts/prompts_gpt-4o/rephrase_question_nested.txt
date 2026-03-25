@@ -1,0 +1,10 @@
+Rephrase the question, removing the perspective of [Agent].
+Do not contain any explanation.
+Example 1:
+Question: Where does A think that B goes for lunch?
+Output: Where will B go for lunch?
+Example 2:
+Question: Where does A think that B thinks C thinks peach is?
+Output: Where does B thinks that C thinks peach is?
+[Question]
+Output:

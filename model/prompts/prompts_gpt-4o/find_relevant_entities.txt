@@ -1,0 +1,3 @@
+Extract all the entities in the sentence: [Choice]
+Entities include names of the agents, objects, locations, ...
+The output format should be: ["aaa.", "bbb.", ...]. Output only this list.

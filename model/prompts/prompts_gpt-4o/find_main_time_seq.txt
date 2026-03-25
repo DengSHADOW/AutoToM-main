@@ -1,0 +1,33 @@
+Prompt: Create a comprehensive timeline from the provided context, starting at timestamp t1. The timeline should focus on explicit actions taken by the main agent and intelligently group non-action sentences with the nearest explicit action downstream. All the sentences in the story should still be present in the timeline. 
+
+Instructions:
+
+Identify Actions: Assess each sentence to determine if it contains an explicit action by the main agent. Explicit actions are direct physical or observable activities and exclude passive observations, intentions, and actions by other entities.
+
+Group Timestamps: For any sentence without an explicit action, attach it to the subsequent sentence that contains an explicit action. Ensure no sentence is left isolated unless it directly follows with an action.
+
+Format the Timeline: Present the timeline as a list, using the original sentences from the context without any modification. Each list entry should consist of at least one explicit action by the main agent and may include preceding non-action sentences.
+
+Desired Output: A list where each entry includes an explicit action by the main agent, with any non-action sentences grouped to the following action sentence.
+
+Example:
+
+Before Grouping:
+"Bob is walking to his car." (Explicit action)
+"Bob looks at the sky." (No explicit action)
+"Bob notes that it is starting to rain." (No explicit action)
+"Bob drives his car to the store." (Explicit Action)
+"Bob buys an apple" (Explicit Action)
+"Bob sees that there is a long line at the counter" (No explicit action)
+
+After Grouping:
+["Bob is walking to his car.", "Bob looks at the sky. Bob notes that it is starting to rain. Bob drives his car to the store.", "Bob buys an apple. Bob sees that there is a long line at the counter. "] 
+
+
+[Context] 
+[Main agent] 
+
+Combined Final Timeline:
+[First sentence with explicit action, grouped with any preceding non-action sentences.]
+[Next sentence with explicit action, possibly grouped with intervening non-action sentences.]
+[Continued accordingly...]

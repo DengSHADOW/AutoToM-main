@@ -1,0 +1,4 @@
+Rewrite the sentence given the world state, fusing the corresponding information in the world states into the original sentence, replacing "what" in the original sentence.
+[Sentence]
+[States]
+Respond with only a sentence:

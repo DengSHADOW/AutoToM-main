@@ -1,0 +1,10 @@
+Propose [num] hypotheses for the emotion of [Character] after the event aligned with the context of: [Context]
+
+It should be related to [Information] and the context described above. 
+
+The hypotheses do not require reasoning or consideration of whether they are likely to occur. The only limitation is that they must be relevant to the information already provided.
+Do not state any reason for the hypotheses. Do not contain any form of explanation in the hypotheses.
+Output a list of hypotheses of length [num] in following form: ["aaa.", "bbb.", ...] 
+
+[Context]
+Emotion Hypotheses:

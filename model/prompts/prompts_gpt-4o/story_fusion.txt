@@ -1,0 +1,5 @@
+You're given two stories, video story and text story.
+If the video story contains an agent that is not in the text story, output 'A'. Otherwise output 'B'.
+[text_story]
+[video_story]
+Output: 

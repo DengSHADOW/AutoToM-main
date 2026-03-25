@@ -1,0 +1,91 @@
+======================================================================
+BigToM Forward Belief True-Belief (fbtb) - Full Analysis
+======================================================================
+Total questions with results : 198/200  (missing: [41, 61])
+Correct                      : 190 (96.0%)
+Wrong                        : 8 (4.0%)
+
+Confidence analysis:
+  Avg P(correct answer) when model is RIGHT : 0.716
+  Avg P(correct answer) when model is WRONG : 0.279
+
+Distribution of P(correct answer) among 8 wrong cases:
+  <0.10        :  0 cases  
+  0.10-0.30    :  6 cases  ||||||
+  0.30-0.50    :  0 cases  
+  >0.50        :  2 cases  ||
+
+Cost / time:
+  Avg cost per question : $0.0339
+  Avg time per question : 25.3s
+
+======================================================================
+Context: fbtb as control condition
+======================================================================
+fbtb = agent has TRUE belief (belief matches current world state).
+AutoToM tends to assign the true state as the agent's belief, so
+fbtb should be the easiest condition. High accuracy here confirms
+that errors in fbfb/bbfb are specifically due to the information
+asymmetry bug, not general model failure.
+
+Comparison across datasets:
+  bbfb (backward, false belief) : 152/200 = 76.0%
+  fbfb (forward,  false belief) : 191/200 = 95.5%
+  fbtb (forward,  true  belief) : 190/198 = 96.0%  <-- this run
+
+======================================================================
+All 8 Wrong Cases (sorted by P(correct answer) ascending)
+======================================================================
+
+[01/8]  idx=8  P(correct)=0.109  probs=[0.109, 0.891]
+  Story    : Farhan is a street food vendor in a bustling market in Istanbul. Farhan wants to prepare a delicious chicken shawarma wrap for a customer who asked for extra garlic sauce. Farhan takes a bottle of garlic sauce from the shelf and pours it onto the shawarma wrap. His assistant, who is busy preparing a different wrap, accidentally swaps the garlic sauce with a bottle of hot sauce, and Farhan unknowingly pours the hot sauce onto the shawarma wrap. Farhan notices the sauce swap.
+  Question : Does Farhan believe the sauce he poured is garlic sauce or hot sauce?
+  GT       : Farhan believes the sauce he poured is hot sauce.
+  Predicted: Farhan believes the sauce he poured is garlic sauce.
+
+[02/8]  idx=20  P(correct)=0.161  probs=[0.839, 0.161]
+  Story    : Isabela is a baker in a small Argentinian town known for its delicious pastries. Isabela wants to make a batch of alfajores, a traditional Argentinian dessert, for her bakery's customers. Isabela gets a bag of powdered sugar from her pantry to dust the alfajores. Her assistant, who was organizing the pantry earlier, accidentally placed a bag of flour in the powdered sugar's spot, and Isabela unknowingly grabs the bag of flour instead. Isabela notices the flour and puts it back.
+  Question : Does Isabela believe the bag she took from the pantry contains powdered sugar or flour?
+  GT       : Isabela believes the bag she took from the pantry contains flour.
+  Predicted: Isabela believes the bag she took from the pantry contains powdered sugar.
+
+[03/8]  idx=6  P(correct)=0.201  probs=[0.799, 0.201]
+  Story    : Kofi is a chef at a popular Ghanaian restaurant. Kofi wants to prepare a traditional groundnut soup for the dinner menu. Kofi adds a small container of peanut butter to the soup pot on the stove. An apprentice chef, mistakenly thinking it was a seasoning paste, removes the peanut butter from the soup and replaces it with tomato paste. Kofi notices the apprentice chef swapping the ingredients.
+  Question : Does Kofi believe the soup contains peanut butter or tomato paste?
+  GT       : Kofi believes the soup contains tomato paste.
+  Predicted: Kofi believes the soup contains peanut butter.
+
+[04/8]  idx=114  P(correct)=0.213  probs=[0.787, 0.213]
+  Story    : Rashida is a professional baker, preparing for a prestigious baking competition. She wants to create a perfect chocolate soufflé for the judges. Rashida stes her oven to preheat at 350°F. However, a power outage occurs and the oven's temperature drops rapidly. Rashida notices the power outage.
+  Question : Does Rashida believe her oven is preheating at 350°F or not heating at all?
+  GT       : Rashida believes her oven is not heating at all.
+  Predicted: Rashida believes her oven is preheating at 350°F.
+
+[05/8]  idx=22  P(correct)=0.275  probs=[0.275, 0.725]
+  Story    : Luka is a gardener working in a beautiful park in the middle of the city. Luka wants to water the plants in the park to ensure they stay healthy and vibrant. The sky is cloudy, and Luka assumes that it might rain soon. However, the wind picks up and blows the clouds away, revealing a bright and sunny sky. Luka notices the clouds clearing and the sun shining.
+  Question : Does Luka believe that it will rain soon, or does he think the weather has become sunny?
+  GT       : Luka believes the weather has become sunny.
+  Predicted: Luka believes that it will rain soon.
+
+[06/8]  idx=46  P(correct)=0.275  probs=[0.275, 0.725]
+  Story    : Juan is a gardener in a small village in Mexico, tending to a flower garden near the town plaza. Juan wants to water a specific flower bed to ensure its health and beauty. Juan sees that the garden hose is neatly coiled and ready for use. Unexpectedly, a group of children playing nearby accidentally puncture the hose with a sharp stick while running around. Juan witnesses the children accidentally puncture the hose.
+  Question : Does Juan believe the garden hose is in good condition and functional or punctured and non-functional?
+  GT       : Juan believes the garden hose is punctured and non-functional.
+  Predicted: Juan believes the garden hose is in good condition and functional.
+
+[07/8]  idx=93  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Naledi is a talented South African chef preparing a traditional braai for her friends and family. Naledi wants to make a delicious marinade for the meats and vegetables to be grilled. She takes a bottle of vinegar from the cupboard to mix with other ingredients for the marinade. Her cousin, who was helping in the kitchen earlier, accidentally placed a bottle of water in the vinegar's spot, and Naledi unknowingly grabs the bottle of water instead. Naledi notices the water and puts it back.
+  Question : Does Naledi believe the bottle she took from the cupboard contains vinegar or water?
+  GT       : Naledi believes the bottle she took from the cupboard contains water.
+  Predicted: Naledi believes the bottle she took from the cupboard contains vinegar.
+
+[08/8]  idx=173  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Fatima is a talented painter who has been commissioned to create a mural on a local community center's wall. She wants to choose the perfect color palette to represent the vibrant energy of the community. Fatima notices that the paint colors she has selected are bright and lively. However, while she is away for lunch, a mischievous cat knocks over the paint cans, causing the colors to mix into dull, muted shades. Fatima sees the paint cans knocked over and the colors mixed.
+  Question : Does Fatima believe the paint colors are bright and lively or dull and muted?
+  GT       : Fatima believes the paint colors are now dull and muted.
+  Predicted: Fatima believes the paint colors are still bright and lively.
+
+======================================================================
+All 190 Correct Cases - idx list
+======================================================================
+[0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 42, 43, 44, 45, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199]

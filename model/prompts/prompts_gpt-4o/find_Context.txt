@@ -1,0 +1,6 @@
+Extract the context of the story.
+The context needs to include background information about the story, usually about the state of the world. But it should not contain any details about what the characters' actions, their goals and desires, their observations of the world, their emotions, etc.
+The background needs to be a description that applies to the entire story and should never contain states like "initially" or "finally". Do not describe any state of the objects, like "empty".
+Be as concise as possible and the maximum length is 50 words.
+[Story]
+Context:

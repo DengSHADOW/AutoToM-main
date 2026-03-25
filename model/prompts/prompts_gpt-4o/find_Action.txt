@@ -1,0 +1,11 @@
+Determine if [Character]'s action(s) is clearly stated in the story.
+The action(s) cannot be the character's inner thoughts. The action(s) do not include the character's utterances. [Character] telling something does not count as an action. Staying or no movements does not count as an action.
+Only actions of [Character] that have already occurred, or are currently taking place can be considered clearly stated. If it's more like [Character]'s desire or goal, it does not count as an action. [Character]'s utterance is considered as an action (include the verb like "said" or "replied" in the evidence sentence, if any). Do not change any of the original wording.
+Answer in the form of a list. The first element of the list contains the option A or B. A means clearly stated, and B means not clearly stated.
+If the answer is A, include sentence(s) from the original story that serves as evidence, and place it in the second element of the list, without any kind of formatting. Note that there could be multiple action sentences.
+Otherwise the second element can be an empty string. Do not write anything else.
+Example 1: ["A", "evidence sentence."]
+Example 2: ["B", ""]
+
+[Story]
+Answer: 

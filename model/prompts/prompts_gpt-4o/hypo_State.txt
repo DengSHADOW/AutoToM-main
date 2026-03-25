@@ -1,0 +1,7 @@
+Propose [num] hypotheses for the state of the world after the event aligned with the context of: [Context]
+State refers to the physical condition of something or to the state of the world caused by an event that has occurred.
+Do not state any reason for the hypotheses. Do not contain any form of explanation in the hypotheses.
+Output a list of hypotheses of length [num] in following form: ["aaa.", "bbb.", ...] 
+
+[Context]
+State Hypotheses:

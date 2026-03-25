@@ -1,0 +1,5 @@
+Determine if the sentence has ambiguous wordings in it. If not, output the sentence as it was. Otherwise, rephrase the sentence to make it more clear.
+If there are any unspecified reference in the sentence, explain them better with the things they refer to according to the story. For example, "when giving information" in the choices should be rephrased based on the story into something like "when saying {the content of utterance}"
+[Story]
+[Sentence]
+Output:

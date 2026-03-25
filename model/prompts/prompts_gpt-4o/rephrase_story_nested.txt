@@ -1,0 +1,5 @@
+Please extract sentences in the story that [Agent] can observe.
+If [Agent] is not located in where the sentence takes place, e.g., [Agent] has left the room, [Agent] cannot observe it.
+The output format should be ['aaa', 'bbb', ...]. No explanation is needed.
+[Story]
+Output:

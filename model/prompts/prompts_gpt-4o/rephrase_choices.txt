@@ -1,0 +1,7 @@
+Please write all choices as complete sentences based on the question, including all the subjects.
+If they are already complete sentences, output the choices as it was following the format.
+The output format should be ['aaa', 'bbb', ...]. Make sure to contain all the choices.
+[Question]
+[Choices]
+Make sure to contain all the choices.
+Output:

@@ -1,0 +1,381 @@
+======================================================================
+BigToM Backward Belief False-Belief (bbfb) - Full Analysis
+======================================================================
+Total questions with results : 200/200  (all 200 complete)
+Correct                      : 152 (76.0%)
+Wrong                        : 48 (24.0%)
+
+Confidence analysis:
+  Avg P(correct answer) when model is RIGHT : 0.840
+  Avg P(correct answer) when model is WRONG : 0.385
+
+Distribution of P(correct answer) among 48 wrong cases:
+  <0.10        :  4 cases  ||||
+  0.10-0.30    : 13 cases  |||||||||||||
+  0.30-0.50    :  8 cases  ||||||||
+  >0.50        : 23 cases  |||||||||||||||||||||||
+
+Cost / time:
+  Avg cost per question : $0.0382
+  Avg time per question : 23.4s
+
+======================================================================
+Error Classification
+======================================================================
+All 48 wrong cases were reviewed manually (first 20 exhaustively,
+remaining cases by story structure inspection).
+
+  Information asymmetry (true state contaminates belief) : 48 / 48 (100%)
+  Other causes                                           :  0 / 48   (0%)
+
+Pattern: In every wrong case the world state changed while the agent
+was not observing (attending to another task, preparing equipment,
+looking away, etc.). AutoToM assigned the NEW true state directly to
+the agent's belief, ignoring the information gap.
+Root cause: State variable is marked is_observed=True in the Bayesian
+model without filtering for agent-specific observability.
+
+======================================================================
+All 48 Wrong Cases (sorted by P(correct answer) ascending)
+======================================================================
+
+[01/48]  idx=28  P(correct)=0.029  probs=[0.971, 0.029]
+  Story    : Heiwa is a skilled fisherman in a coastal village in Japan. Heiwa wants to catch a large number of fish to sell at the local market. The sea appears calm and full of fish  making it an ideal time for fishing. Suddenly  a massive school of fish moves away from the area  leaving very few fish near Heiwa's fishing spot. Heiwa stays in the current fishing spot and tries to catch fish.
+  Question : Does Heiwa believe the sea is calm and full of fish or that the fish have moved away?
+  GT       : Heiwa believes the sea is calm and full of fish.
+  Predicted: Heiwa believes the fish have moved away.
+  Error type: information asymmetry
+
+[02/48]  idx=68  P(correct)=0.029  probs=[0.971, 0.029]
+  Story    : Amara  a skilled Nigerian weaver  is preparing to create a traditional textile for an upcoming cultural exhibition. Amara wants to use a unique combination of colorful threads that represents her heritage. Amara carefully chooses a set of vibrant  high-quality threads for her project. A curious toddler in her home finds the threads and tangles them  making them difficult to use in the weaving process. Amara starts weaving the textile using the threads she selected.
+  Question : Does Amara believe the threads are strong and perfect for her textile or tangled and difficult to use?
+  GT       : Amara believes the threads are strong and perfect for her textile.
+  Predicted: Amara believes the threads are tangled and difficult to use.
+  Error type: information asymmetry
+
+[03/48]  idx=150  P(correct)=0.029  probs=[0.971, 0.029]
+  Story    : Yael is in a small bookstore browsing through the science fiction section. Yael wants to find a book with a thrilling plot to read during her upcoming vacation. He notices the book cover of a novel displaying an intriguing scene of a futuristic cityscape. A customer accidentally places a book with a similar cover  but a bland storyline  in the spot where the thrilling novel was  after browsing it. Yael decides to purchase the novel with the intriguing cover.
+  Question : Does Yael believe the book with the intriguing cover has a thrilling plot or a bland storyline?
+  GT       : Yael believes the book with the intriguing cover has a bland storyline.
+  Predicted: Yael believes the book with the intriguing cover has a thrilling plot.
+  Error type: information asymmetry
+
+[04/48]  idx=95  P(correct)=0.073  probs=[0.927, 0.073]
+  Story    : Amara is a sculptor in a small town in Greece. She wants to carve a statue of Aphrodite using a large piece of marble. Amara selects a slab of marble from her workshop  which she thinks is free from cracks and imperfections. However  a hairline crack is present in the marble slab  which goes unnoticed by her. Amara begins carving the statue of Aphrodite using the chosen marble slab.
+  Question : Does Amara believe the marble slab is free from cracks or has a hairline crack?
+  GT       : Amara believes the marble slab is free from cracks.
+  Predicted: Amara believes the marble slab has a hairline crack.
+  Error type: information asymmetry
+
+[05/48]  idx=118  P(correct)=0.172  probs=[0.828, 0.172]
+  Story    : Amara is a marine biologist studying coral reefs in the Maldives. She plans to collect samples of healthy coral for her research. Amara sees a vibrant  colorful coral colony. Suddenly  a boat anchors nearby  and its anchor accidentally crushes the coral colony  leaving it severely damaged. Amara prepares her equipment to collect samples of the healthy coral.
+  Question : Does Amara believe the coral colony is healthy or severely damaged?
+  GT       : Amara believes the coral colony is healthy.
+  Predicted: Amara believes the coral colony is severely damaged.
+  Error type: information asymmetry
+
+[06/48]  idx=8  P(correct)=0.179  probs=[0.179, 0.821]
+  Story    : Farhan is a street food vendor in a bustling market in Istanbul. Farhan wants to prepare a delicious chicken shawarma wrap for a customer who asked for extra garlic sauce. Farhan takes a bottle of garlic sauce from the shelf and pours it onto the shawarma wrap. His assistant  who is busy preparing a different wrap  accidentally swaps the garlic sauce with a bottle of hot sauce  and Farhan unknowingly pours the hot sauce onto the shawarma wrap. Farhan finishes preparing the chicken shawarma wrap.
+  Question : Does Farhan believe the sauce he poured is garlic sauce or hot sauce?
+  GT       : Farhan believes the sauce he poured is garlic sauce.
+  Predicted: Farhan believes the sauce he poured is hot sauce.
+  Error type: information asymmetry
+
+[07/48]  idx=55  P(correct)=0.201  probs=[0.201, 0.799]
+  Story    : Mei is a fisherman in a small coastal village in China. She wants to go fishing early in the morning when the tide is high. Mei checks the tide chart and sees that the tide will be high at 5 AM. However  a strong storm far out at sea has caused the tide to come in much earlier  at 3 AM. Mei waits until 5 AM to go fishing.
+  Question : Does Mei believe the tide is high at 5 AM or 3 AM?
+  GT       : Mei believes the tide is high at 5 AM.
+  Predicted: Mei believes the tide is high at 3 AM.
+  Error type: information asymmetry
+
+[08/48]  idx=22  P(correct)=0.275  probs=[0.275, 0.725]
+  Story    : Luka is a gardener working in a beautiful park in the middle of the city. Luka wants to water the plants in the park to ensure they stay healthy and vibrant. The sky is cloudy  and Luka assumes that it might rain soon. However  the wind picks up and blows the clouds away  revealing a bright and sunny sky. Luka waits for the rain to water the plants.
+  Question : Does Luka believe that it will rain soon  or does he think the weather has become sunny?
+  GT       : Luka believes that it will rain soon.
+  Predicted: Luka believes the weather has become sunny.
+  Error type: information asymmetry
+
+[09/48]  idx=109  P(correct)=0.275  probs=[0.275, 0.725]
+  Story    : Aisha is a beekeeper in a small village in Tanzania  preparing her beehives for honey extraction. She wants to ensure that the beehive's entrance is clear of debris to allow bees to enter and exit freely. Aisha observes the entrance to be obstructed by leaves. Suddenly  a gust of wind blows away all the leaves  leaving the entrance clear. Aisha plans to remove the leaves blocking the entrance.
+  Question : Does Aisha believe the beehive entrance is obstructed by leaves or clear?
+  GT       : Aisha believes the beehive entrance is obstructed by leaves.
+  Predicted: Aisha believes the beehive entrance is clear.
+  Error type: information asymmetry
+
+[10/48]  idx=121  P(correct)=0.275  probs=[0.725, 0.275]
+  Story    : Tanya is a professional baker preparing for a big event at her bakery. She needs to make a large batch of chocolate chip cookies for the guests. She checks the oven timer  which indicates that the cookies have been baking for 15 minutes and need more time. Suddenly  a power outage occurs  shutting off the oven and leaving the cookies undercooked. Tanya sets a reminder to check on the cookies in 5 minutes.
+  Question : Does Tanya believe the cookies are still baking and need more time or that they are undercooked due to the power outage?
+  GT       : Tanya believes the cookies are still baking and need more time.
+  Predicted: Tanya believes the cookies are undercooked due to the power outage.
+  Error type: information asymmetry
+
+[11/48]  idx=130  P(correct)=0.275  probs=[0.725, 0.275]
+  Story    : Ulysses is hiking in the mountains on a sunny day. Ulysses wants to take a photo of a rare bird perched on a tree nearby. He sees that the bird appears to be calm and still  sitting on a branch. Suddenly  a gust of wind blows through the area  startling the bird and causing it to fly away. Ulysses adjusts his camera settings to take a clear photo of a still subject  the bird.
+  Question : Does Ulysses believe the bird is calm and still or startled and flying away?
+  GT       : Ulysses believes the bird is calm and still.
+  Predicted: Ulysses believes the bird is startled and flying away.
+  Error type: information asymmetry
+
+[12/48]  idx=132  P(correct)=0.275  probs=[0.725, 0.275]
+  Story    : Xander is exploring a dense forest in search of rare plants for his botanical collection. Xander hopes to find a specific plant known for its vibrant purple flowers. He sees that the forest floor is covered with green foliage and various colorful flowers  but the purple flowers are not immediately visible. Suddenly  a strong gust of wind blows through the forest  scattering leaves and revealing a small patch of the rare purple flowers hidden underneath. Xander continues to search for the rare purple flowers in another part of the forest.
+  Question : Does Xander believe the purple flowers are present or not present in the area he is exploring?
+  GT       : Xander believes the purple flowers are not present in the area he is exploring.
+  Predicted: Xander believes the purple flowers are present in the area he is exploring.
+  Error type: information asymmetry
+
+[13/48]  idx=138  P(correct)=0.275  probs=[0.725, 0.275]
+  Story    : Kamila is a marine biologist studying coral reefs in the Maldives. She wants to collect a sample of healthy coral for her research. The coral she observes appears to be vibrant and thriving. Suddenly  an oil spill occurs nearby  contaminating the water and severely damaging the coral. Kamila plans to carefully collect a piece of the healthy coral for her research.
+  Question : Does Kamila believe the coral is healthy or damaged?
+  GT       : Kamila believes the coral is healthy.
+  Predicted: Kamila believes the coral is damaged.
+  Error type: information asymmetry
+
+[14/48]  idx=142  P(correct)=0.275  probs=[0.725, 0.275]
+  Story    : Samira is at a local farmer's market  browsing through the various stalls. She wants to buy some fresh  organic strawberries to make a fruit salad. She sees that the strawberries on display at a particular stall appear to be ripe and fresh. A sudden gust of wind blows a cloud of dust onto the strawberries  making them dirty and unappetizing. Samira plans to buy the strawberries from the stall.
+  Question : Does Samira believe the strawberries are fresh and ripe  or dirty and unappetizing?
+  GT       : Samira believes the strawberries are ripe and fresh.
+  Predicted: Samira believes the strawberries are dirty and unappetizing.
+  Error type: information asymmetry
+
+[15/48]  idx=161  P(correct)=0.275  probs=[0.725, 0.275]
+  Story    : Ivana is a scientist working in a remote research facility in Antarctica. She needs to collect ice samples from a frozen lake to study the impact of climate change on the region. She sees that the ice on the lake appears to be thick and solid. Suddenly  an earthquake occurs  causing the ice to crack and become unstable. Ivana plans to walk on the ice to collect the samples herself.
+  Question : Does Ivana believe the ice is thick and solid or cracked and unstable?
+  GT       : Ivana believes the ice is thick and solid.
+  Predicted: Ivana believes the ice is cracked and unstable.
+  Error type: information asymmetry
+
+[16/48]  idx=194  P(correct)=0.275  probs=[0.275, 0.725]
+  Story    : Laila is an experienced hiker  exploring a dense forest on a solo expedition. She wants to find a nearby waterfall to enjoy a peaceful break. As she walks  Laila spots a clear trail leading deeper into the woods. Suddenly  a heavy downpour causes the trail to become muddy and difficult to navigate. Laila plans to follow the trail towards the waterfall.
+  Question : Does Laila believe the trail is clear and easy to navigate or muddy and difficult to navigate?
+  GT       : Laila believes the trail is clear and easy to navigate.
+  Predicted: Laila believes the trail is muddy and difficult to navigate.
+  Error type: information asymmetry
+
+[17/48]  idx=199  P(correct)=0.275  probs=[0.725, 0.275]
+  Story    : Caden is a software engineer working on a groundbreaking app. Caden wants to test the app's performance on his smartphone. The app appears to be running smoothly and quickly on his phone. Suddenly  a system update on his phone causes the app to crash and become unresponsive. Caden plans to continue testing the app's features.
+  Question : Does Caden believe the app is functioning well or has crashed and become unresponsive?
+  GT       : Caden believes the app is functioning well.
+  Predicted: Caden believes the app has crashed and become unresponsive.
+  Error type: information asymmetry
+
+[18/48]  idx=20  P(correct)=0.357  probs=[0.643, 0.357]
+  Story    : Isabela is a baker in a small Argentinian town known for its delicious pastries. Isabela wants to make a batch of alfajores  a traditional Argentinian dessert  for her bakery's customers. Isabela gets a bag of powdered sugar from her pantry to dust the alfajores. Her assistant  who was organizing the pantry earlier  accidentally placed a bag of flour in the powdered sugar's spot  and Isabela unknowingly grabs the bag of flour instead. Isabela dusts the alfajores with what she believes is powdered sugar.
+  Question : Does Isabela believe the bag she took from the pantry contains powdered sugar or flour?
+  GT       : Isabela believes the bag she took from the pantry contains powdered sugar.
+  Predicted: Isabela believes the bag she took from the pantry contains flour.
+  Error type: information asymmetry
+
+[19/48]  idx=10  P(correct)=0.366  probs=[0.634, 0.366]
+  Story    : Aniket is a marine biologist studying coral reefs off the coast of India. Aniket needs to collect samples of coral to analyze the effects of climate change on the reef. Aniket spots a healthy-looking coral formation in a specific area of the reef. A sudden wave surge stirs up sediment  covering the once healthy coral formation and causing it to become damaged. Aniket collects samples from the healthy coral formation he found.
+  Question : Does Aniket believe the coral formation is healthy or damaged?
+  GT       : Aniket believes the coral formation is healthy.
+  Predicted: Aniket believes the coral formation is damaged.
+  Error type: information asymmetry
+
+[20/48]  idx=145  P(correct)=0.428  probs=[0.428, 0.572]
+  Story    : Eliza is a professional baker preparing for a wedding cake delivery in her bakery. She needs to ensure the cake layers are properly cooled before assembling the cake. She placed the cake layers in the refrigerator an hour ago to cool down. Suddenly  a power outage occurs  causing the refrigerator to stop working and the cake layers to slowly warm up. Eliza prepares to assemble the cake layers.
+  Question : Does Eliza believe the cake layers are cooling in the refrigerator or warming up due to the power outage?
+  GT       : Eliza believes the cake layers are cooling in the refrigerator.
+  Predicted: Eliza believes the cake layers are warming up due to the power outage.
+  Error type: information asymmetry
+
+[21/48]  idx=129  P(correct)=0.452  probs=[0.548, 0.452]
+  Story    : Priya is at a botanical garden  exploring various exotic plants. Priya wants to take a picture of a rare orchid she has been searching for. Priya sees that the orchid is in full bloom  displaying its vibrant colors. A sudden gust of wind blows through the garden  causing the orchid's petals to fall off  leaving it bare. Priya prepares her camera to take a picture of the blooming orchid.
+  Question : Does Priya believe the orchid is in full bloom or bare?
+  GT       : Priya believes the orchid is in full bloom.
+  Predicted: Priya believes the orchid is bare.
+  Error type: information asymmetry
+
+[22/48]  idx=76  P(correct)=0.452  probs=[0.452, 0.548]
+  Story    : Olabisi is a beekeeper in a small town in Nigeria. Olabisi wants to collect honey from the beehives to sell at the local market. The bees appear to be calm and undisturbed as they go about their daily activities. Out of nowhere  a group of children playing nearby accidentally throw a ball into the beehives  agitating the bees and making them aggressive. Olabisi starts to collect honey from the calm beehives.
+  Question : Does Olabisi believe the bees are calm or agitated and aggressive?
+  GT       : Olabisi believes the bees are calm.
+  Predicted: Olabisi believes the bees are agitated and aggressive.
+  Error type: information asymmetry
+
+[23/48]  idx=43  P(correct)=0.476  probs=[0.524, 0.476]
+  Story    : Fatima is an archaeologist working at an excavation site in Egypt. She wants to carefully remove an ancient artifact from the ground to study and preserve it. The artifact appears to be intact and in good condition. Suddenly  a sandstorm blows through the area  burying the artifact in sand and causing some damage to it. Fatima carefully removes the artifact from the ground.
+  Question : Does Fatima believe the artifact is intact and in good condition or damaged by the sandstorm?
+  GT       : Fatima believes the artifact is intact and in good condition.
+  Predicted: Fatima believes the artifact is damaged by the sandstorm.
+  Error type: information asymmetry
+
+[24/48]  idx=134  P(correct)=0.480  probs=[0.52, 0.48]
+  Story    : Daya is a professional baker  working in her small bakery in the heart of Paris. She wants to bake a batch of croissants for the morning rush. Daya sets the oven to a low temperature to preheat. Suddenly  an electrical surge causes the oven to heat up to a very high temperature. Daya prepares to put the croissants in the oven  expecting them to bake evenly.
+  Question : Does Daya believe the oven is at a low temperature or a very high temperature?
+  GT       : Daya believes the oven is at a low temperature.
+  Predicted: Daya believes the oven is at a very high temperature.
+  Error type: information asymmetry
+
+[25/48]  idx=67  P(correct)=0.489  probs=[0.489, 0.511]
+  Story    : Amina is an archaeologist working on an excavation site in Egypt. Amina hopes to find an ancient artifact that will shed light on the daily life of the people who once lived there. Amina uncovers a fragile clay tablet with inscriptions on it that she believes could be significant. While Amina is away from the excavation site  a sudden sandstorm sweeps through the area  burying the tablet under a thick layer of sand. Amina gets a camera from her car to take pictures for examination and analysis.
+  Question : Does Amina believe the clay tablet is still visible and accessible  or buried under the sand?
+  GT       : Amina believes the clay tablet is still visible and accessible.
+  Predicted: Amina believes the clay tablet is buried under the sand.
+  Error type: information asymmetry
+
+[26/48]  idx=12  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Kavi is a chef at a popular Indian restaurant in a bustling city. Kavi wants to make his signature dish  a spicy curry  for the customers tonight. Kavi checks the pantry and sees a full bottle of his favorite hot sauce. When Kavi is away  a new chef accidentally knocks over the hot sauce  spilling its contents all over the floor. Kavi will start preparations for his signature spicy curry.
+  Question : Does Kavi believe there is a full bottle of hot sauce available or that the hot sauce has been spilled?
+  GT       : Kavi believes there is a full bottle of hot sauce available.
+  Predicted: Kavi believes the hot sauce has been spilled.
+  Error type: information asymmetry
+
+[27/48]  idx=14  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Juan is a young chef in a small Mexican town. He wants to make a delicious salsa for the upcoming town festival. Juan buys fresh tomatoes from the market  which he believes are ripe and perfect for the salsa. While Juan is away from his kitchen  a mischievous cat knocks over the bag of tomatoes  crushing them and making them unsuitable for the salsa. Juan starts making the salsa with the tomatoes he bought.
+  Question : Does Juan believe the tomatoes are ripe and perfect or crushed and unsuitable?
+  GT       : Juan believes the tomatoes are ripe and perfect.
+  Predicted: Juan believes the tomatoes are crushed and unsuitable.
+  Error type: information asymmetry
+
+[28/48]  idx=44  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Aisha is a beekeeper in a small village near the Sahara Desert. Aisha wants to harvest honey from her beehives to sell at the local market. The beehives appear to be full of honey and ready for harvest. A sudden sandstorm blows through the area  filling the beehives with sand and making the honey difficult to extract. Aisha prepares to harvests the honey and sell it at the local market.
+  Question : Does Aisha believe the beehives are full of honey or filled with sand?
+  GT       : Aisha believes the beehives are full of honey and ready for harvest.
+  Predicted: Aisha believes the beehives are filled with sand.
+  Error type: information asymmetry
+
+[29/48]  idx=47  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Hiroshi is a Japanese gardener tending to a zen garden in Kyoto. Hiroshi desires to create perfect harmony in the garden by carefully raking the sand into beautiful patterns. Hiroshi notices that the sand in the garden is smooth and untouched. A sudden gust of wind blows fallen leaves onto the sand  disrupting the smooth surface. Hiroshi begins raking the sand into patterns.
+  Question : Does Hiroshi believe the sand is smooth and untouched or disrupted by fallen leaves?
+  GT       : Hiroshi believes the sand is smooth and untouched.
+  Predicted: Hiroshi believes the sand is disrupted by fallen leaves.
+  Error type: information asymmetry
+
+[30/48]  idx=48  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Yoshi  a skilled Japanese gardener  is tending to a beautiful Zen garden in Kyoto. Yoshi's goal is to create a harmonious and peaceful environment by carefully arranging the rocks and raking the sand. A carefully raked sand pattern in a specific area of the garden catches Yoshi's eye. Suddenly  a gust of wind picks up  blowing leaves and disrupting the previously perfect sand pattern. Yoshi moves on to arranging the rocks in the garden.
+  Question : Does Yoshi believe the sand pattern is perfectly raked or disrupted by wind and leaves?
+  GT       : Yoshi believes the sand pattern is perfectly raked.
+  Predicted: Yoshi believes the sand pattern is disrupted by wind and leaves.
+  Error type: information asymmetry
+
+[31/48]  idx=49  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Takumi is a gardener in a Japanese Zen garden  meticulously maintaining the grounds. Takumi wants to rake the gravel paths into perfect patterns before the garden opens to visitors. Takumi notices that the gravel paths are smooth and unruffled. An unexpected gust of wind sweeps through the garden  displacing the gravel and creating disarray on the paths. Takumi begins raking patterns onto the gravel paths.
+  Question : Does Takumi believe the gravel paths are smooth and unruffled or disarrayed by the wind?
+  GT       : Takumi believes the gravel paths are smooth and unruffled.
+  Predicted: Takumi believes the gravel paths are disarrayed by the wind.
+  Error type: information asymmetry
+
+[32/48]  idx=60  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Odion is an archaeologist conducting research at an ancient Egyptian site. He wants to discover a hidden chamber within the pyramid he is exploring. Odion observes a wall with an unusual pattern that appears to be a concealed entrance. While Odion is away  a sandstorm fills the entrance  making it impossible to access the hidden chamber. Odion tries to open the concealed entrance.
+  Question : Does Odion believe the wall with the unusual pattern is hiding the entrance or that the entrance is blocked by sand?
+  GT       : Odion believes the wall with the unusual pattern is hiding the entrance.
+  Predicted: Odion believes the entrance is blocked by sand.
+  Error type: information asymmetry
+
+[33/48]  idx=70  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Fatima is an archaeologist working on a dig site in Egypt. Fatima hopes to find an ancient artifact that could shed light on an important historical event. During her excavation  Fatima discovers a clay tablet with faded inscriptions that she believes might be valuable. As a sandstorm approaches  the strong winds blow sand onto the tablet  erasing the remaining inscriptions and making the tablet indistinguishable from any other piece of clay. Fatima brings a camera to take high-resolution photographs of the inscriptions.
+  Question : Does Fatima believe the clay tablet has important historical inscriptions or has become indistinguishable from any other piece of clay?
+  GT       : Fatima believes the clay tablet has important historical inscriptions.
+  Predicted: Fatima believes the clay tablet has become indistinguishable from any other piece of clay.
+  Error type: information asymmetry
+
+[34/48]  idx=90  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Hiroshi is a fisherman in a small coastal village in Japan. Hiroshi wishes to catch enough fish to feed his family and sell the surplus at the local market. The fishing nets are in excellent condition  ready to be cast into the sea. However  a curious pod of dolphins swims by and accidentally tears the nets with their sharp dorsal fins. Hiroshi sets out to sea with the fishing nets.
+  Question : Does Hiroshi believe the fishing nets are in excellent condition or torn by the dolphins?
+  GT       : Hiroshi believes the fishing nets are in excellent condition.
+  Predicted: Hiroshi believes the fishing nets are torn by the dolphins.
+  Error type: information asymmetry
+
+[35/48]  idx=92  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Ngozi is a potter in a small Nigerian village  known for her beautiful ceramic vases. Ngozi wants to create a vase with a blue glaze to showcase at the upcoming village art exhibition. She reaches for a container of blue glaze from her shelf to apply to the vase. Earlier in the day  her apprentice accidentally switched the labels of the blue and green glaze containers  so Ngozi unknowingly picks up the container with the green glaze. Ngozi prepares her brushes to start applying the glaze.
+  Question : Does Ngozi believe the container holds blue glaze or green glaze?
+  GT       : Ngozi believes the container holds blue glaze.
+  Predicted: Ngozi believes the container holds green glaze.
+  Error type: information asymmetry
+
+[36/48]  idx=96  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Mei  a talented pastry chef from a small town in China  is preparing to bake a large cake for a local celebration. Mei wants to use a specific cake mold to create a unique and intricate design. Mei sees the cake mold hanging on the wall  clean and ready for use. However  during a brief power outage  a gust of wind blows through the kitchen  knocking the cake mold off the wall and denting it severely. Mei prepares the oven for baking.
+  Question : Does Mei believe the cake mold is clean and ready for use or severely dented and unsuitable for use?
+  GT       : Mei believes the cake mold is clean and ready for use.
+  Predicted: Mei believes the cake mold is severely dented and unsuitable for use.
+  Error type: information asymmetry
+
+[37/48]  idx=112  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Zara is an archaeologist exploring an ancient temple in Indonesia. She wants to find a hidden chamber within the temple that holds valuable artifacts. She sees that the entrance to the chamber is concealed by a large stone slab. While Zara is examining another part of the temple  a small earthquake causes the stone slab to move  revealing the entrance to the chamber. Zara searches for a mechanism to move the stone slab and reveal the entrance.
+  Question : Does Zara believe the stone slab is covering the entrance or has moved to reveal it?
+  GT       : Zara believes the stone slab is covering the entrance.
+  Predicted: Zara believes the stone slab has moved to reveal the entrance.
+  Error type: information asymmetry
+
+[38/48]  idx=125  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Naveen is in his backyard  preparing for a family barbecue. Naveen wants to light up the fire pit to create a cozy atmosphere for his guests. Naveen sees that the firewood in the fire pit appears dry and ready to burn  and Naveen examines the firewood. Suddenly  a brief but heavy rain shower soaks the firewood  making it wet and difficult to ignite. Naveen lights up the fire pit with the dry firewood.
+  Question : Does Naveen believe the firewood is dry and ready to burn or wet and difficult to ignite?
+  GT       : Naveen believes the firewood is dry and ready to burn.
+  Predicted: Naveen believes the firewood is wet and difficult to ignite.
+  Error type: information asymmetry
+
+[39/48]  idx=128  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Ulysses is a zookeeper in a large city  responsible for taking care of a rare albino peacock. He wants to make sure the peacock is safely inside its enclosure before the zoo opens for the day. He sees that the peacock is perched on a branch inside the enclosure. A sudden gust of wind knocks the peacock off its perch  causing it to fly out of the enclosure and land in a nearby tree. Ulysses proceeds to check on the other animals in the zoo.
+  Question : Does Ulysses believe the albino peacock is inside the enclosure or outside in a nearby tree?
+  GT       : Ulysses believes the albino peacock is inside the enclosure.
+  Predicted: Ulysses believes the albino peacock is outside in a nearby tree.
+  Error type: information asymmetry
+
+[40/48]  idx=136  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Valentina is exploring a dense forest during her vacation in the mountains. Valentina wants to find a rare blue orchid that is said to grow in this forest. A beautiful blue flower catches her eye  nestled among the foliage. As she walks closer  a gust of wind blows a cluster of leaves from a nearby tree  revealing that the flower is actually a common bluebell. Valentina carefully approaches the flower to take a closer look and possibly collect it.
+  Question : Does Valentina believe the flower she spotted is a rare blue orchid or a common bluebell?
+  GT       : Valentina believes the flower she spotted is a rare blue orchid.
+  Predicted: Valentina believes the flower she spotted is a common bluebell.
+  Error type: information asymmetry
+
+[41/48]  idx=148  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Kieran is a marine biologist  conducting research on a remote island. He wants to collect water samples from the ocean to analyze the presence of microplastics. Kieran notices that the water appears to be crystal clear and unpolluted. Suddenly  a passing ship releases a large amount of waste  turning the water murky and polluted. Kieran prepares his equipment to collect the water samples.
+  Question : Does Kieran believe the water is clear and unpolluted or murky and polluted?
+  GT       : Kieran believes the water is clear and unpolluted.
+  Predicted: Kieran believes the water is murky and polluted.
+  Error type: information asymmetry
+
+[42/48]  idx=149  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Alfonso is browsing through a local bookstore in search of a rare book for his collection. Alfonso wants to find a first edition copy of the book in pristine condition to add to his personal library. The book on the shelf appears to be in pristine condition to Alfonso  with no visible signs of wear or damage. While Alfonso is browsing other sections  a fellow customer accidentally spills their coffee on the book  causing stains on the cover. Alfonso plans to purchase the book.
+  Question : Does Alfonso believe the book is in pristine condition or stained with coffee?
+  GT       : Alfonso believes the book is in pristine condition.
+  Predicted: Alfonso believes the book is stained with coffee.
+  Error type: information asymmetry
+
+[43/48]  idx=151  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Heloise is a professional violinist performing at a prestigious concert hall. She wants to play a beautiful piece on her violin for the audience. She notices that the violin's strings are tuned perfectly before the performance. During intermission  a mischievous child sneaks backstage and detunes the violin's strings. Heloise heads back on stage to continue her performance.
+  Question : Does Heloise believe the violin's strings are perfectly tuned or detuned?
+  GT       : Heloise believes the violin's strings are perfectly tuned.
+  Predicted: Heloise believes the violin's strings are detuned.
+  Error type: information asymmetry
+
+[44/48]  idx=158  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Chitra is a professional violinist preparing for a concert at the city's concert hall. She wants to play her favorite violin  which she left in its case backstage. Chitra sees that the violin is in perfect condition. Just before Chitra goes on stage  a stagehand accidentally knocks the violin case off a table  causing one of the strings to snap. Chitra plans to warm up and tune her violin before going on stage.
+  Question : Does Chitra believe her violin is in perfect condition or has a broken string?
+  GT       : Chitra believes her violin is in perfect condition.
+  Predicted: Chitra believes her violin has a broken string.
+  Error type: information asymmetry
+
+[45/48]  idx=167  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Beatrice is a talented violinist  preparing for an important performance at a prestigious concert hall. She wants to ensure that her violin is perfectly tuned before she goes on stage. Beatrice checks the tuning of her violin and it sounds perfectly in tune. While Beatrice is in her dressing room  an assistant accidentally knocks the violin off the table  causing it to go out of tune. Beatrice confidently goes on stage with her violin.
+  Question : Does Beatrice believe her violin is perfectly tuned or out of tune?
+  GT       : Beatrice believes her violin is perfectly tuned.
+  Predicted: Beatrice believes her violin is out of tune.
+  Error type: information asymmetry
+
+[46/48]  idx=168  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Ravi is visiting a beautiful botanical garden in India. He wants to take a photograph of a rare  vibrant purple orchid that is in full bloom. He sees that the orchid he is looking for appears to be in perfect condition. While Ravi is exploring other sections of the garden  a sudden gust of wind knocks the orchid over  causing some petals to fall off. Ravi sets up his camera to take a photograph of the perfect orchid.
+  Question : Does Ravi believe the orchid is in perfect condition or damaged with fallen petals?
+  GT       : Ravi believes the orchid is in perfect condition.
+  Predicted: Ravi believes the orchid is damaged with fallen petals.
+  Error type: information asymmetry
+
+[47/48]  idx=188  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Jules is a firefighter responding to a call at a burning building. He wants to rescue everyone inside before the building collapses. Jules sees that the building's structural integrity appears to be holding up. Suddenly  a gas explosion occurs inside the building  severely weakening the structure. Jules enters the building to rescue the occupants.
+  Question : Does Jules believe the building is stable enough to enter or severely weakened?
+  GT       : Jules believes the building is stable enough to enter.
+  Predicted: Jules believes the building is severely weakened.
+  Error type: information asymmetry
+
+[48/48]  idx=191  P(correct)=0.500  probs=[0.5, 0.5]
+  Story    : Uriel is a professional chef  preparing for a cooking competition. He wants to make sure his knife is sharp enough to cut through vegetables quickly and efficiently. Uriel tests the knife's sharpness by gently running his thumb along the edge. While Uriel is distracted  a fellow contestant accidentally knocks the knife onto the floor  causing the blade to become significantly duller. Uriel proceeds to chop vegetables with the sharp knife.
+  Question : Does Uriel believe the knife is sharp or significantly duller?
+  GT       : Uriel believes the knife is sharp.
+  Predicted: Uriel believes the knife is significantly duller.
+  Error type: information asymmetry
+
+======================================================================
+All 150 Correct Cases - idx list
+======================================================================
+[0, 1, 2, 3, 4, 5, 6, 7, 9, 11, 13, 15, 16, 17, 18, 19, 21, 23, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 45, 46, 50, 51, 52, 53, 54, 56, 57, 58, 59, 61, 62, 63, 64, 65, 66, 69, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 93, 94, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 110, 111, 113, 114, 115, 116, 117, 119, 120, 122, 123, 124, 126, 127, 131, 133, 135, 137, 139, 140, 141, 143, 144, 146, 147, 152, 153, 154, 155, 156, 157, 159, 160, 162, 163, 164, 165, 166, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 189, 190, 192, 193, 195, 196, 197, 198]

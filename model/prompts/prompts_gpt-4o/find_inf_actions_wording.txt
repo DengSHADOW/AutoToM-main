@@ -1,0 +1,12 @@
+[Story]
+Given the list of the actions of [Inferred_agent] that are clearly stated in the story without changing the original wording: [bare_actions]. 
+If it is already in full sentences and grammatically correct do not change anything and output the same thing as the input. Do not change the names of any agent. 
+If it is not in full sentences or not grammatically corrct, then follow the following steps. 
+1. If [Inferred_agent] is not mentioned in the action then rephrase it so that it has [Inferred_agent]. 
+2. Make sure that it is grammatically correct but do not lose any information.
+3. If the object involved in [Inferred_agent]'s action is not clearly described and for example just described as "it" then write out explicitly what "it" is referring to. 
+4. Do not guess anything and if you are not sure then do not change it. 
+5. If nothing happens between two actions of [Inferred_agent] then treat them as one action.
+
+The output format should be: ["aaa.", "bbb.", ...], ["aaa.", "bbb.", ...], and should be the same length as the list [bare_actions]. Output only this list.
+[]

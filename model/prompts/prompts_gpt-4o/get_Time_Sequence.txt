@@ -1,0 +1,5 @@
+Based on the context, clearly define a timeline starting at timestemp t1 for the actions. These timestamps should include all the actions and events that occur in the context. Return the answer in the format as a list without listing the timestamps. 
+
+[Context]
+Complete Timeline:
+1.

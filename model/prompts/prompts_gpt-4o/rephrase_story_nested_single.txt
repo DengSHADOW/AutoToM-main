@@ -1,0 +1,11 @@
+Determine if [Agent] can observe the sentence in the story.
+[Agent] can only observe events where [Agent] is located in. [Agent] can observe everything (including objects inside containers) in their location.
+After [Agent] exits a room, [Agent] cannot observe events in the room.
+If the sentence is about someone's inner thoughts, [Agent] cannot observe it.
+
+[Story]
+
+Determine if [Agent] can observe: [Sentence]
+A) [Agent] can observe the sentence.
+B) [Agent] cannot observe the sentence.
+Answer:

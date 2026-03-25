@@ -1,0 +1,4 @@
+Organize the story in chronological order into a timeline list.
+The output format should be: ["aaa", "bbb", ...]. Only output this list.
+[Story]
+Response:

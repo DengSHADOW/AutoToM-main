@@ -1,0 +1,5 @@
+First, find the object being moved, and the location that object is moved to in given information. 
+Then, in action, if the object being moved / the moved location is different, replace it with the object and the location in the information. Otherwise, output the action as it was.
+[Info]
+[Action]
+Action:

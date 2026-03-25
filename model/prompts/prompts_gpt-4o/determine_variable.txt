@@ -1,0 +1,12 @@
+Determine this sentence: [Sentence] can be classified as [Variable] given the following definitions. 
+If yes, output "A". If no, output "B". 
+
+1. Goal: Usually, goal refers to a person's goals or intentions regarding a particular event. Moreover, a sentence that shows a person has been trying to do something, or summarizes their efforts of doing something should always be considered a goal. Helping others to achieve their goals also counts as a person's goal.
+
+2. Belief: Usually, belief is one's understanding of the state of the world or the state of others. An subjective attitude towards things does not count as belief. An action or utterance of the agent does not count as belief. Words like "know" or "believe" could be hints for belief.
+
+3. Action: The action(s) cannot be the character's inner thoughts.
+
+4. Observation: Observation refers to the main character's perception of an event; it is only considered clearly stated when the protagonist's perception is explicitly mentioned, like if they visually see something, visually notice something or hear something, or any other state that can be perceived by the agent with but not limited to their 5 senses.
+
+

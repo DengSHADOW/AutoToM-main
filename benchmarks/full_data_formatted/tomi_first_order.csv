@@ -1,0 +1,3921 @@
+story,question,gt_answer,answer_choices
+"1 Jayden entered the attic.
+2 Hannah entered the attic.
+3 The hat is in the envelope.
+4 The envelope is in the attic.
+5 Jayden exited the attic.
+6 Jayden entered the attic.
+7 Hannah moved the hat to the container.
+8 The container is in the attic.",Where will Jayden look for the hat?,container,"envelope,container"
+"1 Owen entered the back_yard.
+2 Mason entered the garden.
+3 Abigail entered the back_yard.
+4 Mason exited the garden.
+5 The beans is in the envelope.
+6 The envelope is in the back_yard.
+7 Abigail exited the back_yard.
+8 Owen moved the beans to the suitcase.
+9 The suitcase is in the back_yard.
+10 Owen exited the back_yard.
+11 Abigail entered the garden.",Where will Abigail look for the beans?,envelope,"envelope,suitcase"
+"1 Hunter entered the bathroom.
+2 Hunter loves the orange.
+3 Nathan entered the garden.
+4 Jacob entered the garden.
+5 The melon is in the box.
+6 The box is in the garden.
+7 Jacob moved the melon to the treasure_chest.
+8 The treasure_chest is in the garden.
+9 Nathan exited the garden.",Where will Jacob look for the melon?,treasure_chest,"treasure_chest,box"
+"1 Amelia entered the living_room.
+2 Carter entered the living_room.
+3 Alexander entered the living_room.
+4 The beans is in the pantry.
+5 The pantry is in the living_room.
+6 Carter exited the living_room.
+7 Amelia hates the raincoat.
+8 Carter entered the living_room.
+9 Alexander moved the beans to the bottle.
+10 The bottle is in the living_room.",Where will Carter look for the beans?,bottle,"pantry,bottle"
+"1 Charlotte dislikes the grapefruit.
+2 Charlotte hates the banana.
+3 Carter entered the crawlspace.
+4 Carter exited the crawlspace.
+5 Ella entered the pantry.
+6 Charlotte entered the pantry.
+7 The melon is in the container.
+8 The container is in the pantry.
+9 Ella moved the melon to the envelope.
+10 The envelope is in the pantry.
+11 Charlotte exited the pantry.",Where will Charlotte look for the melon?,envelope,"container,envelope"
+"1 James dislikes the suit.
+2 James entered the staircase.
+3 Noah entered the staircase.
+4 The slacks is in the basket.
+5 The basket is in the staircase.
+6 Noah exited the staircase.
+7 James moved the slacks to the treasure_chest.
+8 The treasure_chest is in the staircase.",Where will Noah look for the slacks?,basket,"treasure_chest,basket"
+"1 Aiden entered the den.
+2 Jayden entered the den.
+3 The underclothes is in the treasure_chest.
+4 The treasure_chest is in the den.
+5 Aiden loves the watermelon.
+6 Jayden moved the underclothes to the drawer.
+7 The drawer is in the den.
+8 Aiden exited the den.
+9 Jayden exited the den.
+10 Aiden entered the cellar.",Where will Aiden look for the underclothes?,drawer,"treasure_chest,drawer"
+"1 Amelia entered the lounge.
+2 Logan entered the cellar.
+3 Logan exited the cellar.
+4 Jackson entered the lounge.
+5 The underclothes is in the bathtub.
+6 The bathtub is in the lounge.
+7 Jackson moved the underclothes to the cupboard.
+8 The cupboard is in the lounge.
+9 Amelia exited the lounge.",Where will Amelia look for the underclothes?,cupboard,"bathtub,cupboard"
+"1 Ella entered the dining_room.
+2 William entered the living_room.
+3 Ella exited the dining_room.
+4 Owen entered the living_room.
+5 The slacks is in the container.
+6 The container is in the living_room.
+7 William loves the scarf.
+8 Owen exited the living_room.
+9 William moved the slacks to the cupboard.
+10 The cupboard is in the living_room.",Where will Owen look for the slacks?,container,"container,cupboard"
+"1 Isla entered the den.
+2 Hunter entered the den.
+3 The cabbage is in the bathtub.
+4 The bathtub is in the den.
+5 Isla moved the cabbage to the cupboard.
+6 The cupboard is in the den.
+7 Hunter exited the den.
+8 Isabella entered the den.
+9 Isla exited the den.
+10 Hunter entered the basement.",Where will Hunter look for the cabbage?,cupboard,"bathtub,cupboard"
+"1 William entered the hall.
+2 Isla entered the hall.
+3 The cherry is in the bottle.
+4 The bottle is in the hall.
+5 Isla exited the hall.
+6 Isla entered the hall.
+7 William moved the cherry to the drawer.
+8 The drawer is in the hall.",Where will Isla look for the cherry?,drawer,"drawer,bottle"
+"1 Ella entered the master_bedroom.
+2 Ava entered the master_bedroom.
+3 The onion is in the envelope.
+4 The envelope is in the master_bedroom.
+5 Ella exited the master_bedroom.
+6 Ava moved the onion to the box.
+7 The box is in the master_bedroom.
+8 Ava exited the master_bedroom.
+9 Ella entered the hallway.",Where will Ella look for the onion?,envelope,"envelope,box"
+"1 Carter entered the kitchen.
+2 Lucas entered the TV_room.
+3 Lucas hates the pajamas.
+4 Logan entered the kitchen.
+5 The belt is in the box.
+6 The box is in the kitchen.
+7 Logan moved the belt to the cupboard.
+8 The cupboard is in the kitchen.
+9 Lucas exited the TV_room.
+10 Carter exited the kitchen.
+11 Logan exited the kitchen.
+12 Carter entered the kitchen.
+13 Logan dislikes the cabbage.",Where will Logan look for the belt?,cupboard,"cupboard,box"
+"1 Avery entered the staircase.
+2 Alexander entered the staircase.
+3 Charlotte entered the staircase.
+4 The cabbage is in the crate.
+5 The crate is in the staircase.
+6 Charlotte exited the staircase.
+7 Alexander moved the cabbage to the suitcase.
+8 The suitcase is in the staircase.",Where will Charlotte look for the cabbage?,crate,"suitcase,crate"
+"1 Emily entered the crawlspace.
+2 Ethan likes the underclothes.
+3 Ethan entered the crawlspace.
+4 The spinach is in the box.
+5 The box is in the crawlspace.
+6 Ethan exited the crawlspace.
+7 Ethan entered the sunroom.
+8 Emily moved the spinach to the envelope.
+9 The envelope is in the crawlspace.
+10 Ethan hates the persimmon.",Where will Ethan look for the spinach?,box,"box,envelope"
+"1 Emily entered the staircase.
+2 Isla entered the staircase.
+3 The persimmon is in the bathtub.
+4 The bathtub is in the staircase.
+5 Jacob likes the slacks.
+6 Isla exited the staircase.
+7 Isla entered the garage.
+8 Emily moved the persimmon to the box.
+9 The box is in the staircase.",Where will Isla look for the persimmon?,bathtub,"bathtub,box"
+"1 Charlotte entered the hallway.
+2 Mila entered the hallway.
+3 The socks is in the crate.
+4 The crate is in the hallway.
+5 Mila moved the socks to the basket.
+6 The basket is in the hallway.
+7 Charlotte exited the hallway.
+8 Charlotte entered the hallway.
+9 Charlotte likes the underpants.",Where will Mila look for the socks?,basket,"crate,basket"
+"1 Isla entered the den.
+2 Avery entered the den.
+3 The jeans is in the treasure_chest.
+4 The treasure_chest is in the den.
+5 Isla exited the den.
+6 Avery moved the jeans to the bathtub.
+7 The bathtub is in the den.
+8 Isla entered the sunroom.
+9 Nathan likes the lettuce.",Where will Isla look for the jeans?,treasure_chest,"bathtub,treasure_chest"
+"1 Nathan entered the playroom.
+2 Isla entered the playroom.
+3 Nathan hates the melon.
+4 The green_pepper is in the box.
+5 The box is in the playroom.
+6 Nathan exited the playroom.
+7 Nathan hates the sweater.
+8 Isla moved the green_pepper to the container.
+9 The container is in the playroom.",Where will Nathan look for the green_pepper?,box,"container,box"
+"1 Evelyn entered the cellar.
+2 Owen entered the cellar.
+3 The belt is in the bathtub.
+4 The bathtub is in the cellar.
+5 Elizabeth loves the apple.
+6 Evelyn exited the cellar.
+7 Owen moved the belt to the envelope.
+8 The envelope is in the cellar.",Where will Evelyn look for the belt?,bathtub,"bathtub,envelope"
+"1 Jackson entered the pantry.
+2 Mila likes the spinach.
+3 Aiden entered the pantry.
+4 The sweatshirt is in the box.
+5 The box is in the pantry.
+6 Aiden exited the pantry.
+7 Jackson moved the sweatshirt to the pantry.
+8 The pantry is in the pantry.
+9 Mila entered the cellar.",Where will Aiden look for the sweatshirt?,box,"box,pantry"
+"1 Liam likes the tangerine.
+2 Mason likes the socks.
+3 Mason is in the den.
+4 Emily entered the den.
+5 The potato is in the suitcase.
+6 The suitcase is in the den.
+7 Emily moved the potato to the pantry.
+8 The pantry is in the den.
+9 Mason exited the den.",Where will Emily look for the potato?,pantry,"suitcase,pantry"
+"1 Ella entered the master_bedroom.
+2 Liam entered the master_bedroom.
+3 The dress is in the suitcase.
+4 The suitcase is in the master_bedroom.
+5 Ava entered the master_bedroom.
+6 Ava exited the master_bedroom.
+7 Liam exited the master_bedroom.
+8 Ella moved the dress to the box.
+9 The box is in the master_bedroom.
+10 Ella exited the master_bedroom.
+11 Liam entered the closet.",Where will Liam look for the dress?,suitcase,"box,suitcase"
+"1 Charlotte entered the patio.
+2 Lily entered the patio.
+3 The slacks is in the bucket.
+4 The bucket is in the patio.
+5 Lily moved the slacks to the treasure_chest.
+6 The treasure_chest is in the patio.
+7 Charlotte exited the patio.",Where will Lily look for the slacks?,treasure_chest,"treasure_chest,bucket"
+"1 Carter hates the lettuce.
+2 Carter entered the back_yard.
+3 Carter exited the back_yard.
+4 Mila loves the skirt.
+5 Mila entered the back_yard.
+6 Ella entered the back_yard.
+7 The trousers is in the bucket.
+8 The bucket is in the back_yard.
+9 Mila exited the back_yard.
+10 Mila entered the basement.
+11 Ella moved the trousers to the pantry.
+12 The pantry is in the back_yard.",Where will Mila look for the trousers?,bucket,"pantry,bucket"
+"1 Chloe entered the study.
+2 Jackson entered the study.
+3 Mia loves the sweatshirt.
+4 The lettuce is in the container.
+5 The container is in the study.
+6 Jackson exited the study.
+7 Chloe moved the lettuce to the crate.
+8 The crate is in the study.
+9 Chloe exited the study.
+10 Jackson entered the pantry.",Where will Jackson look for the lettuce?,container,"container,crate"
+"1 Amelia entered the crawlspace.
+2 Noah entered the crawlspace.
+3 Avery entered the crawlspace.
+4 The pants is in the bottle.
+5 The bottle is in the crawlspace.
+6 Amelia moved the pants to the envelope.
+7 The envelope is in the crawlspace.
+8 Noah exited the crawlspace.
+9 Avery exited the crawlspace.
+10 Avery dislikes the potato.
+11 Amelia exited the crawlspace.
+12 Avery entered the crawlspace.",Where will Amelia look for the pants?,envelope,"envelope,bottle"
+"1 Noah entered the cellar.
+2 Owen entered the hallway.
+3 Noah exited the cellar.
+4 Lily entered the hallway.
+5 The banana is in the cupboard.
+6 The cupboard is in the hallway.
+7 Owen exited the hallway.
+8 Lily moved the banana to the treasure_chest.
+9 The treasure_chest is in the hallway.
+10 Lily exited the hallway.
+11 Owen entered the cellar.",Where will Owen look for the banana?,cupboard,"treasure_chest,cupboard"
+"1 Hannah entered the hallway.
+2 Sophia entered the study.
+3 Noah entered the study.
+4 Hannah exited the hallway.
+5 The cabbage is in the bottle.
+6 The bottle is in the study.
+7 Noah exited the study.
+8 Sophia moved the cabbage to the treasure_chest.
+9 The treasure_chest is in the study.",Where will Noah look for the cabbage?,bottle,"treasure_chest,bottle"
+"1 Jackson entered the office.
+2 Chloe entered the office.
+3 The slacks is in the basket.
+4 The basket is in the office.
+5 Jackson exited the office.
+6 Chloe moved the slacks to the crate.
+7 The crate is in the office.
+8 Alexander entered the garage.
+9 Chloe exited the office.
+10 Jackson entered the garage.
+11 Jackson likes the peas.",Where will Jackson look for the slacks?,basket,"basket,crate"
+"1 Jayden entered the garage.
+2 Jayden loves the plum.
+3 Jayden hates the jeans.
+4 Jack entered the staircase.
+5 Lucas entered the staircase.
+6 The beans is in the cupboard.
+7 The cupboard is in the staircase.
+8 Jack exited the staircase.
+9 Lucas moved the beans to the bottle.
+10 The bottle is in the staircase.
+11 Lucas exited the staircase.
+12 Jack entered the garage.",Where will Jack look for the beans?,cupboard,"cupboard,bottle"
+"1 Noah entered the staircase.
+2 Owen entered the staircase.
+3 The peach is in the box.
+4 The box is in the staircase.
+5 Noah dislikes the shirt.
+6 Noah loves the turnip.
+7 Owen exited the staircase.
+8 Noah moved the peach to the drawer.
+9 The drawer is in the staircase.
+10 Owen entered the office.",Where will Owen look for the peach?,box,"drawer,box"
+"1 Amelia entered the lounge.
+2 Logan entered the cellar.
+3 Logan exited the cellar.
+4 Jackson entered the lounge.
+5 The underclothes is in the bathtub.
+6 The bathtub is in the lounge.
+7 Jackson moved the underclothes to the cupboard.
+8 The cupboard is in the lounge.
+9 Amelia exited the lounge.",Where will Jackson look for the underclothes?,cupboard,"bathtub,cupboard"
+"1 Avery entered the attic.
+2 Chloe entered the den.
+3 Noah likes the pineapple.
+4 Noah entered the den.
+5 Chloe hates the lime.
+6 The orange is in the suitcase.
+7 The suitcase is in the den.
+8 Chloe moved the orange to the box.
+9 The box is in the den.
+10 Noah exited the den.",Where will Noah look for the orange?,box,"box,suitcase"
+"1 Lucas hates the grapes.
+2 William entered the patio.
+3 Lucas entered the patio.
+4 Jayden entered the patio.
+5 The pineapple is in the bucket.
+6 The bucket is in the patio.
+7 Lucas exited the patio.
+8 Jayden moved the pineapple to the drawer.
+9 The drawer is in the patio.
+10 William exited the patio.",Where will Jayden look for the pineapple?,drawer,"bucket,drawer"
+"1 Lucas entered the back_yard.
+2 Lucas dislikes the green_pepper.
+3 Avery entered the back_yard.
+4 The tie is in the bucket.
+5 The bucket is in the back_yard.
+6 Logan dislikes the slippers.
+7 Lucas exited the back_yard.
+8 Avery moved the tie to the suitcase.
+9 The suitcase is in the back_yard.",Where will Lucas look for the tie?,bucket,"suitcase,bucket"
+"1 Aria entered the workshop.
+2 Charlotte entered the workshop.
+3 Hannah entered the workshop.
+4 Aria loves the underclothes.
+5 The tangerine is in the container.
+6 The container is in the workshop.
+7 Aria exited the workshop.
+8 Aria dislikes the beans.
+9 Charlotte exited the workshop.
+10 Aria entered the crawlspace.
+11 Hannah moved the tangerine to the bathtub.
+12 The bathtub is in the workshop.",Where will Aria look for the tangerine?,container,"container,bathtub"
+"1 Ava entered the sunroom.
+2 Jack entered the sunroom.
+3 The sweatshirt is in the bathtub.
+4 The bathtub is in the sunroom.
+5 Ava exited the sunroom.
+6 Isabella loves the cherry.
+7 Jack moved the sweatshirt to the basket.
+8 The basket is in the sunroom.",Where will Ava look for the sweatshirt?,bathtub,"bathtub,basket"
+"1 Oliver entered the playroom.
+2 Mila entered the playroom.
+3 Evelyn entered the bathroom.
+4 Evelyn exited the bathroom.
+5 The persimmon is in the bucket.
+6 The bucket is in the playroom.
+7 Mila moved the persimmon to the crate.
+8 The crate is in the playroom.
+9 Evelyn dislikes the lime.
+10 Oliver exited the playroom.",Where will Oliver look for the persimmon?,crate,"crate,bucket"
+"1 James entered the TV_room.
+2 Logan entered the TV_room.
+3 The lemon is in the envelope.
+4 The envelope is in the TV_room.
+5 Logan exited the TV_room.
+6 James moved the lemon to the crate.
+7 The crate is in the TV_room.",Where will Logan look for the lemon?,envelope,"crate,envelope"
+"1 Chloe entered the front_yard.
+2 Amelia entered the front_yard.
+3 The grapes is in the crate.
+4 The crate is in the front_yard.
+5 Chloe moved the grapes to the basket.
+6 The basket is in the front_yard.
+7 Mason loves the turnip.
+8 Mason entered the staircase.
+9 Amelia exited the front_yard.
+10 Mason exited the staircase.
+11 Chloe exited the front_yard.
+12 Amelia entered the front_yard.",Where will Chloe look for the grapes?,basket,"basket,crate"
+"1 Benjamin entered the hall.
+2 Carter entered the hall.
+3 The tomato is in the pantry.
+4 The pantry is in the hall.
+5 Carter exited the hall.
+6 Carter entered the patio.
+7 Benjamin moved the tomato to the drawer.
+8 The drawer is in the hall.",Where will Carter look for the tomato?,pantry,"drawer,pantry"
+"1 Olivia entered the attic.
+2 Mia entered the attic.
+3 Liam entered the attic.
+4 The cabbage is in the crate.
+5 The crate is in the attic.
+6 Liam exited the attic.
+7 Olivia moved the cabbage to the envelope.
+8 The envelope is in the attic.
+9 Olivia exited the attic.
+10 Mia exited the attic.
+11 Liam entered the workshop.",Where will Liam look for the cabbage?,crate,"envelope,crate"
+"1 Isabella entered the bedroom.
+2 Jack entered the bedroom.
+3 The persimmon is in the suitcase.
+4 The suitcase is in the bedroom.
+5 Isabella exited the bedroom.
+6 Jack moved the persimmon to the crate.
+7 The crate is in the bedroom.
+8 Jack exited the bedroom.
+9 Isabella entered the office.",Where will Isabella look for the persimmon?,suitcase,"crate,suitcase"
+"1 Ella likes the suit.
+2 Ella entered the cellar.
+3 Lucas entered the cellar.
+4 Benjamin entered the porch.
+5 The boots is in the cupboard.
+6 The cupboard is in the cellar.
+7 Lucas exited the cellar.
+8 Benjamin exited the porch.
+9 Ella likes the sweatshirt.
+10 Lucas entered the porch.
+11 Ella moved the boots to the pantry.
+12 The pantry is in the cellar.",Where will Lucas look for the boots?,cupboard,"pantry,cupboard"
+"1 Hannah likes the pineapple.
+2 Aria entered the crawlspace.
+3 Hannah entered the crawlspace.
+4 Lucas entered the hall.
+5 The onion is in the envelope.
+6 The envelope is in the crawlspace.
+7 Aria exited the crawlspace.
+8 Hannah moved the onion to the suitcase.
+9 The suitcase is in the crawlspace.
+10 Aria dislikes the tie.",Where will Aria look for the onion?,envelope,"envelope,suitcase"
+"1 Lucas likes the cabbage.
+2 Lucas entered the dining_room.
+3 Ella entered the dining_room.
+4 Lucas loves the dress.
+5 The sweater is in the suitcase.
+6 The suitcase is in the dining_room.
+7 Lucas moved the sweater to the basket.
+8 The basket is in the dining_room.
+9 Ella exited the dining_room.",Where will Ella look for the sweater?,basket,"basket,suitcase"
+"1 Sophia dislikes the sweet_potato.
+2 Emma entered the front_yard.
+3 Nathan entered the front_yard.
+4 The beans is in the crate.
+5 The crate is in the front_yard.
+6 Nathan hates the shirt.
+7 Emma exited the front_yard.
+8 Nathan moved the beans to the cupboard.
+9 The cupboard is in the front_yard.",Where will Emma look for the beans?,crate,"crate,cupboard"
+"1 Hunter entered the sunroom.
+2 Nathan dislikes the scarf.
+3 Nathan entered the sunroom.
+4 Hunter hates the gloves.
+5 The suit is in the bucket.
+6 The bucket is in the sunroom.
+7 Ella entered the sunroom.
+8 Nathan exited the sunroom.
+9 Hunter moved the suit to the pantry.
+10 The pantry is in the sunroom.",Where will Nathan look for the suit?,bucket,"pantry,bucket"
+"1 Olivia entered the lounge.
+2 Abigail likes the potato.
+3 Abigail entered the lounge.
+4 Avery entered the lounge.
+5 The shoes is in the bucket.
+6 The bucket is in the lounge.
+7 Olivia hates the socks.
+8 Olivia moved the shoes to the envelope.
+9 The envelope is in the lounge.
+10 Abigail exited the lounge.",Where will Olivia look for the shoes?,envelope,"envelope,bucket"
+"1 Jackson entered the crawlspace.
+2 Lucas entered the TV_room.
+3 Aria entered the crawlspace.
+4 Aria likes the lime.
+5 Lucas exited the TV_room.
+6 The shoes is in the box.
+7 The box is in the crawlspace.
+8 Aria exited the crawlspace.
+9 Jackson moved the shoes to the bucket.
+10 The bucket is in the crawlspace.
+11 Jackson exited the crawlspace.
+12 Aria entered the TV_room.",Where will Aria look for the shoes?,box,"bucket,box"
+"1 Jackson likes the belt.
+2 Jackson entered the bathroom.
+3 Emma dislikes the sweatshirt.
+4 Emma entered the garden.
+5 James entered the garden.
+6 The cucumber is in the bottle.
+7 The bottle is in the garden.
+8 James moved the cucumber to the crate.
+9 The crate is in the garden.
+10 Emma exited the garden.
+11 James exited the garden.
+12 Jackson exited the bathroom.
+13 Emma entered the bathroom.",Where will James look for the cucumber?,crate,"bottle,crate"
+"1 Mason entered the kitchen.
+2 Mason exited the kitchen.
+3 Evelyn entered the workshop.
+4 Oliver entered the workshop.
+5 The pineapple is in the cupboard.
+6 The cupboard is in the workshop.
+7 Oliver exited the workshop.
+8 Evelyn moved the pineapple to the treasure_chest.
+9 The treasure_chest is in the workshop.",Where will Oliver look for the pineapple?,cupboard,"cupboard,treasure_chest"
+"1 Elizabeth entered the living_room.
+2 Liam entered the living_room.
+3 Elizabeth exited the living_room.
+4 Avery entered the living_room.
+5 The shirt is in the box.
+6 The box is in the living_room.
+7 Avery exited the living_room.
+8 Elizabeth loves the green_pepper.
+9 Liam moved the shirt to the crate.
+10 The crate is in the living_room.",Where will Avery look for the shirt?,box,"crate,box"
+"1 Ethan entered the crawlspace.
+2 Mia entered the crawlspace.
+3 The tomato is in the bottle.
+4 The bottle is in the crawlspace.
+5 Ethan moved the tomato to the envelope.
+6 The envelope is in the crawlspace.
+7 Ethan likes the undershirt.
+8 Mia exited the crawlspace.
+9 Ethan exited the crawlspace.
+10 Ethan loves the tangerine.
+11 Mia entered the hallway.
+12 Evelyn entered the crawlspace.",Where will Ethan look for the tomato?,envelope,"envelope,bottle"
+"1 Evelyn entered the attic.
+2 James entered the office.
+3 Charlotte entered the attic.
+4 The cap is in the bucket.
+5 The bucket is in the attic.
+6 Charlotte exited the attic.
+7 Charlotte entered the office.
+8 Evelyn moved the cap to the basket.
+9 The basket is in the attic.",Where will Charlotte look for the cap?,bucket,"bucket,basket"
+"1 Mason entered the office.
+2 Jackson entered the office.
+3 Mason exited the office.
+4 Mason dislikes the apple.
+5 Jacob entered the office.
+6 The onion is in the container.
+7 The container is in the office.
+8 Jackson exited the office.
+9 Jacob moved the onion to the bottle.
+10 The bottle is in the office.",Where will Jackson look for the onion?,container,"bottle,container"
+"1 Hunter likes the jeans.
+2 Hunter entered the dining_room.
+3 Ava entered the dining_room.
+4 Emma likes the broccoli.
+5 Emma entered the dining_room.
+6 The onion is in the box.
+7 The box is in the dining_room.
+8 Ava moved the onion to the bathtub.
+9 The bathtub is in the dining_room.
+10 Emma exited the dining_room.",Where will Ava look for the onion?,bathtub,"bathtub,box"
+"1 Ava entered the closet.
+2 Mason entered the closet.
+3 Aria entered the office.
+4 The green_pepper is in the bucket.
+5 The bucket is in the closet.
+6 Ava moved the green_pepper to the basket.
+7 The basket is in the closet.
+8 Mason exited the closet.
+9 Mason likes the peach.
+10 Ava exited the closet.
+11 Mason entered the closet.",Where will Mason look for the green_pepper?,basket,"bucket,basket"
+"1 Carter entered the study.
+2 Lily entered the hall.
+3 Jackson entered the study.
+4 Lily exited the hall.
+5 Jackson hates the jacket.
+6 The shirt is in the box.
+7 The box is in the study.
+8 Carter exited the study.
+9 Jackson moved the shirt to the basket.
+10 The basket is in the study.
+11 Jackson exited the study.
+12 Jackson dislikes the melon.
+13 Carter entered the hall.",Where will Carter look for the shirt?,box,"basket,box"
+"1 Benjamin entered the porch.
+2 Lily entered the porch.
+3 The corn is in the drawer.
+4 The drawer is in the porch.
+5 Lily moved the corn to the bathtub.
+6 The bathtub is in the porch.
+7 Benjamin exited the porch.",Where will Lily look for the corn?,bathtub,"bathtub,drawer"
+"1 Emma dislikes the spinach.
+2 Emma entered the front_yard.
+3 Olivia entered the front_yard.
+4 The pants is in the bottle.
+5 The bottle is in the front_yard.
+6 Hannah dislikes the pineapple.
+7 Emma exited the front_yard.
+8 Olivia moved the pants to the envelope.
+9 The envelope is in the front_yard.",Where will Emma look for the pants?,bottle,"bottle,envelope"
+"1 Liam entered the kitchen.
+2 Carter hates the grapefruit.
+3 Liam likes the shirt.
+4 Carter entered the kitchen.
+5 Emma entered the kitchen.
+6 The lemon is in the container.
+7 The container is in the kitchen.
+8 Carter exited the kitchen.
+9 Liam moved the lemon to the bottle.
+10 The bottle is in the kitchen.
+11 Emma exited the kitchen.
+12 Liam exited the kitchen.
+13 Emma entered the crawlspace.",Where will Emma look for the lemon?,bottle,"bottle,container"
+"1 Elizabeth entered the garage.
+2 Chloe entered the garage.
+3 Liam entered the garage.
+4 The sweater is in the suitcase.
+5 The suitcase is in the garage.
+6 Chloe moved the sweater to the container.
+7 The container is in the garage.
+8 Liam exited the garage.
+9 Chloe hates the undershirt.
+10 Chloe exited the garage.
+11 Liam entered the garage.",Where will Liam look for the sweater?,container,"suitcase,container"
+"1 Jayden entered the sunroom.
+2 Mason entered the sunroom.
+3 The asparagus is in the box.
+4 The box is in the sunroom.
+5 Mason moved the asparagus to the treasure_chest.
+6 The treasure_chest is in the sunroom.
+7 Jayden exited the sunroom.
+8 James entered the sunroom.
+9 Mason exited the sunroom.
+10 Jayden entered the sunroom.
+11 Jayden hates the melon.",Where will Mason look for the asparagus?,treasure_chest,"box,treasure_chest"
+"1 James is in the hallway.
+2 Oliver entered the hallway.
+3 The tie is in the envelope.
+4 The envelope is in the hallway.
+5 James moved the tie to the pantry.
+6 The pantry is in the hallway.
+7 Oliver exited the hallway.
+8 James exited the hallway.
+9 Oliver entered the kitchen.
+10 Alexander entered the kitchen.
+11 James likes the shirt.",Where will James look for the tie?,pantry,"envelope,pantry"
+"1 Noah entered the basement.
+2 Chloe entered the basement.
+3 Avery dislikes the beans.
+4 The coat is in the crate.
+5 The crate is in the basement.
+6 Chloe hates the underclothes.
+7 Chloe exited the basement.
+8 Noah moved the coat to the bucket.
+9 The bucket is in the basement.
+10 Noah exited the basement.
+11 Chloe entered the den.",Where will Chloe look for the coat?,crate,"crate,bucket"
+"1 Hunter entered the study.
+2 Hannah entered the bathroom.
+3 Ella entered the study.
+4 The raincoat is in the envelope.
+5 The envelope is in the study.
+6 Hunter exited the study.
+7 Ella moved the raincoat to the crate.
+8 The crate is in the study.
+9 Hunter entered the bathroom.",Where will Hunter look for the raincoat?,envelope,"envelope,crate"
+"1 Jayden entered the laundry.
+2 Avery entered the laundry.
+3 The carrot is in the cupboard.
+4 The cupboard is in the laundry.
+5 Avery hates the skirt.
+6 Jayden exited the laundry.
+7 Avery hates the tie.
+8 Avery moved the carrot to the bathtub.
+9 The bathtub is in the laundry.
+10 Ava entered the laundry.",Where will Jayden look for the carrot?,cupboard,"cupboard,bathtub"
+"1 Lucas entered the lounge.
+2 Lily loves the hat.
+3 Ethan entered the lounge.
+4 Lily entered the lounge.
+5 Ethan dislikes the celery.
+6 The plum is in the treasure_chest.
+7 The treasure_chest is in the lounge.
+8 Ethan exited the lounge.
+9 Lucas exited the lounge.
+10 Lily moved the plum to the drawer.
+11 The drawer is in the lounge.",Where will Ethan look for the plum?,treasure_chest,"treasure_chest,drawer"
+"1 Abigail entered the TV_room.
+2 Abigail exited the TV_room.
+3 Aiden loves the shirt.
+4 Nathan entered the TV_room.
+5 Aiden entered the TV_room.
+6 The corn is in the bucket.
+7 The bucket is in the TV_room.
+8 Aiden exited the TV_room.
+9 Abigail likes the underpants.
+10 Nathan moved the corn to the bathtub.
+11 The bathtub is in the TV_room.",Where will Aiden look for the corn?,bucket,"bucket,bathtub"
+"1 Elizabeth entered the hall.
+2 Nathan entered the hall.
+3 The pajamas is in the suitcase.
+4 The suitcase is in the hall.
+5 Mila entered the hall.
+6 Nathan moved the pajamas to the bottle.
+7 The bottle is in the hall.
+8 Nathan dislikes the dress.
+9 Mila exited the hall.
+10 Elizabeth exited the hall.",Where will Elizabeth look for the pajamas?,bottle,"bottle,suitcase"
+"1 Jacob entered the attic.
+2 Mia entered the attic.
+3 The celery is in the bathtub.
+4 The bathtub is in the attic.
+5 Mia exited the attic.
+6 Mia loves the banana.
+7 Jacob moved the celery to the bucket.
+8 The bucket is in the attic.",Where will Mia look for the celery?,bathtub,"bathtub,bucket"
+"1 Lily loves the asparagus.
+2 Charlotte hates the persimmon.
+3 Charlotte is in the attic.
+4 Lily entered the attic.
+5 The pumpkin is in the crate.
+6 The crate is in the attic.
+7 Charlotte moved the pumpkin to the suitcase.
+8 The suitcase is in the attic.
+9 Isabella entered the bathroom.
+10 Lily exited the attic.
+11 Charlotte exited the attic.
+12 Lily entered the bathroom.",Where will Charlotte look for the pumpkin?,suitcase,"crate,suitcase"
+"1 Noah entered the basement.
+2 Carter entered the basement.
+3 Sophia entered the basement.
+4 The pear is in the bottle.
+5 The bottle is in the basement.
+6 Carter exited the basement.
+7 Sophia exited the basement.
+8 Noah moved the pear to the pantry.
+9 The pantry is in the basement.",Where will Carter look for the pear?,bottle,"pantry,bottle"
+"1 Jackson entered the staircase.
+2 Lily entered the staircase.
+3 The sweater is in the cupboard.
+4 The cupboard is in the staircase.
+5 Jackson moved the sweater to the suitcase.
+6 The suitcase is in the staircase.
+7 Lily exited the staircase.
+8 Jackson exited the staircase.
+9 Lily entered the staircase.",Where will Jackson look for the sweater?,suitcase,"suitcase,cupboard"
+"1 Lily entered the dining_room.
+2 Jackson entered the dining_room.
+3 The cabbage is in the container.
+4 The container is in the dining_room.
+5 Jackson exited the dining_room.
+6 Lily moved the cabbage to the box.
+7 The box is in the dining_room.
+8 Lily exited the dining_room.
+9 Jackson entered the workshop.",Where will Jackson look for the cabbage?,container,"box,container"
+"1 Isabella hates the carrot.
+2 Isabella entered the kitchen.
+3 James entered the study.
+4 Jackson entered the study.
+5 The banana is in the drawer.
+6 The drawer is in the study.
+7 James exited the study.
+8 Jackson moved the banana to the bathtub.
+9 The bathtub is in the study.
+10 Isabella exited the kitchen.
+11 James entered the kitchen.",Where will James look for the banana?,drawer,"bathtub,drawer"
+"1 Ella entered the TV_room.
+2 Ella hates the orange.
+3 Hannah entered the TV_room.
+4 Olivia entered the garden.
+5 The broccoli is in the crate.
+6 The crate is in the TV_room.
+7 Hannah exited the TV_room.
+8 Ella moved the broccoli to the pantry.
+9 The pantry is in the TV_room.
+10 Ella exited the TV_room.
+11 Hannah entered the garden.",Where will Hannah look for the broccoli?,crate,"crate,pantry"
+"1 Jack entered the bathroom.
+2 Amelia entered the bathroom.
+3 Chloe entered the bathroom.
+4 The pants is in the crate.
+5 The crate is in the bathroom.
+6 Chloe exited the bathroom.
+7 Amelia moved the pants to the drawer.
+8 The drawer is in the bathroom.
+9 Jack exited the bathroom.
+10 Amelia likes the pineapple.
+11 Amelia exited the bathroom.
+12 Chloe likes the lemon.
+13 Chloe entered the dining_room.",Where will Chloe look for the pants?,crate,"drawer,crate"
+"1 William dislikes the cucumber.
+2 Avery entered the den.
+3 William entered the den.
+4 James entered the pantry.
+5 William likes the pajamas.
+6 The eggplant is in the treasure_chest.
+7 The treasure_chest is in the den.
+8 James exited the pantry.
+9 Avery exited the den.
+10 William moved the eggplant to the bottle.
+11 The bottle is in the den.
+12 Avery entered the den.",Where will William look for the eggplant?,bottle,"bottle,treasure_chest"
+"1 William entered the pantry.
+2 Hannah entered the pantry.
+3 The persimmon is in the drawer.
+4 The drawer is in the pantry.
+5 William moved the persimmon to the crate.
+6 The crate is in the pantry.
+7 Hannah exited the pantry.
+8 Emma dislikes the pineapple.
+9 William exited the pantry.
+10 William loves the hat.
+11 Hannah entered the dining_room.",Where will William look for the persimmon?,crate,"drawer,crate"
+"1 Amelia is in the basement.
+2 Elizabeth entered the basement.
+3 Jacob entered the staircase.
+4 The tie is in the container.
+5 The container is in the basement.
+6 Elizabeth exited the basement.
+7 Jacob exited the staircase.
+8 Amelia moved the tie to the drawer.
+9 The drawer is in the basement.",Where will Elizabeth look for the tie?,container,"container,drawer"
+"1 Jayden loves the tie.
+2 Mila entered the front_yard.
+3 Aria entered the front_yard.
+4 The onion is in the suitcase.
+5 The suitcase is in the front_yard.
+6 Jayden hates the scarf.
+7 Mila exited the front_yard.
+8 Aria moved the onion to the drawer.
+9 The drawer is in the front_yard.",Where will Mila look for the onion?,suitcase,"suitcase,drawer"
+"1 Mason loves the cucumber.
+2 Mason entered the cellar.
+3 James entered the cellar.
+4 Ethan entered the cellar.
+5 The sweater is in the cupboard.
+6 The cupboard is in the cellar.
+7 Mason loves the eggplant.
+8 James exited the cellar.
+9 Mason exited the cellar.
+10 James entered the cellar.
+11 Ethan moved the sweater to the suitcase.
+12 The suitcase is in the cellar.",Where will Ethan look for the sweater?,suitcase,"suitcase,cupboard"
+"1 Hannah entered the kitchen.
+2 Mila entered the kitchen.
+3 Jackson dislikes the carrot.
+4 Jackson entered the kitchen.
+5 Jackson exited the kitchen.
+6 The jacket is in the treasure_chest.
+7 The treasure_chest is in the kitchen.
+8 Mila moved the jacket to the crate.
+9 The crate is in the kitchen.
+10 Jackson dislikes the cabbage.
+11 Hannah exited the kitchen.",Where will Mila look for the jacket?,crate,"crate,treasure_chest"
+"1 Nathan entered the bathroom.
+2 Elizabeth entered the bathroom.
+3 The boots is in the basket.
+4 The basket is in the bathroom.
+5 Nathan moved the boots to the bottle.
+6 The bottle is in the bathroom.
+7 Emma entered the bathroom.
+8 Elizabeth exited the bathroom.",Where will Elizabeth look for the boots?,bottle,"basket,bottle"
+"1 Aria entered the closet.
+2 Sophia entered the closet.
+3 Evelyn entered the closet.
+4 The slippers is in the envelope.
+5 The envelope is in the closet.
+6 Evelyn moved the slippers to the basket.
+7 The basket is in the closet.
+8 Sophia exited the closet.
+9 Evelyn exited the closet.
+10 Aria exited the closet.
+11 Sophia entered the garden.",Where will Evelyn look for the slippers?,basket,"basket,envelope"
+"1 Aria entered the lounge.
+2 Jacob entered the lounge.
+3 Hannah entered the hall.
+4 Hannah exited the hall.
+5 The jeans is in the crate.
+6 The crate is in the lounge.
+7 Jacob exited the lounge.
+8 Aria moved the jeans to the container.
+9 The container is in the lounge.",Where will Jacob look for the jeans?,crate,"crate,container"
+"1 Ava entered the bathroom.
+2 Charlotte entered the bathroom.
+3 The peas is in the box.
+4 The box is in the bathroom.
+5 Ava moved the peas to the container.
+6 The container is in the bathroom.
+7 Charlotte exited the bathroom.
+8 Carter entered the den.
+9 Ava exited the bathroom.
+10 Charlotte entered the den.",Where will Charlotte look for the peas?,container,"container,box"
+"1 Owen entered the garage.
+2 Benjamin entered the garage.
+3 The trousers is in the box.
+4 The box is in the garage.
+5 Benjamin exited the garage.
+6 Owen moved the trousers to the envelope.
+7 The envelope is in the garage.
+8 Noah entered the bedroom.",Where will Benjamin look for the trousers?,box,"envelope,box"
+"1 James entered the TV_room.
+2 Lily entered the TV_room.
+3 The skirt is in the suitcase.
+4 The suitcase is in the TV_room.
+5 Lily moved the skirt to the envelope.
+6 The envelope is in the TV_room.
+7 Olivia loves the skirt.
+8 James exited the TV_room.",Where will Lily look for the skirt?,envelope,"suitcase,envelope"
+"1 Logan entered the bedroom.
+2 Logan likes the cucumber.
+3 Ava entered the bedroom.
+4 Logan hates the carrot.
+5 The cherry is in the envelope.
+6 The envelope is in the bedroom.
+7 Logan exited the bedroom.
+8 Ava moved the cherry to the container.
+9 The container is in the bedroom.",Where will Logan look for the cherry?,envelope,"envelope,container"
+"1 Alexander dislikes the slippers.
+2 Alexander entered the office.
+3 Noah entered the office.
+4 The carrot is in the bucket.
+5 The bucket is in the office.
+6 Noah exited the office.
+7 Noah entered the living_room.
+8 Alexander likes the t-shirt.
+9 Alexander moved the carrot to the crate.
+10 The crate is in the office.",Where will Noah look for the carrot?,bucket,"crate,bucket"
+"1 Jack entered the dining_room.
+2 Owen is in the dining_room.
+3 Aria entered the closet.
+4 Aria loves the t-shirt.
+5 The orange is in the treasure_chest.
+6 The treasure_chest is in the dining_room.
+7 Jack moved the orange to the pantry.
+8 The pantry is in the dining_room.
+9 Owen exited the dining_room.
+10 Owen likes the boots.
+11 Jack exited the dining_room.
+12 Owen entered the dining_room.",Where will Jack look for the orange?,pantry,"treasure_chest,pantry"
+"1 Aria entered the workshop.
+2 Sophia entered the workshop.
+3 Oliver entered the lounge.
+4 Oliver exited the lounge.
+5 The raincoat is in the treasure_chest.
+6 The treasure_chest is in the workshop.
+7 Aria exited the workshop.
+8 Sophia moved the raincoat to the basket.
+9 The basket is in the workshop.
+10 Aria entered the lounge.",Where will Aria look for the raincoat?,treasure_chest,"treasure_chest,basket"
+"1 Nathan entered the basement.
+2 Liam entered the basement.
+3 Jackson dislikes the watermelon.
+4 The potato is in the bottle.
+5 The bottle is in the basement.
+6 Jackson hates the beans.
+7 Liam moved the potato to the crate.
+8 The crate is in the basement.
+9 Nathan exited the basement.",Where will Nathan look for the potato?,crate,"crate,bottle"
+"1 Carter entered the workshop.
+2 Alexander dislikes the grapefruit.
+3 Alexander is in the workshop.
+4 The grapefruit is in the bathtub.
+5 The bathtub is in the workshop.
+6 Mason entered the hallway.
+7 Carter exited the workshop.
+8 Carter entered the hallway.
+9 Mason exited the hallway.
+10 Alexander moved the grapefruit to the envelope.
+11 The envelope is in the workshop.",Where will Carter look for the grapefruit?,bathtub,"bathtub,envelope"
+"1 Liam entered the workshop.
+2 Avery entered the workshop.
+3 Lily entered the workshop.
+4 Lily exited the workshop.
+5 The beans is in the bottle.
+6 The bottle is in the workshop.
+7 Avery moved the beans to the pantry.
+8 The pantry is in the workshop.
+9 Liam exited the workshop.
+10 Liam entered the dining_room.",Where will Avery look for the beans?,pantry,"bottle,pantry"
+"1 Jackson entered the sunroom.
+2 Isabella loves the asparagus.
+3 Isabella entered the sunroom.
+4 Noah loves the slippers.
+5 The beans is in the container.
+6 The container is in the sunroom.
+7 Jackson exited the sunroom.
+8 Isabella moved the beans to the bottle.
+9 The bottle is in the sunroom.
+10 Noah entered the sunroom.
+11 Jackson entered the master_bedroom.",Where will Jackson look for the beans?,container,"bottle,container"
+"1 Isla entered the dining_room.
+2 Noah entered the dining_room.
+3 The peach is in the box.
+4 The box is in the dining_room.
+5 Aiden entered the dining_room.
+6 Isla moved the peach to the drawer.
+7 The drawer is in the dining_room.
+8 Noah exited the dining_room.
+9 Isla exited the dining_room.
+10 Noah entered the workshop.",Where will Noah look for the peach?,drawer,"box,drawer"
+"1 Logan entered the laundry.
+2 Alexander entered the laundry.
+3 Logan dislikes the coat.
+4 Aiden entered the laundry.
+5 The strawberry is in the box.
+6 The box is in the laundry.
+7 Logan dislikes the scarf.
+8 Logan exited the laundry.
+9 Aiden moved the strawberry to the bottle.
+10 The bottle is in the laundry.",Where will Logan look for the strawberry?,box,"box,bottle"
+"1 Isla entered the crawlspace.
+2 Mila entered the crawlspace.
+3 Amelia likes the grapefruit.
+4 The turnip is in the box.
+5 The box is in the crawlspace.
+6 Isla exited the crawlspace.
+7 Mila moved the turnip to the basket.
+8 The basket is in the crawlspace.
+9 Amelia entered the crawlspace.
+10 Mila exited the crawlspace.
+11 Mila hates the peas.
+12 Isla entered the living_room.",Where will Isla look for the turnip?,box,"box,basket"
+"1 Hunter entered the hallway.
+2 Ava entered the hallway.
+3 The onion is in the treasure_chest.
+4 The treasure_chest is in the hallway.
+5 Ava moved the onion to the bottle.
+6 The bottle is in the hallway.
+7 Hunter exited the hallway.",Where will Hunter look for the onion?,bottle,"bottle,treasure_chest"
+"1 Owen entered the staircase.
+2 Nathan entered the staircase.
+3 Evelyn likes the broccoli.
+4 The dress is in the container.
+5 The container is in the staircase.
+6 Nathan exited the staircase.
+7 Evelyn entered the lounge.
+8 Evelyn exited the lounge.
+9 Owen hates the tangerine.
+10 Owen moved the dress to the drawer.
+11 The drawer is in the staircase.",Where will Nathan look for the dress?,container,"drawer,container"
+"1 Jackson entered the garden.
+2 Mia is in the garden.
+3 The persimmon is in the basket.
+4 The basket is in the garden.
+5 Mia exited the garden.
+6 Jackson moved the persimmon to the drawer.
+7 The drawer is in the garden.
+8 Lucas hates the cucumber.
+9 Mia entered the garden.",Where will Mia look for the persimmon?,drawer,"drawer,basket"
+"1 Jackson entered the garden.
+2 William entered the garden.
+3 William dislikes the coat.
+4 The underpants is in the drawer.
+5 The drawer is in the garden.
+6 Jack entered the porch.
+7 William exited the garden.
+8 Jackson likes the melon.
+9 Jackson moved the underpants to the bathtub.
+10 The bathtub is in the garden.",Where will William look for the underpants?,drawer,"bathtub,drawer"
+"1 Amelia entered the garden.
+2 Isabella likes the tie.
+3 Jackson entered the garden.
+4 The watermelon is in the crate.
+5 The crate is in the garden.
+6 Jackson moved the watermelon to the container.
+7 The container is in the garden.
+8 Amelia exited the garden.
+9 Jackson exited the garden.
+10 Amelia entered the garden.",Where will Amelia look for the watermelon?,container,"container,crate"
+"1 Oliver entered the patio.
+2 Elizabeth entered the patio.
+3 The asparagus is in the cupboard.
+4 The cupboard is in the patio.
+5 Avery entered the den.
+6 Avery exited the den.
+7 Oliver exited the patio.
+8 Elizabeth dislikes the corn.
+9 Elizabeth moved the asparagus to the bathtub.
+10 The bathtub is in the patio.",Where will Oliver look for the asparagus?,cupboard,"bathtub,cupboard"
+"1 Hannah entered the cellar.
+2 Carter entered the cellar.
+3 The tie is in the pantry.
+4 The pantry is in the cellar.
+5 Hannah exited the cellar.
+6 Carter moved the tie to the container.
+7 The container is in the cellar.
+8 Hannah entered the hall.",Where will Hannah look for the tie?,pantry,"container,pantry"
+"1 Avery dislikes the raincoat.
+2 Hunter entered the master_bedroom.
+3 Lily entered the master_bedroom.
+4 Avery loves the trousers.
+5 Hunter exited the master_bedroom.
+6 Avery entered the master_bedroom.
+7 The tie is in the container.
+8 The container is in the master_bedroom.
+9 Lily moved the tie to the crate.
+10 The crate is in the master_bedroom.
+11 Avery exited the master_bedroom.
+12 Lily exited the master_bedroom.
+13 Avery entered the master_bedroom.",Where will Lily look for the tie?,crate,"container,crate"
+"1 Chloe likes the carrot.
+2 Jacob entered the garden.
+3 Chloe entered the garden.
+4 Chloe exited the garden.
+5 Isabella entered the garden.
+6 Chloe hates the gloves.
+7 The tangerine is in the box.
+8 The box is in the garden.
+9 Isabella exited the garden.
+10 Jacob moved the tangerine to the envelope.
+11 The envelope is in the garden.",Where will Isabella look for the tangerine?,box,"box,envelope"
+"1 Oliver entered the pantry.
+2 Noah entered the pantry.
+3 Chloe entered the pantry.
+4 The skirt is in the box.
+5 The box is in the pantry.
+6 Noah moved the skirt to the crate.
+7 The crate is in the pantry.
+8 Chloe exited the pantry.
+9 Oliver likes the sweater.
+10 Noah exited the pantry.
+11 Chloe entered the pantry.",Where will Noah look for the skirt?,crate,"box,crate"
+"1 Lucas entered the pantry.
+2 Mia entered the pantry.
+3 Mia dislikes the undershirt.
+4 The pants is in the bottle.
+5 The bottle is in the pantry.
+6 Lucas exited the pantry.
+7 Lucas entered the pantry.
+8 Mia moved the pants to the envelope.
+9 The envelope is in the pantry.",Where will Mia look for the pants?,envelope,"bottle,envelope"
+"1 Jackson entered the staircase.
+2 Lily entered the staircase.
+3 The sweater is in the cupboard.
+4 The cupboard is in the staircase.
+5 Jackson moved the sweater to the suitcase.
+6 The suitcase is in the staircase.
+7 Lily exited the staircase.
+8 Jackson exited the staircase.
+9 Lily entered the staircase.",Where will Lily look for the sweater?,suitcase,"cupboard,suitcase"
+"1 Lily entered the workshop.
+2 Aria likes the beans.
+3 Aria entered the workshop.
+4 The pumpkin is in the treasure_chest.
+5 The treasure_chest is in the workshop.
+6 Aria exited the workshop.
+7 Aria entered the workshop.
+8 Mia entered the workshop.
+9 Lily moved the pumpkin to the bucket.
+10 The bucket is in the workshop.",Where will Aria look for the pumpkin?,bucket,"bucket,treasure_chest"
+"1 Emma entered the cellar.
+2 Chloe entered the cellar.
+3 The tangerine is in the suitcase.
+4 The suitcase is in the cellar.
+5 Chloe moved the tangerine to the bucket.
+6 The bucket is in the cellar.
+7 Emma exited the cellar.
+8 Chloe exited the cellar.
+9 Isabella entered the back_yard.
+10 Isabella exited the back_yard.
+11 Emma entered the cellar.",Where will Emma look for the tangerine?,bucket,"bucket,suitcase"
+"1 Emma entered the den.
+2 Jack is in the den.
+3 The cherry is in the treasure_chest.
+4 The treasure_chest is in the den.
+5 Emma moved the cherry to the envelope.
+6 The envelope is in the den.
+7 Jack exited the den.
+8 Emma exited the den.
+9 Jack entered the den.",Where will Jack look for the cherry?,envelope,"treasure_chest,envelope"
+"1 James entered the den.
+2 Jayden entered the den.
+3 Logan entered the den.
+4 The strawberry is in the drawer.
+5 The drawer is in the den.
+6 Jayden exited the den.
+7 Jayden entered the den.
+8 James loves the peach.
+9 Logan moved the strawberry to the bucket.
+10 The bucket is in the den.",Where will Jayden look for the strawberry?,bucket,"bucket,drawer"
+"1 Logan entered the living_room.
+2 Olivia entered the living_room.
+3 The melon is in the crate.
+4 The crate is in the living_room.
+5 Olivia exited the living_room.
+6 Logan moved the melon to the treasure_chest.
+7 The treasure_chest is in the living_room.
+8 Logan exited the living_room.
+9 Olivia entered the cellar.",Where will Olivia look for the melon?,crate,"crate,treasure_chest"
+"1 Alexander is in the patio.
+2 Abigail entered the patio.
+3 Mila entered the bathroom.
+4 The dress is in the bottle.
+5 The bottle is in the patio.
+6 Abigail moved the dress to the cupboard.
+7 The cupboard is in the patio.
+8 Alexander exited the patio.",Where will Abigail look for the dress?,cupboard,"bottle,cupboard"
+"1 Ava entered the master_bedroom.
+2 James entered the master_bedroom.
+3 Jacob entered the master_bedroom.
+4 The peach is in the bucket.
+5 The bucket is in the master_bedroom.
+6 Jacob exited the master_bedroom.
+7 Ava moved the peach to the basket.
+8 The basket is in the master_bedroom.
+9 James exited the master_bedroom.
+10 Ava exited the master_bedroom.
+11 Jacob entered the kitchen.",Where will Jacob look for the peach?,bucket,"basket,bucket"
+"1 Alexander entered the bathroom.
+2 Noah entered the bathroom.
+3 The grapefruit is in the box.
+4 The box is in the bathroom.
+5 Alexander exited the bathroom.
+6 Noah moved the grapefruit to the basket.
+7 The basket is in the bathroom.
+8 Noah exited the bathroom.
+9 Alexander entered the basement.
+10 Alexander hates the socks.",Where will Alexander look for the grapefruit?,box,"box,basket"
+"1 Ella entered the TV_room.
+2 Hannah entered the TV_room.
+3 The sweatshirt is in the pantry.
+4 The pantry is in the TV_room.
+5 Hannah exited the TV_room.
+6 Ella moved the sweatshirt to the bottle.
+7 The bottle is in the TV_room.",Where will Hannah look for the sweatshirt?,pantry,"pantry,bottle"
+"1 Isabella entered the sunroom.
+2 Nathan entered the sunroom.
+3 Mia entered the kitchen.
+4 The persimmon is in the treasure_chest.
+5 The treasure_chest is in the sunroom.
+6 Isabella exited the sunroom.
+7 Nathan moved the persimmon to the envelope.
+8 The envelope is in the sunroom.
+9 Isabella entered the kitchen.
+10 Isabella hates the carrot.",Where will Isabella look for the persimmon?,treasure_chest,"envelope,treasure_chest"
+"1 Amelia entered the bedroom.
+2 Logan entered the bedroom.
+3 The sweater is in the box.
+4 The box is in the bedroom.
+5 Logan exited the bedroom.
+6 Amelia moved the sweater to the drawer.
+7 The drawer is in the bedroom.
+8 Logan entered the bedroom.",Where will Amelia look for the sweater?,drawer,"drawer,box"
+"1 Ethan entered the attic.
+2 Emily entered the attic.
+3 The turnip is in the drawer.
+4 The drawer is in the attic.
+5 Ethan dislikes the grapes.
+6 Emily exited the attic.
+7 Ethan moved the turnip to the bucket.
+8 The bucket is in the attic.
+9 Emily entered the garden.",Where will Emily look for the turnip?,drawer,"drawer,bucket"
+"1 Emily entered the patio.
+2 Noah entered the patio.
+3 The sweatshirt is in the container.
+4 The container is in the patio.
+5 Emily dislikes the boots.
+6 Hannah entered the patio.
+7 Emily exited the patio.
+8 Hannah exited the patio.
+9 Noah moved the sweatshirt to the envelope.
+10 The envelope is in the patio.",Where will Emily look for the sweatshirt?,container,"container,envelope"
+"1 Nathan dislikes the belt.
+2 Nathan entered the back_yard.
+3 Jackson entered the back_yard.
+4 The socks is in the bucket.
+5 The bucket is in the back_yard.
+6 Jackson exited the back_yard.
+7 Nathan moved the socks to the suitcase.
+8 The suitcase is in the back_yard.
+9 Hannah entered the closet.
+10 Hannah exited the closet.
+11 Nathan exited the back_yard.
+12 Jackson entered the closet.",Where will Jackson look for the socks?,bucket,"bucket,suitcase"
+"1 Avery entered the playroom.
+2 James entered the playroom.
+3 Aiden entered the back_yard.
+4 Aiden exited the back_yard.
+5 Aiden likes the watermelon.
+6 The underpants is in the bathtub.
+7 The bathtub is in the playroom.
+8 James moved the underpants to the basket.
+9 The basket is in the playroom.
+10 Aiden likes the plum.
+11 Avery exited the playroom.
+12 James exited the playroom.
+13 Avery entered the playroom.",Where will James look for the underpants?,basket,"basket,bathtub"
+"1 Logan entered the office.
+2 Aria entered the office.
+3 The peas is in the crate.
+4 The crate is in the office.
+5 Hunter loves the skirt.
+6 Logan exited the office.
+7 Aria moved the peas to the suitcase.
+8 The suitcase is in the office.",Where will Logan look for the peas?,crate,"suitcase,crate"
+"1 Chloe entered the bedroom.
+2 Liam entered the bedroom.
+3 The radish is in the bottle.
+4 The bottle is in the bedroom.
+5 Chloe exited the bedroom.
+6 Liam moved the radish to the crate.
+7 The crate is in the bedroom.",Where will Chloe look for the radish?,bottle,"bottle,crate"
+"1 Hannah hates the shirt.
+2 Liam entered the staircase.
+3 Olivia entered the staircase.
+4 The pineapple is in the treasure_chest.
+5 The treasure_chest is in the staircase.
+6 Olivia exited the staircase.
+7 Liam moved the pineapple to the pantry.
+8 The pantry is in the staircase.",Where will Olivia look for the pineapple?,treasure_chest,"treasure_chest,pantry"
+"1 William dislikes the trousers.
+2 Emma entered the patio.
+3 Mia entered the patio.
+4 The cucumber is in the container.
+5 The container is in the patio.
+6 William entered the basement.
+7 Emma moved the cucumber to the drawer.
+8 The drawer is in the patio.
+9 Mia exited the patio.
+10 Mia entered the patio.
+11 Emma hates the skirt.",Where will Emma look for the cucumber?,drawer,"drawer,container"
+"1 Mia entered the hallway.
+2 Hunter entered the hallway.
+3 The broccoli is in the crate.
+4 The crate is in the hallway.
+5 Hunter loves the dress.
+6 Hunter exited the hallway.
+7 Mia moved the broccoli to the basket.
+8 The basket is in the hallway.",Where will Hunter look for the broccoli?,crate,"crate,basket"
+"1 Ethan entered the bathroom.
+2 Mia entered the bathroom.
+3 The carrot is in the treasure_chest.
+4 The treasure_chest is in the bathroom.
+5 Mia exited the bathroom.
+6 Ethan moved the carrot to the drawer.
+7 The drawer is in the bathroom.
+8 Mia entered the basement.
+9 Isla likes the melon.",Where will Mia look for the carrot?,treasure_chest,"treasure_chest,drawer"
+"1 Isla likes the underclothes.
+2 Jack entered the study.
+3 Amelia entered the study.
+4 Isla hates the corn.
+5 The broccoli is in the box.
+6 The box is in the study.
+7 Amelia moved the broccoli to the basket.
+8 The basket is in the study.
+9 Jack exited the study.
+10 Isla entered the study.
+11 Amelia exited the study.
+12 Jack entered the kitchen.",Where will Amelia look for the broccoli?,basket,"box,basket"
+"1 Elizabeth loves the apple.
+2 Mila entered the cellar.
+3 Elizabeth entered the cellar.
+4 The lemon is in the crate.
+5 The crate is in the cellar.
+6 Elizabeth exited the cellar.
+7 Mila dislikes the jeans.
+8 Mila moved the lemon to the basket.
+9 The basket is in the cellar.",Where will Elizabeth look for the lemon?,crate,"crate,basket"
+"1 Jacob entered the hallway.
+2 Ethan entered the hallway.
+3 The tomato is in the box.
+4 The box is in the hallway.
+5 Ethan moved the tomato to the bathtub.
+6 The bathtub is in the hallway.
+7 Jacob exited the hallway.
+8 Jack dislikes the jacket.",Where will Jacob look for the tomato?,bathtub,"bathtub,box"
+"1 Abigail entered the playroom.
+2 Ava entered the playroom.
+3 The trousers is in the suitcase.
+4 The suitcase is in the playroom.
+5 Ava exited the playroom.
+6 Abigail moved the trousers to the envelope.
+7 The envelope is in the playroom.
+8 Ava hates the slacks.",Where will Ava look for the trousers?,suitcase,"suitcase,envelope"
+"1 Aiden entered the porch.
+2 Lucas loves the lemon.
+3 Evelyn entered the porch.
+4 The hat is in the envelope.
+5 The envelope is in the porch.
+6 Evelyn moved the hat to the cupboard.
+7 The cupboard is in the porch.
+8 Aiden exited the porch.
+9 Evelyn exited the porch.
+10 Aiden entered the porch.",Where will Aiden look for the hat?,cupboard,"cupboard,envelope"
+"1 Carter entered the dining_room.
+2 Jackson entered the dining_room.
+3 Carter loves the asparagus.
+4 The shoes is in the suitcase.
+5 The suitcase is in the dining_room.
+6 Carter moved the shoes to the bathtub.
+7 The bathtub is in the dining_room.
+8 Ethan entered the TV_room.
+9 Jackson exited the dining_room.",Where will Carter look for the shoes?,bathtub,"suitcase,bathtub"
+"1 Carter entered the laundry.
+2 Oliver entered the workshop.
+3 Carter hates the sweet_potato.
+4 Liam entered the workshop.
+5 The radish is in the box.
+6 The box is in the workshop.
+7 Oliver moved the radish to the basket.
+8 The basket is in the workshop.
+9 Carter exited the laundry.
+10 Liam exited the workshop.",Where will Oliver look for the radish?,basket,"basket,box"
+"1 Avery entered the cellar.
+2 Abigail entered the sunroom.
+3 Lily entered the sunroom.
+4 The slippers is in the box.
+5 The box is in the sunroom.
+6 Abigail exited the sunroom.
+7 Abigail entered the cellar.
+8 Lily loves the cucumber.
+9 Lily moved the slippers to the treasure_chest.
+10 The treasure_chest is in the sunroom.
+11 Abigail dislikes the sweatshirt.",Where will Abigail look for the slippers?,box,"treasure_chest,box"
+"1 Isla entered the bedroom.
+2 Hannah entered the bedroom.
+3 Avery entered the bedroom.
+4 The pajamas is in the suitcase.
+5 The suitcase is in the bedroom.
+6 Avery likes the belt.
+7 Avery exited the bedroom.
+8 Hannah exited the bedroom.
+9 Isla moved the pajamas to the bottle.
+10 The bottle is in the bedroom.",Where will Avery look for the pajamas?,suitcase,"bottle,suitcase"
+"1 Elizabeth is in the hallway.
+2 Hannah is in the hallway.
+3 The cherry is in the box.
+4 The box is in the hallway.
+5 Hannah moved the cherry to the basket.
+6 The basket is in the hallway.
+7 Elizabeth exited the hallway.
+8 Hannah exited the hallway.
+9 Elizabeth entered the patio.",Where will Elizabeth look for the cherry?,basket,"basket,box"
+"1 Emma entered the laundry.
+2 Mila entered the laundry.
+3 Lily entered the laundry.
+4 The cucumber is in the pantry.
+5 The pantry is in the laundry.
+6 Mila moved the cucumber to the basket.
+7 The basket is in the laundry.
+8 Lily exited the laundry.
+9 Emma exited the laundry.
+10 Mila exited the laundry.
+11 Lily entered the laundry.",Where will Mila look for the cucumber?,basket,"pantry,basket"
+"1 Emma entered the dining_room.
+2 Charlotte entered the dining_room.
+3 The socks is in the container.
+4 The container is in the dining_room.
+5 Emma exited the dining_room.
+6 Charlotte moved the socks to the suitcase.
+7 The suitcase is in the dining_room.
+8 Charlotte loves the boots.",Where will Emma look for the socks?,container,"suitcase,container"
+"1 Elizabeth entered the bedroom.
+2 Owen entered the bedroom.
+3 The eggplant is in the suitcase.
+4 The suitcase is in the bedroom.
+5 Owen moved the eggplant to the container.
+6 The container is in the bedroom.
+7 Elizabeth exited the bedroom.
+8 Elizabeth likes the cabbage.",Where will Elizabeth look for the eggplant?,container,"container,suitcase"
+"1 Hannah entered the hall.
+2 Amelia entered the hall.
+3 The corn is in the drawer.
+4 The drawer is in the hall.
+5 Amelia hates the grapes.
+6 Amelia hates the stockings.
+7 Hannah exited the hall.
+8 Amelia moved the corn to the bathtub.
+9 The bathtub is in the hall.
+10 Hannah entered the hall.
+11 Charlotte entered the hall.",Where will Hannah look for the corn?,bathtub,"bathtub,drawer"
+"1 Amelia entered the basement.
+2 Jack entered the basement.
+3 The cap is in the box.
+4 The box is in the basement.
+5 Jack moved the cap to the bottle.
+6 The bottle is in the basement.
+7 Amelia exited the basement.",Where will Jack look for the cap?,bottle,"box,bottle"
+"1 Liam entered the hallway.
+2 Ella entered the hallway.
+3 The sweatshirt is in the envelope.
+4 The envelope is in the hallway.
+5 Liam exited the hallway.
+6 Ella moved the sweatshirt to the treasure_chest.
+7 The treasure_chest is in the hallway.
+8 Emily likes the turnip.",Where will Liam look for the sweatshirt?,envelope,"envelope,treasure_chest"
+"1 Alexander entered the patio.
+2 Aria entered the patio.
+3 The underpants is in the treasure_chest.
+4 The treasure_chest is in the patio.
+5 Alexander exited the patio.
+6 Alexander entered the garden.
+7 Aria moved the underpants to the drawer.
+8 The drawer is in the patio.",Where will Alexander look for the underpants?,treasure_chest,"drawer,treasure_chest"
+"1 Elizabeth entered the cellar.
+2 Elizabeth dislikes the jacket.
+3 Chloe entered the cellar.
+4 The scarf is in the box.
+5 The box is in the cellar.
+6 Aiden hates the turnip.
+7 Elizabeth exited the cellar.
+8 Chloe moved the scarf to the pantry.
+9 The pantry is in the cellar.
+10 Elizabeth entered the cellar.",Where will Elizabeth look for the scarf?,pantry,"pantry,box"
+"1 Olivia entered the staircase.
+2 Olivia likes the peas.
+3 Hunter entered the staircase.
+4 The apple is in the bathtub.
+5 The bathtub is in the staircase.
+6 Hunter exited the staircase.
+7 Olivia moved the apple to the envelope.
+8 The envelope is in the staircase.",Where will Hunter look for the apple?,bathtub,"bathtub,envelope"
+"1 Charlotte entered the dining_room.
+2 Emma entered the dining_room.
+3 Aiden entered the dining_room.
+4 The scarf is in the pantry.
+5 The pantry is in the dining_room.
+6 Charlotte exited the dining_room.
+7 Emma exited the dining_room.
+8 Aiden moved the scarf to the suitcase.
+9 The suitcase is in the dining_room.",Where will Emma look for the scarf?,pantry,"suitcase,pantry"
+"1 Carter entered the crawlspace.
+2 Ethan entered the crawlspace.
+3 The lettuce is in the bucket.
+4 The bucket is in the crawlspace.
+5 Carter exited the crawlspace.
+6 Logan entered the crawlspace.
+7 Ethan moved the lettuce to the drawer.
+8 The drawer is in the crawlspace.
+9 Carter entered the crawlspace.",Where will Ethan look for the lettuce?,drawer,"drawer,bucket"
+"1 Emma entered the workshop.
+2 Sophia entered the workshop.
+3 James entered the workshop.
+4 Sophia exited the workshop.
+5 The lettuce is in the bathtub.
+6 The bathtub is in the workshop.
+7 James exited the workshop.
+8 Emma moved the lettuce to the box.
+9 The box is in the workshop.",Where will James look for the lettuce?,bathtub,"bathtub,box"
+"1 Sophia entered the garden.
+2 Olivia entered the garden.
+3 The belt is in the box.
+4 The box is in the garden.
+5 Olivia exited the garden.
+6 Olivia entered the garden.
+7 Sophia moved the belt to the envelope.
+8 The envelope is in the garden.
+9 Mason entered the living_room.",Where will Sophia look for the belt?,envelope,"box,envelope"
+"1 Benjamin entered the playroom.
+2 Lily entered the playroom.
+3 The lemon is in the bottle.
+4 The bottle is in the playroom.
+5 Benjamin likes the shirt.
+6 Benjamin exited the playroom.
+7 Benjamin dislikes the grapefruit.
+8 Lily moved the lemon to the pantry.
+9 The pantry is in the playroom.",Where will Benjamin look for the lemon?,bottle,"bottle,pantry"
+"1 Jacob entered the crawlspace.
+2 Ava entered the crawlspace.
+3 Ava hates the cucumber.
+4 The peach is in the container.
+5 The container is in the crawlspace.
+6 Jacob exited the crawlspace.
+7 Ava moved the peach to the pantry.
+8 The pantry is in the crawlspace.",Where will Jacob look for the peach?,container,"container,pantry"
+"1 Ella entered the front_yard.
+2 Hunter entered the pantry.
+3 Olivia entered the pantry.
+4 The sweatshirt is in the container.
+5 The container is in the pantry.
+6 Hunter exited the pantry.
+7 Ella exited the front_yard.
+8 Olivia moved the sweatshirt to the box.
+9 The box is in the pantry.
+10 Olivia exited the pantry.
+11 Hunter entered the front_yard.",Where will Hunter look for the sweatshirt?,container,"container,box"
+"1 Elizabeth entered the hall.
+2 Ella entered the hall.
+3 The eggplant is in the cupboard.
+4 The cupboard is in the hall.
+5 Ella exited the hall.
+6 Elizabeth moved the eggplant to the container.
+7 The container is in the hall.
+8 Noah entered the office.",Where will Ella look for the eggplant?,cupboard,"cupboard,container"
+"1 Emily entered the master_bedroom.
+2 Aiden entered the master_bedroom.
+3 The cabbage is in the drawer.
+4 The drawer is in the master_bedroom.
+5 Emily exited the master_bedroom.
+6 Aiden moved the cabbage to the bathtub.
+7 The bathtub is in the master_bedroom.
+8 Lucas entered the master_bedroom.
+9 Emily entered the master_bedroom.
+10 Lucas likes the asparagus.",Where will Emily look for the cabbage?,bathtub,"bathtub,drawer"
+"1 Elizabeth entered the garden.
+2 Benjamin entered the garden.
+3 The slacks is in the box.
+4 The box is in the garden.
+5 Benjamin exited the garden.
+6 Benjamin entered the garden.
+7 Elizabeth moved the slacks to the suitcase.
+8 The suitcase is in the garden.",Where will Benjamin look for the slacks?,suitcase,"suitcase,box"
+"1 William hates the spinach.
+2 Jacob entered the bedroom.
+3 William entered the bedroom.
+4 The lime is in the crate.
+5 The crate is in the bedroom.
+6 Jacob exited the bedroom.
+7 Jacob entered the TV_room.
+8 William moved the lime to the basket.
+9 The basket is in the bedroom.",Where will Jacob look for the lime?,crate,"basket,crate"
+"1 Ella entered the sunroom.
+2 Nathan entered the hallway.
+3 Jack entered the sunroom.
+4 The pineapple is in the bottle.
+5 The bottle is in the sunroom.
+6 Ella exited the sunroom.
+7 Nathan exited the hallway.
+8 Jack dislikes the dress.
+9 Ella entered the hallway.
+10 Jack moved the pineapple to the crate.
+11 The crate is in the sunroom.",Where will Ella look for the pineapple?,bottle,"bottle,crate"
+"1 Chloe loves the t-shirt.
+2 William entered the pantry.
+3 Chloe entered the pantry.
+4 William loves the strawberry.
+5 The slacks is in the treasure_chest.
+6 The treasure_chest is in the pantry.
+7 William exited the pantry.
+8 Chloe moved the slacks to the drawer.
+9 The drawer is in the pantry.",Where will William look for the slacks?,treasure_chest,"drawer,treasure_chest"
+"1 Aiden likes the pineapple.
+2 Mila entered the lounge.
+3 Aiden entered the lounge.
+4 The banana is in the treasure_chest.
+5 The treasure_chest is in the lounge.
+6 Mila exited the lounge.
+7 Aiden moved the banana to the container.
+8 The container is in the lounge.",Where will Mila look for the banana?,treasure_chest,"container,treasure_chest"
+"1 Emily entered the study.
+2 Ella entered the study.
+3 The sweater is in the box.
+4 The box is in the study.
+5 Emily exited the study.
+6 Logan entered the garden.
+7 Emily entered the study.
+8 Ella moved the sweater to the bottle.
+9 The bottle is in the study.",Where will Emily look for the sweater?,bottle,"box,bottle"
+"1 Jacob loves the cap.
+2 Jack entered the lounge.
+3 Liam entered the sunroom.
+4 Jacob entered the sunroom.
+5 The lemon is in the envelope.
+6 The envelope is in the sunroom.
+7 Liam exited the sunroom.
+8 Jack exited the lounge.
+9 Jacob moved the lemon to the box.
+10 The box is in the sunroom.
+11 Liam entered the sunroom.
+12 Liam hates the lettuce.",Where will Liam look for the lemon?,box,"envelope,box"
+"1 Emily entered the living_room.
+2 James entered the living_room.
+3 The banana is in the container.
+4 The container is in the living_room.
+5 James moved the banana to the basket.
+6 The basket is in the living_room.
+7 Emily likes the cucumber.
+8 Emily exited the living_room.",Where will Emily look for the banana?,basket,"container,basket"
+"1 Owen likes the grapes.
+2 Jayden entered the porch.
+3 Lily entered the porch.
+4 The skirt is in the bucket.
+5 The bucket is in the porch.
+6 Jayden dislikes the orange.
+7 Lily exited the porch.
+8 Jayden moved the skirt to the suitcase.
+9 The suitcase is in the porch.",Where will Lily look for the skirt?,bucket,"suitcase,bucket"
+"1 Sophia entered the staircase.
+2 Jayden entered the staircase.
+3 Mason entered the basement.
+4 The lime is in the container.
+5 The container is in the staircase.
+6 Jayden moved the lime to the basket.
+7 The basket is in the staircase.
+8 Sophia exited the staircase.
+9 Jayden exited the staircase.
+10 Sophia entered the staircase.",Where will Jayden look for the lime?,basket,"basket,container"
+"1 Aria entered the workshop.
+2 Emma entered the workshop.
+3 The melon is in the drawer.
+4 The drawer is in the workshop.
+5 Aria moved the melon to the cupboard.
+6 The cupboard is in the workshop.
+7 Emma exited the workshop.",Where will Aria look for the melon?,cupboard,"cupboard,drawer"
+"1 Ethan dislikes the onion.
+2 Hunter dislikes the skirt.
+3 Ethan entered the front_yard.
+4 Jackson entered the front_yard.
+5 The pants is in the envelope.
+6 The envelope is in the front_yard.
+7 Jackson exited the front_yard.
+8 Ethan moved the pants to the bathtub.
+9 The bathtub is in the front_yard.
+10 Ethan exited the front_yard.
+11 Jackson entered the lounge.",Where will Jackson look for the pants?,envelope,"envelope,bathtub"
+"1 Jayden entered the garage.
+2 Noah entered the garage.
+3 The apple is in the cupboard.
+4 The cupboard is in the garage.
+5 Noah moved the apple to the bottle.
+6 The bottle is in the garage.
+7 Jayden exited the garage.
+8 Jayden likes the grapefruit.
+9 Noah exited the garage.
+10 Jayden entered the garage.",Where will Noah look for the apple?,bottle,"cupboard,bottle"
+"1 Evelyn entered the hall.
+2 Mila entered the hall.
+3 The onion is in the bucket.
+4 The bucket is in the hall.
+5 Evelyn moved the onion to the container.
+6 The container is in the hall.
+7 Mila exited the hall.",Where will Evelyn look for the onion?,container,"container,bucket"
+"1 Charlotte is in the porch.
+2 Lily entered the hall.
+3 Lily exited the hall.
+4 Lily likes the cap.
+5 Oliver entered the porch.
+6 The cucumber is in the envelope.
+7 The envelope is in the porch.
+8 Oliver moved the cucumber to the suitcase.
+9 The suitcase is in the porch.
+10 Charlotte exited the porch.
+11 Lily likes the socks.
+12 Charlotte entered the hall.",Where will Oliver look for the cucumber?,suitcase,"suitcase,envelope"
+"1 Logan entered the crawlspace.
+2 Owen entered the study.
+3 Alexander entered the study.
+4 Logan loves the lettuce.
+5 The underpants is in the crate.
+6 The crate is in the study.
+7 Owen exited the study.
+8 Owen entered the crawlspace.
+9 Alexander moved the underpants to the envelope.
+10 The envelope is in the study.",Where will Owen look for the underpants?,crate,"envelope,crate"
+"1 Oliver entered the master_bedroom.
+2 Sophia entered the master_bedroom.
+3 Jayden entered the master_bedroom.
+4 The underpants is in the bucket.
+5 The bucket is in the master_bedroom.
+6 Sophia moved the underpants to the treasure_chest.
+7 The treasure_chest is in the master_bedroom.
+8 Oliver exited the master_bedroom.",Where will Oliver look for the underpants?,treasure_chest,"bucket,treasure_chest"
+"1 Alexander entered the bedroom.
+2 Olivia likes the corn.
+3 James entered the bedroom.
+4 Olivia entered the bedroom.
+5 Alexander loves the undershirt.
+6 The turnip is in the container.
+7 The container is in the bedroom.
+8 James moved the turnip to the suitcase.
+9 The suitcase is in the bedroom.
+10 Alexander exited the bedroom.",Where will James look for the turnip?,suitcase,"suitcase,container"
+"1 Logan entered the garage.
+2 Logan dislikes the tangerine.
+3 Lucas entered the garage.
+4 The persimmon is in the bottle.
+5 The bottle is in the garage.
+6 Lucas moved the persimmon to the container.
+7 The container is in the garage.
+8 Logan exited the garage.",Where will Lucas look for the persimmon?,container,"bottle,container"
+"1 Mila likes the coat.
+2 Nathan entered the back_yard.
+3 William entered the back_yard.
+4 Mila entered the back_yard.
+5 The socks is in the container.
+6 The container is in the back_yard.
+7 Nathan exited the back_yard.
+8 Nathan entered the master_bedroom.
+9 Mila moved the socks to the envelope.
+10 The envelope is in the back_yard.",Where will Nathan look for the socks?,container,"container,envelope"
+"1 Alexander entered the attic.
+2 Mia entered the attic.
+3 Benjamin entered the cellar.
+4 Alexander dislikes the banana.
+5 The lemon is in the box.
+6 The box is in the attic.
+7 Mia exited the attic.
+8 Alexander moved the lemon to the bucket.
+9 The bucket is in the attic.",Where will Mia look for the lemon?,box,"bucket,box"
+"1 Nathan entered the pantry.
+2 James entered the pantry.
+3 The undershirt is in the bucket.
+4 The bucket is in the pantry.
+5 Emily entered the den.
+6 Nathan exited the pantry.
+7 Nathan entered the pantry.
+8 James moved the undershirt to the treasure_chest.
+9 The treasure_chest is in the pantry.",Where will Nathan look for the undershirt?,treasure_chest,"bucket,treasure_chest"
+"1 Evelyn likes the stockings.
+2 Logan entered the bathroom.
+3 Hunter entered the bathroom.
+4 The sweatshirt is in the drawer.
+5 The drawer is in the bathroom.
+6 Logan exited the bathroom.
+7 Logan entered the bathroom.
+8 Hunter moved the sweatshirt to the treasure_chest.
+9 The treasure_chest is in the bathroom.
+10 Evelyn likes the lime.",Where will Logan look for the sweatshirt?,treasure_chest,"treasure_chest,drawer"
+"1 Carter entered the staircase.
+2 Noah entered the staircase.
+3 The trousers is in the envelope.
+4 The envelope is in the staircase.
+5 Noah exited the staircase.
+6 Carter loves the gloves.
+7 Carter moved the trousers to the drawer.
+8 The drawer is in the staircase.
+9 Noah entered the staircase.",Where will Noah look for the trousers?,drawer,"envelope,drawer"
+"1 Liam entered the study.
+2 Elizabeth loves the cherry.
+3 Olivia entered the study.
+4 The lettuce is in the box.
+5 The box is in the study.
+6 Olivia moved the lettuce to the bottle.
+7 The bottle is in the study.
+8 Elizabeth hates the pajamas.
+9 Liam exited the study.
+10 Olivia exited the study.
+11 Liam entered the study.",Where will Liam look for the lettuce?,bottle,"bottle,box"
+"1 Mason entered the living_room.
+2 Emily entered the living_room.
+3 Emily hates the hat.
+4 Logan entered the living_room.
+5 The jeans is in the envelope.
+6 The envelope is in the living_room.
+7 Mason exited the living_room.
+8 Emily moved the jeans to the suitcase.
+9 The suitcase is in the living_room.
+10 Logan exited the living_room.
+11 Logan entered the living_room.
+12 Mason hates the underpants.",Where will Emily look for the jeans?,suitcase,"envelope,suitcase"
+"1 Jack entered the office.
+2 Aiden entered the master_bedroom.
+3 Jacob entered the office.
+4 The persimmon is in the bucket.
+5 The bucket is in the office.
+6 Aiden exited the master_bedroom.
+7 Jacob moved the persimmon to the basket.
+8 The basket is in the office.
+9 Jack exited the office.
+10 Jack entered the master_bedroom.",Where will Jack look for the persimmon?,basket,"bucket,basket"
+"1 Emily entered the porch.
+2 Olivia entered the porch.
+3 Benjamin entered the porch.
+4 The socks is in the suitcase.
+5 The suitcase is in the porch.
+6 Benjamin moved the socks to the container.
+7 The container is in the porch.
+8 Emily exited the porch.
+9 Benjamin exited the porch.
+10 Olivia exited the porch.
+11 Emily entered the porch.
+12 Olivia hates the spinach.",Where will Emily look for the socks?,container,"container,suitcase"
+"1 Isla entered the master_bedroom.
+2 Amelia entered the master_bedroom.
+3 Isla likes the lime.
+4 The underpants is in the basket.
+5 The basket is in the master_bedroom.
+6 Amelia likes the underpants.
+7 Amelia exited the master_bedroom.
+8 Isla moved the underpants to the pantry.
+9 The pantry is in the master_bedroom.
+10 Isla exited the master_bedroom.
+11 Amelia entered the garage.",Where will Amelia look for the underpants?,basket,"pantry,basket"
+"1 Isabella entered the playroom.
+2 Lily entered the playroom.
+3 The belt is in the cupboard.
+4 The cupboard is in the playroom.
+5 Lily moved the belt to the envelope.
+6 The envelope is in the playroom.
+7 Isabella exited the playroom.",Where will Lily look for the belt?,envelope,"cupboard,envelope"
+"1 Aria entered the staircase.
+2 Jacob entered the staircase.
+3 The skirt is in the container.
+4 The container is in the staircase.
+5 Jacob exited the staircase.
+6 Aria moved the skirt to the suitcase.
+7 The suitcase is in the staircase.",Where will Jacob look for the skirt?,container,"suitcase,container"
+"1 James entered the office.
+2 Sophia entered the office.
+3 Sophia dislikes the raincoat.
+4 The carrot is in the bottle.
+5 The bottle is in the office.
+6 Jacob entered the dining_room.
+7 Sophia exited the office.
+8 Jacob exited the dining_room.
+9 James moved the carrot to the bathtub.
+10 The bathtub is in the office.
+11 Sophia entered the dining_room.",Where will Sophia look for the carrot?,bottle,"bathtub,bottle"
+"1 Evelyn loves the lemon.
+2 Alexander entered the back_yard.
+3 Evelyn entered the attic.
+4 Sophia is in the back_yard.
+5 The pajamas is in the crate.
+6 The crate is in the back_yard.
+7 Evelyn exited the attic.
+8 Sophia moved the pajamas to the bathtub.
+9 The bathtub is in the back_yard.
+10 Alexander exited the back_yard.
+11 Sophia exited the back_yard.
+12 Alexander entered the back_yard.",Where will Alexander look for the pajamas?,bathtub,"bathtub,crate"
+"1 Emma entered the kitchen.
+2 Owen entered the kitchen.
+3 Jacob entered the kitchen.
+4 The onion is in the suitcase.
+5 The suitcase is in the kitchen.
+6 Jacob moved the onion to the treasure_chest.
+7 The treasure_chest is in the kitchen.
+8 Jacob dislikes the plum.
+9 Emma exited the kitchen.
+10 Jacob exited the kitchen.
+11 Emma entered the study.
+12 Emma hates the gloves.",Where will Emma look for the onion?,treasure_chest,"suitcase,treasure_chest"
+"1 Jayden entered the sunroom.
+2 Mason entered the sunroom.
+3 The asparagus is in the box.
+4 The box is in the sunroom.
+5 Mason moved the asparagus to the treasure_chest.
+6 The treasure_chest is in the sunroom.
+7 Jayden exited the sunroom.
+8 James entered the sunroom.
+9 Mason exited the sunroom.
+10 Jayden entered the sunroom.
+11 Jayden hates the melon.",Where will Jayden look for the asparagus?,treasure_chest,"treasure_chest,box"
+"1 Ella likes the peach.
+2 Logan entered the kitchen.
+3 Avery loves the shirt.
+4 Avery entered the kitchen.
+5 Ella entered the kitchen.
+6 The coat is in the box.
+7 The box is in the kitchen.
+8 Ella exited the kitchen.
+9 Avery exited the kitchen.
+10 Logan moved the coat to the basket.
+11 The basket is in the kitchen.
+12 Ella entered the kitchen.",Where will Logan look for the coat?,basket,"box,basket"
+"1 Logan entered the kitchen.
+2 Noah entered the kitchen.
+3 Emma entered the kitchen.
+4 The cherry is in the container.
+5 The container is in the kitchen.
+6 Noah moved the cherry to the basket.
+7 The basket is in the kitchen.
+8 Emma exited the kitchen.
+9 Noah exited the kitchen.
+10 Emma entered the back_yard.",Where will Emma look for the cherry?,basket,"basket,container"
+"1 Ella entered the porch.
+2 Oliver hates the slippers.
+3 Hunter entered the porch.
+4 The underclothes is in the suitcase.
+5 The suitcase is in the porch.
+6 Hunter moved the underclothes to the crate.
+7 The crate is in the porch.
+8 Ella exited the porch.
+9 Oliver entered the porch.",Where will Ella look for the underclothes?,crate,"suitcase,crate"
+"1 Owen likes the banana.
+2 Logan entered the closet.
+3 Owen entered the closet.
+4 The eggplant is in the box.
+5 The box is in the closet.
+6 Owen hates the dress.
+7 Owen exited the closet.
+8 Logan moved the eggplant to the bottle.
+9 The bottle is in the closet.
+10 Logan exited the closet.
+11 Owen entered the sunroom.",Where will Owen look for the eggplant?,box,"bottle,box"
+"1 Jayden entered the pantry.
+2 Mason entered the pantry.
+3 The turnip is in the drawer.
+4 The drawer is in the pantry.
+5 Jayden exited the pantry.
+6 Mason moved the turnip to the treasure_chest.
+7 The treasure_chest is in the pantry.",Where will Jayden look for the turnip?,drawer,"treasure_chest,drawer"
+"1 Ella entered the porch.
+2 Oliver hates the slippers.
+3 Hunter entered the porch.
+4 The underclothes is in the suitcase.
+5 The suitcase is in the porch.
+6 Hunter moved the underclothes to the crate.
+7 The crate is in the porch.
+8 Ella exited the porch.
+9 Oliver entered the porch.",Where will Hunter look for the underclothes?,crate,"crate,suitcase"
+"1 Logan entered the closet.
+2 Sophia entered the closet.
+3 Isla entered the closet.
+4 The green_pepper is in the cupboard.
+5 The cupboard is in the closet.
+6 Isla exited the closet.
+7 Logan moved the green_pepper to the container.
+8 The container is in the closet.
+9 Sophia exited the closet.
+10 Logan exited the closet.
+11 Isla entered the bedroom.",Where will Isla look for the green_pepper?,cupboard,"container,cupboard"
+"1 Carter entered the garage.
+2 Aiden entered the garage.
+3 Aiden hates the pumpkin.
+4 The asparagus is in the envelope.
+5 The envelope is in the garage.
+6 Aiden exited the garage.
+7 Carter moved the asparagus to the cupboard.
+8 The cupboard is in the garage.
+9 Aiden entered the back_yard.",Where will Aiden look for the asparagus?,cupboard,"cupboard,envelope"
+"1 William entered the bathroom.
+2 Noah entered the bathroom.
+3 The boots is in the pantry.
+4 The pantry is in the bathroom.
+5 Noah moved the boots to the container.
+6 The container is in the bathroom.
+7 William exited the bathroom.
+8 Noah exited the bathroom.
+9 William entered the bathroom.",Where will Noah look for the boots?,container,"pantry,container"
+"1 Hunter entered the lounge.
+2 Abigail entered the master_bedroom.
+3 Oliver entered the master_bedroom.
+4 The peas is in the cupboard.
+5 The cupboard is in the master_bedroom.
+6 Abigail exited the master_bedroom.
+7 Abigail entered the master_bedroom.
+8 Oliver moved the peas to the bottle.
+9 The bottle is in the master_bedroom.",Where will Oliver look for the peas?,bottle,"cupboard,bottle"
+"1 William hates the jeans.
+2 Chloe entered the laundry.
+3 Alexander entered the hall.
+4 William entered the laundry.
+5 The t-shirt is in the suitcase.
+6 The suitcase is in the laundry.
+7 Alexander exited the hall.
+8 Chloe moved the t-shirt to the bottle.
+9 The bottle is in the laundry.
+10 Alexander hates the pants.
+11 William exited the laundry.",Where will Chloe look for the t-shirt?,bottle,"suitcase,bottle"
+"1 Nathan entered the office.
+2 Sophia entered the office.
+3 The slippers is in the basket.
+4 The basket is in the office.
+5 Avery loves the melon.
+6 Avery entered the office.
+7 Nathan moved the slippers to the treasure_chest.
+8 The treasure_chest is in the office.
+9 Sophia exited the office.
+10 Nathan likes the carrot.
+11 Nathan exited the office.
+12 Sophia entered the closet.",Where will Nathan look for the slippers?,treasure_chest,"treasure_chest,basket"
+"1 Logan entered the back_yard.
+2 Amelia loves the trousers.
+3 Amelia is in the back_yard.
+4 James entered the back_yard.
+5 The onion is in the bathtub.
+6 The bathtub is in the back_yard.
+7 Logan exited the back_yard.
+8 Logan entered the back_yard.
+9 Amelia moved the onion to the box.
+10 The box is in the back_yard.",Where will Logan look for the onion?,box,"box,bathtub"
+"1 Isabella entered the bathroom.
+2 Elizabeth entered the bathroom.
+3 Isla entered the bathroom.
+4 Isabella exited the bathroom.
+5 The t-shirt is in the basket.
+6 The basket is in the bathroom.
+7 Isla exited the bathroom.
+8 Isabella loves the belt.
+9 Elizabeth moved the t-shirt to the bucket.
+10 The bucket is in the bathroom.
+11 Elizabeth exited the bathroom.
+12 Isla entered the cellar.",Where will Isla look for the t-shirt?,basket,"basket,bucket"
+"1 Noah entered the hall.
+2 Elizabeth entered the hall.
+3 The grapefruit is in the treasure_chest.
+4 The treasure_chest is in the hall.
+5 James entered the basement.
+6 Elizabeth moved the grapefruit to the bathtub.
+7 The bathtub is in the hall.
+8 Noah hates the pajamas.
+9 Noah exited the hall.
+10 James exited the basement.
+11 Elizabeth loves the socks.
+12 Elizabeth exited the hall.
+13 Noah entered the basement.",Where will Elizabeth look for the grapefruit?,bathtub,"treasure_chest,bathtub"
+"1 Isla entered the playroom.
+2 Isla dislikes the lime.
+3 Abigail entered the playroom.
+4 The carrot is in the crate.
+5 The crate is in the playroom.
+6 Elizabeth entered the crawlspace.
+7 Isla moved the carrot to the cupboard.
+8 The cupboard is in the playroom.
+9 Abigail exited the playroom.",Where will Abigail look for the carrot?,cupboard,"crate,cupboard"
+"1 Mia entered the garage.
+2 Lily dislikes the celery.
+3 Lily likes the shoes.
+4 Lily entered the dining_room.
+5 Sophia entered the dining_room.
+6 The slippers is in the cupboard.
+7 The cupboard is in the dining_room.
+8 Sophia exited the dining_room.
+9 Lily moved the slippers to the suitcase.
+10 The suitcase is in the dining_room.
+11 Mia exited the garage.
+12 Sophia entered the dining_room.",Where will Lily look for the slippers?,suitcase,"suitcase,cupboard"
+"1 Logan loves the onion.
+2 Logan entered the cellar.
+3 Alexander entered the cellar.
+4 The undershirt is in the container.
+5 The container is in the cellar.
+6 Logan exited the cellar.
+7 Alexander moved the undershirt to the basket.
+8 The basket is in the cellar.",Where will Logan look for the undershirt?,container,"basket,container"
+"1 Liam likes the tangerine.
+2 Mason likes the socks.
+3 Mason is in the den.
+4 Emily entered the den.
+5 The potato is in the suitcase.
+6 The suitcase is in the den.
+7 Emily moved the potato to the pantry.
+8 The pantry is in the den.
+9 Mason exited the den.",Where will Mason look for the potato?,pantry,"pantry,suitcase"
+"1 Evelyn entered the living_room.
+2 Sophia entered the living_room.
+3 The slacks is in the drawer.
+4 The drawer is in the living_room.
+5 Evelyn exited the living_room.
+6 Sophia hates the t-shirt.
+7 Evelyn entered the living_room.
+8 Mia hates the raincoat.
+9 Sophia moved the slacks to the bucket.
+10 The bucket is in the living_room.",Where will Evelyn look for the slacks?,bucket,"drawer,bucket"
+"1 Hunter entered the office.
+2 Isla entered the office.
+3 The onion is in the drawer.
+4 The drawer is in the office.
+5 Hunter exited the office.
+6 Isla moved the onion to the suitcase.
+7 The suitcase is in the office.
+8 Isla exited the office.
+9 Hunter entered the attic.",Where will Hunter look for the onion?,drawer,"drawer,suitcase"
+"1 Jayden entered the crawlspace.
+2 Aria entered the crawlspace.
+3 The jacket is in the box.
+4 The box is in the crawlspace.
+5 Jayden moved the jacket to the basket.
+6 The basket is in the crawlspace.
+7 Aria exited the crawlspace.
+8 Jayden exited the crawlspace.
+9 Aria entered the lounge.",Where will Jayden look for the jacket?,basket,"basket,box"
+"1 Lily entered the back_yard.
+2 Emily entered the back_yard.
+3 Noah loves the stockings.
+4 The apple is in the suitcase.
+5 The suitcase is in the back_yard.
+6 Emily exited the back_yard.
+7 Emily hates the corn.
+8 Lily moved the apple to the bucket.
+9 The bucket is in the back_yard.
+10 Lily exited the back_yard.
+11 Emily entered the pantry.",Where will Emily look for the apple?,suitcase,"suitcase,bucket"
+"1 Mia entered the laundry.
+2 Emma entered the master_bedroom.
+3 Lily entered the laundry.
+4 The apple is in the bottle.
+5 The bottle is in the laundry.
+6 Lily exited the laundry.
+7 Mia moved the apple to the crate.
+8 The crate is in the laundry.",Where will Lily look for the apple?,bottle,"bottle,crate"
+"1 Lily entered the TV_room.
+2 Lucas entered the TV_room.
+3 The cabbage is in the box.
+4 The box is in the TV_room.
+5 Lily exited the TV_room.
+6 Lily entered the TV_room.
+7 Lucas likes the hat.
+8 Lucas moved the cabbage to the basket.
+9 The basket is in the TV_room.",Where will Lucas look for the cabbage?,basket,"box,basket"
+"1 Mason entered the basement.
+2 Mia entered the basement.
+3 The onion is in the container.
+4 The container is in the basement.
+5 Mia exited the basement.
+6 Mason moved the onion to the suitcase.
+7 The suitcase is in the basement.
+8 Mia entered the basement.",Where will Mia look for the onion?,suitcase,"suitcase,container"
+"1 Amelia entered the lounge.
+2 Aiden entered the lounge.
+3 The underclothes is in the cupboard.
+4 The cupboard is in the lounge.
+5 Amelia exited the lounge.
+6 Amelia entered the staircase.
+7 Aiden likes the underpants.
+8 Aiden moved the underclothes to the basket.
+9 The basket is in the lounge.",Where will Amelia look for the underclothes?,cupboard,"cupboard,basket"
+"1 Mason entered the hallway.
+2 Olivia is in the hallway.
+3 Jackson entered the hallway.
+4 The celery is in the pantry.
+5 The pantry is in the hallway.
+6 Olivia exited the hallway.
+7 Olivia entered the kitchen.
+8 Jackson exited the hallway.
+9 Mason moved the celery to the basket.
+10 The basket is in the hallway.",Where will Olivia look for the celery?,pantry,"pantry,basket"
+"1 Logan entered the back_yard.
+2 James entered the back_yard.
+3 The trousers is in the cupboard.
+4 The cupboard is in the back_yard.
+5 Logan moved the trousers to the suitcase.
+6 The suitcase is in the back_yard.
+7 Isabella entered the back_yard.
+8 Isabella dislikes the belt.
+9 James exited the back_yard.
+10 Isabella hates the orange.
+11 Logan exited the back_yard.
+12 James entered the workshop.",Where will Logan look for the trousers?,suitcase,"suitcase,cupboard"
+"1 Ava hates the sweet_potato.
+2 Ava entered the garden.
+3 Evelyn entered the garden.
+4 The spinach is in the bottle.
+5 The bottle is in the garden.
+6 James entered the garden.
+7 Evelyn exited the garden.
+8 Ava moved the spinach to the suitcase.
+9 The suitcase is in the garden.",Where will Evelyn look for the spinach?,bottle,"bottle,suitcase"
+"1 Alexander entered the hallway.
+2 Alexander exited the hallway.
+3 Avery entered the playroom.
+4 Amelia entered the playroom.
+5 The shoes is in the pantry.
+6 The pantry is in the playroom.
+7 Amelia exited the playroom.
+8 Avery moved the shoes to the envelope.
+9 The envelope is in the playroom.
+10 Amelia entered the playroom.",Where will Amelia look for the shoes?,envelope,"envelope,pantry"
+"1 Jacob entered the garage.
+2 Elizabeth entered the garage.
+3 The stockings is in the box.
+4 The box is in the garage.
+5 Elizabeth loves the coat.
+6 Jacob exited the garage.
+7 Jacob entered the study.
+8 Mason dislikes the lime.
+9 Mason entered the garage.
+10 Elizabeth moved the stockings to the basket.
+11 The basket is in the garage.",Where will Jacob look for the stockings?,box,"basket,box"
+"1 Isla entered the master_bedroom.
+2 Emily entered the master_bedroom.
+3 The banana is in the drawer.
+4 The drawer is in the master_bedroom.
+5 Emily moved the banana to the envelope.
+6 The envelope is in the master_bedroom.
+7 Isla exited the master_bedroom.
+8 Isla entered the back_yard.",Where will Isla look for the banana?,envelope,"drawer,envelope"
+"1 William entered the bathroom.
+2 Charlotte entered the bathroom.
+3 Carter entered the bathroom.
+4 The corn is in the treasure_chest.
+5 The treasure_chest is in the bathroom.
+6 William exited the bathroom.
+7 Carter moved the corn to the crate.
+8 The crate is in the bathroom.",Where will William look for the corn?,treasure_chest,"crate,treasure_chest"
+"1 Isabella entered the attic.
+2 Alexander entered the attic.
+3 The corn is in the box.
+4 The box is in the attic.
+5 Isabella exited the attic.
+6 Alexander moved the corn to the envelope.
+7 The envelope is in the attic.
+8 Alexander exited the attic.
+9 Nathan hates the corn.
+10 Isabella entered the back_yard.",Where will Isabella look for the corn?,box,"box,envelope"
+"1 Aiden dislikes the asparagus.
+2 Mason entered the pantry.
+3 Mason dislikes the apple.
+4 Aiden entered the pantry.
+5 The melon is in the pantry.
+6 The pantry is in the pantry.
+7 Mason exited the pantry.
+8 Aiden moved the melon to the envelope.
+9 The envelope is in the pantry.",Where will Mason look for the melon?,pantry,"pantry,envelope"
+"1 Sophia entered the TV_room.
+2 Lucas entered the TV_room.
+3 The tomato is in the cupboard.
+4 The cupboard is in the TV_room.
+5 Lucas moved the tomato to the box.
+6 The box is in the TV_room.
+7 Lucas likes the cabbage.
+8 Sophia exited the TV_room.",Where will Sophia look for the tomato?,box,"cupboard,box"
+"1 Ava entered the bathroom.
+2 William entered the bathroom.
+3 The turnip is in the suitcase.
+4 The suitcase is in the bathroom.
+5 Ava exited the bathroom.
+6 Ava entered the attic.
+7 William moved the turnip to the drawer.
+8 The drawer is in the bathroom.",Where will Ava look for the turnip?,suitcase,"suitcase,drawer"
+"1 Ella entered the workshop.
+2 Ella likes the asparagus.
+3 Isabella entered the workshop.
+4 Isabella dislikes the pineapple.
+5 The grapefruit is in the drawer.
+6 The drawer is in the workshop.
+7 Isabella exited the workshop.
+8 Ella moved the grapefruit to the bathtub.
+9 The bathtub is in the workshop.
+10 Aria entered the workshop.",Where will Isabella look for the grapefruit?,drawer,"drawer,bathtub"
+"1 Hannah entered the attic.
+2 Hannah loves the carrot.
+3 Ethan entered the attic.
+4 Hannah exited the attic.
+5 Ethan hates the potato.
+6 Jack entered the attic.
+7 The cabbage is in the drawer.
+8 The drawer is in the attic.
+9 Ethan moved the cabbage to the bucket.
+10 The bucket is in the attic.
+11 Jack exited the attic.",Where will Ethan look for the cabbage?,bucket,"bucket,drawer"
+"1 Jack entered the bathroom.
+2 Logan entered the bathroom.
+3 Jack hates the asparagus.
+4 The celery is in the pantry.
+5 The pantry is in the bathroom.
+6 Olivia entered the bathroom.
+7 Logan moved the celery to the crate.
+8 The crate is in the bathroom.
+9 Jack exited the bathroom.
+10 Logan exited the bathroom.
+11 Jack hates the orange.
+12 Jack entered the bathroom.",Where will Jack look for the celery?,crate,"crate,pantry"
+"1 Lucas entered the hall.
+2 Chloe entered the hall.
+3 Chloe likes the watermelon.
+4 Lucas loves the peach.
+5 The turnip is in the suitcase.
+6 The suitcase is in the hall.
+7 Chloe exited the hall.
+8 Lucas moved the turnip to the pantry.
+9 The pantry is in the hall.
+10 Chloe entered the patio.",Where will Chloe look for the turnip?,suitcase,"suitcase,pantry"
+"1 Avery entered the TV_room.
+2 Olivia entered the pantry.
+3 Olivia exited the pantry.
+4 Emma entered the TV_room.
+5 Emma loves the broccoli.
+6 The slacks is in the pantry.
+7 The pantry is in the TV_room.
+8 Emma exited the TV_room.
+9 Avery moved the slacks to the envelope.
+10 The envelope is in the TV_room.",Where will Emma look for the slacks?,pantry,"envelope,pantry"
+"1 Hunter entered the sunroom.
+2 Noah entered the sunroom.
+3 Jackson entered the office.
+4 Jackson exited the office.
+5 The slacks is in the bathtub.
+6 The bathtub is in the sunroom.
+7 Noah exited the sunroom.
+8 Noah entered the sunroom.
+9 Hunter moved the slacks to the drawer.
+10 The drawer is in the sunroom.",Where will Noah look for the slacks?,drawer,"bathtub,drawer"
+"1 Charlotte entered the crawlspace.
+2 Avery entered the patio.
+3 Aria entered the patio.
+4 The pineapple is in the crate.
+5 The crate is in the patio.
+6 Charlotte exited the crawlspace.
+7 Charlotte loves the jeans.
+8 Aria moved the pineapple to the cupboard.
+9 The cupboard is in the patio.
+10 Avery exited the patio.",Where will Avery look for the pineapple?,cupboard,"crate,cupboard"
+"1 Olivia dislikes the slippers.
+2 Logan entered the basement.
+3 Jackson entered the basement.
+4 Olivia loves the radish.
+5 The cabbage is in the envelope.
+6 The envelope is in the basement.
+7 Jackson exited the basement.
+8 Olivia entered the bathroom.
+9 Jackson entered the basement.
+10 Olivia exited the bathroom.
+11 Logan moved the cabbage to the basket.
+12 The basket is in the basement.",Where will Jackson look for the cabbage?,basket,"basket,envelope"
+"1 Liam entered the garage.
+2 Benjamin entered the living_room.
+3 Ava entered the living_room.
+4 The dress is in the bottle.
+5 The bottle is in the living_room.
+6 Liam dislikes the cabbage.
+7 Benjamin exited the living_room.
+8 Benjamin entered the living_room.
+9 Ava moved the dress to the basket.
+10 The basket is in the living_room.",Where will Benjamin look for the dress?,basket,"bottle,basket"
+"1 Jackson likes the belt.
+2 Jackson entered the bathroom.
+3 Emma dislikes the sweatshirt.
+4 Emma entered the garden.
+5 James entered the garden.
+6 The cucumber is in the bottle.
+7 The bottle is in the garden.
+8 James moved the cucumber to the crate.
+9 The crate is in the garden.
+10 Emma exited the garden.
+11 James exited the garden.
+12 Jackson exited the bathroom.
+13 Emma entered the bathroom.",Where will Emma look for the cucumber?,crate,"bottle,crate"
+"1 Benjamin entered the TV_room.
+2 Isabella entered the TV_room.
+3 The pumpkin is in the envelope.
+4 The envelope is in the TV_room.
+5 Isabella exited the TV_room.
+6 Benjamin moved the pumpkin to the cupboard.
+7 The cupboard is in the TV_room.",Where will Isabella look for the pumpkin?,envelope,"cupboard,envelope"
+"1 Jacob entered the garage.
+2 Noah entered the garden.
+3 Chloe entered the garage.
+4 Noah exited the garden.
+5 The cherry is in the bottle.
+6 The bottle is in the garage.
+7 Noah loves the undershirt.
+8 Jacob exited the garage.
+9 Noah dislikes the peach.
+10 Chloe moved the cherry to the basket.
+11 The basket is in the garage.",Where will Jacob look for the cherry?,bottle,"bottle,basket"
+"1 Ethan likes the dress.
+2 Benjamin entered the basement.
+3 Ethan entered the basement.
+4 The celery is in the box.
+5 The box is in the basement.
+6 James entered the playroom.
+7 Ethan moved the celery to the basket.
+8 The basket is in the basement.
+9 James exited the playroom.
+10 Benjamin exited the basement.",Where will Benjamin look for the celery?,basket,"box,basket"
+"1 Evelyn entered the basement.
+2 Abigail entered the basement.
+3 The lime is in the box.
+4 The box is in the basement.
+5 Evelyn exited the basement.
+6 Abigail moved the lime to the envelope.
+7 The envelope is in the basement.
+8 Abigail exited the basement.
+9 Chloe entered the basement.
+10 Abigail dislikes the turnip.
+11 Evelyn entered the bathroom.",Where will Evelyn look for the lime?,box,"envelope,box"
+"1 Noah entered the garage.
+2 Elizabeth entered the garage.
+3 The dress is in the treasure_chest.
+4 The treasure_chest is in the garage.
+5 Noah exited the garage.
+6 Elizabeth moved the dress to the suitcase.
+7 The suitcase is in the garage.
+8 Hunter entered the garage.
+9 Noah hates the melon.
+10 Hunter exited the garage.
+11 Elizabeth exited the garage.
+12 Noah entered the living_room.",Where will Noah look for the dress?,treasure_chest,"treasure_chest,suitcase"
+"1 Charlotte entered the hallway.
+2 Mila entered the hallway.
+3 The socks is in the crate.
+4 The crate is in the hallway.
+5 Mila moved the socks to the basket.
+6 The basket is in the hallway.
+7 Charlotte exited the hallway.
+8 Charlotte entered the hallway.
+9 Charlotte likes the underpants.",Where will Charlotte look for the socks?,basket,"crate,basket"
+"1 Emma entered the garage.
+2 Emily entered the garage.
+3 Alexander hates the watermelon.
+4 The t-shirt is in the treasure_chest.
+5 The treasure_chest is in the garage.
+6 Emma exited the garage.
+7 Emily likes the t-shirt.
+8 Emma entered the bedroom.
+9 Alexander entered the garage.
+10 Alexander exited the garage.
+11 Emily moved the t-shirt to the bucket.
+12 The bucket is in the garage.",Where will Emma look for the t-shirt?,treasure_chest,"bucket,treasure_chest"
+"1 Jackson entered the master_bedroom.
+2 Isabella entered the master_bedroom.
+3 Hunter entered the master_bedroom.
+4 Jackson exited the master_bedroom.
+5 The raincoat is in the basket.
+6 The basket is in the master_bedroom.
+7 Hunter exited the master_bedroom.
+8 Isabella moved the raincoat to the container.
+9 The container is in the master_bedroom.",Where will Hunter look for the raincoat?,basket,"basket,container"
+"1 Aiden entered the attic.
+2 Jayden entered the attic.
+3 Aiden dislikes the carrot.
+4 The eggplant is in the treasure_chest.
+5 The treasure_chest is in the attic.
+6 Jayden exited the attic.
+7 Elizabeth entered the playroom.
+8 Jayden entered the playroom.
+9 Aiden dislikes the sweet_potato.
+10 Aiden moved the eggplant to the box.
+11 The box is in the attic.",Where will Jayden look for the eggplant?,treasure_chest,"box,treasure_chest"
+"1 Mason entered the workshop.
+2 Lucas entered the workshop.
+3 Alexander entered the workshop.
+4 The lettuce is in the cupboard.
+5 The cupboard is in the workshop.
+6 Alexander dislikes the peas.
+7 Alexander exited the workshop.
+8 Mason moved the lettuce to the bucket.
+9 The bucket is in the workshop.
+10 Mason exited the workshop.
+11 Alexander entered the porch.",Where will Alexander look for the lettuce?,cupboard,"bucket,cupboard"
+"1 Owen entered the kitchen.
+2 Noah entered the kitchen.
+3 Aiden entered the kitchen.
+4 Noah dislikes the lettuce.
+5 Owen exited the kitchen.
+6 The t-shirt is in the crate.
+7 The crate is in the kitchen.
+8 Aiden exited the kitchen.
+9 Noah moved the t-shirt to the basket.
+10 The basket is in the kitchen.",Where will Aiden look for the t-shirt?,crate,"basket,crate"
+"1 William is in the kitchen.
+2 Elizabeth entered the kitchen.
+3 Jack entered the kitchen.
+4 The pear is in the bathtub.
+5 The bathtub is in the kitchen.
+6 William moved the pear to the container.
+7 The container is in the kitchen.
+8 Jack exited the kitchen.
+9 Elizabeth exited the kitchen.
+10 Jack entered the garage.",Where will Jack look for the pear?,container,"bathtub,container"
+"1 Avery entered the workshop.
+2 Noah entered the workshop.
+3 The sweater is in the crate.
+4 The crate is in the workshop.
+5 Noah hates the underclothes.
+6 Avery exited the workshop.
+7 Emily entered the porch.
+8 Emily exited the porch.
+9 Noah moved the sweater to the container.
+10 The container is in the workshop.
+11 Avery entered the workshop.",Where will Avery look for the sweater?,container,"crate,container"
+"1 Emily likes the t-shirt.
+2 Logan entered the living_room.
+3 Emily entered the living_room.
+4 The underclothes is in the bottle.
+5 The bottle is in the living_room.
+6 Emily moved the underclothes to the treasure_chest.
+7 The treasure_chest is in the living_room.
+8 Logan exited the living_room.
+9 Isla entered the hallway.
+10 Isla exited the hallway.
+11 Logan entered the hallway.",Where will Logan look for the underclothes?,treasure_chest,"bottle,treasure_chest"
+"1 Hannah entered the attic.
+2 Chloe entered the attic.
+3 Ava entered the attic.
+4 The jacket is in the basket.
+5 The basket is in the attic.
+6 Ava moved the jacket to the treasure_chest.
+7 The treasure_chest is in the attic.
+8 Chloe exited the attic.
+9 Ava exited the attic.
+10 Hannah exited the attic.
+11 Chloe entered the porch.",Where will Chloe look for the jacket?,treasure_chest,"basket,treasure_chest"
+"1 Emma entered the den.
+2 Hunter entered the den.
+3 The grapefruit is in the container.
+4 The container is in the den.
+5 Emma moved the grapefruit to the treasure_chest.
+6 The treasure_chest is in the den.
+7 Hunter exited the den.
+8 Emma exited the den.
+9 Hunter entered the den.",Where will Emma look for the grapefruit?,treasure_chest,"container,treasure_chest"
+"1 William dislikes the grapes.
+2 Avery entered the office.
+3 Alexander entered the office.
+4 Avery exited the office.
+5 William entered the office.
+6 The boots is in the pantry.
+7 The pantry is in the office.
+8 Avery dislikes the apple.
+9 Alexander exited the office.
+10 William moved the boots to the bathtub.
+11 The bathtub is in the office.",Where will Alexander look for the boots?,pantry,"bathtub,pantry"
+"1 Emily entered the garden.
+2 Emily likes the gloves.
+3 Oliver is in the garden.
+4 The celery is in the container.
+5 The container is in the garden.
+6 Oliver loves the slippers.
+7 Oliver moved the celery to the suitcase.
+8 The suitcase is in the garden.
+9 Emily exited the garden.",Where will Emily look for the celery?,suitcase,"suitcase,container"
+"1 Nathan entered the patio.
+2 Aiden entered the patio.
+3 The turnip is in the crate.
+4 The crate is in the patio.
+5 Hunter entered the patio.
+6 Nathan exited the patio.
+7 Nathan entered the garage.
+8 Hunter exited the patio.
+9 Aiden moved the turnip to the container.
+10 The container is in the patio.",Where will Nathan look for the turnip?,crate,"container,crate"
+"1 Isabella entered the cellar.
+2 Isla entered the lounge.
+3 Noah entered the lounge.
+4 The suit is in the bathtub.
+5 The bathtub is in the lounge.
+6 Noah exited the lounge.
+7 Isla moved the suit to the pantry.
+8 The pantry is in the lounge.
+9 Isabella exited the cellar.
+10 Isla dislikes the banana.
+11 Isla exited the lounge.
+12 Noah entered the cellar.",Where will Noah look for the suit?,bathtub,"pantry,bathtub"
+"1 Mason entered the garage.
+2 Hunter entered the garage.
+3 The hat is in the bottle.
+4 The bottle is in the garage.
+5 Mason exited the garage.
+6 Hunter moved the hat to the pantry.
+7 The pantry is in the garage.",Where will Mason look for the hat?,bottle,"pantry,bottle"
+"1 Amelia entered the hall.
+2 Logan entered the hall.
+3 The cap is in the container.
+4 The container is in the hall.
+5 Logan moved the cap to the drawer.
+6 The drawer is in the hall.
+7 Emma entered the hall.
+8 Emma exited the hall.
+9 Amelia exited the hall.
+10 Logan exited the hall.
+11 Amelia entered the hall.",Where will Logan look for the cap?,drawer,"container,drawer"
+"1 Avery entered the master_bedroom.
+2 Ava entered the master_bedroom.
+3 The undershirt is in the pantry.
+4 The pantry is in the master_bedroom.
+5 Ava moved the undershirt to the drawer.
+6 The drawer is in the master_bedroom.
+7 Noah entered the master_bedroom.
+8 Avery exited the master_bedroom.
+9 Ava exited the master_bedroom.
+10 Noah exited the master_bedroom.
+11 Avery entered the hallway.
+12 Ava loves the underclothes.",Where will Ava look for the undershirt?,drawer,"pantry,drawer"
+"1 Lily loves the pajamas.
+2 Logan entered the sunroom.
+3 Mia entered the sunroom.
+4 Lily entered the sunroom.
+5 The carrot is in the treasure_chest.
+6 The treasure_chest is in the sunroom.
+7 Mia exited the sunroom.
+8 Lily exited the sunroom.
+9 Mia dislikes the orange.
+10 Logan moved the carrot to the container.
+11 The container is in the sunroom.",Where will Mia look for the carrot?,treasure_chest,"container,treasure_chest"
+"1 Evelyn entered the bedroom.
+2 Ava entered the bedroom.
+3 Evelyn dislikes the gloves.
+4 The gloves is in the suitcase.
+5 The suitcase is in the bedroom.
+6 Evelyn moved the gloves to the pantry.
+7 The pantry is in the bedroom.
+8 Evelyn loves the tangerine.
+9 Ava exited the bedroom.
+10 Ava entered the basement.",Where will Ava look for the gloves?,pantry,"pantry,suitcase"
+"1 Mila entered the staircase.
+2 James entered the staircase.
+3 The skirt is in the box.
+4 The box is in the staircase.
+5 James exited the staircase.
+6 Mila moved the skirt to the bucket.
+7 The bucket is in the staircase.",Where will James look for the skirt?,box,"bucket,box"
+"1 Avery entered the crawlspace.
+2 Logan entered the crawlspace.
+3 The grapefruit is in the box.
+4 The box is in the crawlspace.
+5 Logan hates the celery.
+6 Logan exited the crawlspace.
+7 Avery moved the grapefruit to the cupboard.
+8 The cupboard is in the crawlspace.",Where will Logan look for the grapefruit?,box,"cupboard,box"
+"1 Benjamin entered the study.
+2 Logan entered the study.
+3 The hat is in the envelope.
+4 The envelope is in the study.
+5 Benjamin exited the study.
+6 Logan moved the hat to the basket.
+7 The basket is in the study.
+8 Benjamin hates the skirt.
+9 Alexander entered the master_bedroom.",Where will Benjamin look for the hat?,envelope,"envelope,basket"
+"1 Elizabeth entered the garage.
+2 Chloe entered the garage.
+3 Liam entered the garage.
+4 The sweater is in the suitcase.
+5 The suitcase is in the garage.
+6 Chloe moved the sweater to the container.
+7 The container is in the garage.
+8 Liam exited the garage.
+9 Chloe hates the undershirt.
+10 Chloe exited the garage.
+11 Liam entered the garage.",Where will Chloe look for the sweater?,container,"container,suitcase"
+"1 Elizabeth entered the office.
+2 Isabella entered the office.
+3 The lemon is in the cupboard.
+4 The cupboard is in the office.
+5 Elizabeth exited the office.
+6 Elizabeth likes the onion.
+7 Isabella dislikes the lime.
+8 Isabella moved the lemon to the envelope.
+9 The envelope is in the office.",Where will Elizabeth look for the lemon?,cupboard,"cupboard,envelope"
+"1 Benjamin entered the kitchen.
+2 Jack likes the broccoli.
+3 Jack entered the kitchen.
+4 The stockings is in the box.
+5 The box is in the kitchen.
+6 Jack exited the kitchen.
+7 Benjamin moved the stockings to the pantry.
+8 The pantry is in the kitchen.",Where will Jack look for the stockings?,box,"pantry,box"
+"1 Jack entered the crawlspace.
+2 Jack exited the crawlspace.
+3 Avery entered the crawlspace.
+4 Ava entered the crawlspace.
+5 The pajamas is in the suitcase.
+6 The suitcase is in the crawlspace.
+7 Avery exited the crawlspace.
+8 Ava moved the pajamas to the drawer.
+9 The drawer is in the crawlspace.",Where will Avery look for the pajamas?,suitcase,"suitcase,drawer"
+"1 Sophia entered the master_bedroom.
+2 Ava entered the master_bedroom.
+3 The underpants is in the bottle.
+4 The bottle is in the master_bedroom.
+5 Sophia exited the master_bedroom.
+6 Ava moved the underpants to the bathtub.
+7 The bathtub is in the master_bedroom.
+8 Sophia entered the master_bedroom.",Where will Ava look for the underpants?,bathtub,"bathtub,bottle"
+"1 Lily entered the living_room.
+2 Carter entered the living_room.
+3 The dress is in the basket.
+4 The basket is in the living_room.
+5 Lily moved the dress to the bottle.
+6 The bottle is in the living_room.
+7 Hannah entered the office.
+8 Carter exited the living_room.
+9 Carter entered the office.",Where will Carter look for the dress?,bottle,"basket,bottle"
+"1 Ava entered the study.
+2 Noah entered the study.
+3 Ava loves the persimmon.
+4 Oliver entered the study.
+5 Ava loves the lettuce.
+6 The lettuce is in the bathtub.
+7 The bathtub is in the study.
+8 Noah exited the study.
+9 Oliver moved the lettuce to the bottle.
+10 The bottle is in the study.",Where will Noah look for the lettuce?,bathtub,"bathtub,bottle"
+"1 Isabella loves the beans.
+2 Hunter entered the cellar.
+3 Mason entered the cellar.
+4 Hunter exited the cellar.
+5 Isabella entered the cellar.
+6 The turnip is in the crate.
+7 The crate is in the cellar.
+8 Isabella exited the cellar.
+9 Mason moved the turnip to the bottle.
+10 The bottle is in the cellar.",Where will Isabella look for the turnip?,crate,"crate,bottle"
+"1 Mia entered the bathroom.
+2 Noah entered the bathroom.
+3 Evelyn loves the raincoat.
+4 The onion is in the envelope.
+5 The envelope is in the bathroom.
+6 Mia exited the bathroom.
+7 Noah moved the onion to the cupboard.
+8 The cupboard is in the bathroom.",Where will Mia look for the onion?,envelope,"envelope,cupboard"
+"1 Jackson loves the broccoli.
+2 Liam entered the front_yard.
+3 Jackson entered the front_yard.
+4 Owen entered the front_yard.
+5 Jackson exited the front_yard.
+6 The radish is in the crate.
+7 The crate is in the front_yard.
+8 Liam exited the front_yard.
+9 Owen moved the radish to the bottle.
+10 The bottle is in the front_yard.",Where will Liam look for the radish?,crate,"crate,bottle"
+"1 Lucas entered the sunroom.
+2 Alexander loves the broccoli.
+3 Chloe loves the boots.
+4 Chloe is in the sunroom.
+5 The undershirt is in the bucket.
+6 The bucket is in the sunroom.
+7 Chloe moved the undershirt to the basket.
+8 The basket is in the sunroom.
+9 Lucas exited the sunroom.",Where will Chloe look for the undershirt?,basket,"basket,bucket"
+"1 Hannah entered the garden.
+2 Abigail entered the closet.
+3 Lily loves the onion.
+4 Lily entered the garden.
+5 The eggplant is in the treasure_chest.
+6 The treasure_chest is in the garden.
+7 Hannah moved the eggplant to the bucket.
+8 The bucket is in the garden.
+9 Abigail exited the closet.
+10 Lily likes the pear.
+11 Lily exited the garden.",Where will Lily look for the eggplant?,bucket,"bucket,treasure_chest"
+"1 Logan entered the office.
+2 Carter entered the office.
+3 Logan likes the watermelon.
+4 The tie is in the bucket.
+5 The bucket is in the office.
+6 Olivia entered the office.
+7 Logan moved the tie to the bathtub.
+8 The bathtub is in the office.
+9 Carter exited the office.
+10 Olivia exited the office.
+11 Logan exited the office.
+12 Carter entered the garage.",Where will Logan look for the tie?,bathtub,"bathtub,bucket"
+"1 William entered the attic.
+2 Mason entered the attic.
+3 The banana is in the pantry.
+4 The pantry is in the attic.
+5 William exited the attic.
+6 Mason moved the banana to the envelope.
+7 The envelope is in the attic.
+8 Aria entered the pantry.",Where will William look for the banana?,pantry,"pantry,envelope"
+"1 Emma entered the laundry.
+2 Mila entered the laundry.
+3 Lily entered the laundry.
+4 The cucumber is in the pantry.
+5 The pantry is in the laundry.
+6 Mila moved the cucumber to the basket.
+7 The basket is in the laundry.
+8 Lily exited the laundry.
+9 Emma exited the laundry.
+10 Mila exited the laundry.
+11 Lily entered the laundry.",Where will Lily look for the cucumber?,basket,"basket,pantry"
+"1 Isabella entered the dining_room.
+2 Jackson entered the dining_room.
+3 Carter entered the dining_room.
+4 The underclothes is in the bottle.
+5 The bottle is in the dining_room.
+6 Isabella exited the dining_room.
+7 Jackson moved the underclothes to the drawer.
+8 The drawer is in the dining_room.
+9 Isabella entered the garden.",Where will Isabella look for the underclothes?,bottle,"bottle,drawer"
+"1 Amelia entered the bedroom.
+2 Alexander hates the eggplant.
+3 Jackson entered the bedroom.
+4 Jackson exited the bedroom.
+5 Alexander entered the bedroom.
+6 The lime is in the treasure_chest.
+7 The treasure_chest is in the bedroom.
+8 Amelia moved the lime to the cupboard.
+9 The cupboard is in the bedroom.
+10 Alexander hates the cherry.
+11 Alexander exited the bedroom.",Where will Alexander look for the lime?,cupboard,"cupboard,treasure_chest"
+"1 Sophia entered the back_yard.
+2 Noah entered the back_yard.
+3 The corn is in the box.
+4 The box is in the back_yard.
+5 Sophia exited the back_yard.
+6 Sophia loves the suit.
+7 Noah moved the corn to the bucket.
+8 The bucket is in the back_yard.
+9 James entered the back_yard.
+10 Noah exited the back_yard.
+11 James exited the back_yard.
+12 Sophia entered the dining_room.",Where will Sophia look for the corn?,box,"bucket,box"
+"1 Elizabeth entered the porch.
+2 Ava entered the porch.
+3 The peach is in the box.
+4 The box is in the porch.
+5 Emma entered the bedroom.
+6 Elizabeth exited the porch.
+7 Ava moved the peach to the bucket.
+8 The bucket is in the porch.",Where will Elizabeth look for the peach?,box,"box,bucket"
+"1 Emily entered the garage.
+2 Noah entered the garage.
+3 The sweet_potato is in the drawer.
+4 The drawer is in the garage.
+5 Emily loves the stockings.
+6 Noah moved the sweet_potato to the crate.
+7 The crate is in the garage.
+8 Noah likes the cabbage.
+9 Emily exited the garage.",Where will Noah look for the sweet_potato?,crate,"drawer,crate"
+"1 Olivia loves the skirt.
+2 Olivia entered the workshop.
+3 Nathan is in the workshop.
+4 Jacob entered the workshop.
+5 Jacob exited the workshop.
+6 The peach is in the basket.
+7 The basket is in the workshop.
+8 Jacob dislikes the stockings.
+9 Olivia moved the peach to the box.
+10 The box is in the workshop.
+11 Nathan exited the workshop.",Where will Nathan look for the peach?,box,"basket,box"
+"1 Ethan entered the porch.
+2 Jack entered the den.
+3 Jack exited the den.
+4 Evelyn entered the porch.
+5 The eggplant is in the envelope.
+6 The envelope is in the porch.
+7 Evelyn exited the porch.
+8 Ethan moved the eggplant to the bucket.
+9 The bucket is in the porch.",Where will Evelyn look for the eggplant?,envelope,"envelope,bucket"
+"1 Logan entered the bedroom.
+2 Nathan entered the bedroom.
+3 The sweatshirt is in the crate.
+4 The crate is in the bedroom.
+5 Logan exited the bedroom.
+6 Nathan moved the sweatshirt to the container.
+7 The container is in the bedroom.
+8 Nathan exited the bedroom.
+9 Logan entered the workshop.",Where will Logan look for the sweatshirt?,crate,"crate,container"
+"1 Alexander entered the staircase.
+2 Lucas dislikes the raincoat.
+3 Liam entered the staircase.
+4 Liam dislikes the watermelon.
+5 Lucas entered the staircase.
+6 The celery is in the container.
+7 The container is in the staircase.
+8 Liam moved the celery to the suitcase.
+9 The suitcase is in the staircase.
+10 Alexander exited the staircase.",Where will Liam look for the celery?,suitcase,"container,suitcase"
+"1 Mila entered the staircase.
+2 Avery entered the staircase.
+3 Avery hates the shirt.
+4 The t-shirt is in the drawer.
+5 The drawer is in the staircase.
+6 Mila exited the staircase.
+7 Avery moved the t-shirt to the cupboard.
+8 The cupboard is in the staircase.
+9 Avery exited the staircase.
+10 Mila entered the playroom.",Where will Mila look for the t-shirt?,drawer,"drawer,cupboard"
+"1 Oliver entered the office.
+2 Carter entered the office.
+3 Owen loves the corn.
+4 The tangerine is in the envelope.
+5 The envelope is in the office.
+6 Owen entered the office.
+7 Oliver moved the tangerine to the treasure_chest.
+8 The treasure_chest is in the office.
+9 Carter exited the office.
+10 Owen hates the lettuce.",Where will Oliver look for the tangerine?,treasure_chest,"envelope,treasure_chest"
+"1 Oliver dislikes the onion.
+2 Isabella entered the master_bedroom.
+3 Abigail likes the corn.
+4 Abigail entered the study.
+5 Oliver entered the study.
+6 The cherry is in the suitcase.
+7 The suitcase is in the study.
+8 Abigail exited the study.
+9 Oliver moved the cherry to the container.
+10 The container is in the study.",Where will Abigail look for the cherry?,suitcase,"suitcase,container"
+"1 Mia entered the patio.
+2 Owen entered the patio.
+3 The jacket is in the bathtub.
+4 The bathtub is in the patio.
+5 Owen exited the patio.
+6 Mia moved the jacket to the crate.
+7 The crate is in the patio.
+8 Ava entered the patio.",Where will Owen look for the jacket?,bathtub,"crate,bathtub"
+"1 Isla entered the pantry.
+2 Charlotte entered the pantry.
+3 The suit is in the cupboard.
+4 The cupboard is in the pantry.
+5 Isla dislikes the grapefruit.
+6 Charlotte moved the suit to the drawer.
+7 The drawer is in the pantry.
+8 Isla exited the pantry.
+9 Jackson entered the bathroom.
+10 Charlotte exited the pantry.
+11 Isla entered the bathroom.",Where will Charlotte look for the suit?,drawer,"cupboard,drawer"
+"1 Aiden entered the hallway.
+2 Carter entered the hallway.
+3 The scarf is in the suitcase.
+4 The suitcase is in the hallway.
+5 Jackson hates the tomato.
+6 Jackson entered the hallway.
+7 Aiden moved the scarf to the treasure_chest.
+8 The treasure_chest is in the hallway.
+9 Carter exited the hallway.
+10 Aiden exited the hallway.
+11 Carter entered the closet.",Where will Carter look for the scarf?,treasure_chest,"treasure_chest,suitcase"
+"1 Mila entered the bathroom.
+2 Alexander entered the bathroom.
+3 The lemon is in the box.
+4 The box is in the bathroom.
+5 Emily entered the bathroom.
+6 Emily exited the bathroom.
+7 Emily dislikes the melon.
+8 Mila exited the bathroom.
+9 Alexander moved the lemon to the crate.
+10 The crate is in the bathroom.",Where will Mila look for the lemon?,box,"box,crate"
+"1 Mason loves the persimmon.
+2 Mason entered the office.
+3 Aiden is in the office.
+4 The belt is in the drawer.
+5 The drawer is in the office.
+6 Aiden exited the office.
+7 Liam dislikes the underclothes.
+8 Aiden entered the den.
+9 Mason moved the belt to the cupboard.
+10 The cupboard is in the office.",Where will Aiden look for the belt?,drawer,"drawer,cupboard"
+"1 Isla entered the den.
+2 William entered the hallway.
+3 Isla likes the sweet_potato.
+4 Hunter entered the hallway.
+5 The suit is in the crate.
+6 The crate is in the hallway.
+7 William moved the suit to the container.
+8 The container is in the hallway.
+9 Hunter exited the hallway.",Where will William look for the suit?,container,"container,crate"
+"1 Owen entered the kitchen.
+2 Emily entered the kitchen.
+3 Emily hates the raincoat.
+4 The banana is in the cupboard.
+5 The cupboard is in the kitchen.
+6 Sophia entered the kitchen.
+7 Sophia exited the kitchen.
+8 Emily moved the banana to the container.
+9 The container is in the kitchen.
+10 Sophia dislikes the onion.
+11 Owen exited the kitchen.
+12 Owen entered the garage.",Where will Emily look for the banana?,container,"cupboard,container"
+"1 Nathan entered the hall.
+2 Lily entered the hall.
+3 The gloves is in the treasure_chest.
+4 The treasure_chest is in the hall.
+5 Nathan exited the hall.
+6 Lily moved the gloves to the bucket.
+7 The bucket is in the hall.
+8 Lily exited the hall.
+9 Nathan entered the hallway.
+10 Isla entered the hall.",Where will Nathan look for the gloves?,treasure_chest,"bucket,treasure_chest"
+"1 Aiden entered the laundry.
+2 Aria entered the laundry.
+3 Nathan entered the laundry.
+4 The turnip is in the drawer.
+5 The drawer is in the laundry.
+6 Aiden moved the turnip to the bottle.
+7 The bottle is in the laundry.
+8 Nathan exited the laundry.
+9 Nathan hates the strawberry.",Where will Nathan look for the turnip?,bottle,"drawer,bottle"
+"1 Mia entered the office.
+2 Evelyn entered the garden.
+3 Ava entered the office.
+4 The gloves is in the cupboard.
+5 The cupboard is in the office.
+6 Mia exited the office.
+7 Ava moved the gloves to the box.
+8 The box is in the office.
+9 Ava hates the lettuce.",Where will Mia look for the gloves?,cupboard,"cupboard,box"
+"1 Jacob entered the garage.
+2 Emma entered the garage.
+3 The underclothes is in the box.
+4 The box is in the garage.
+5 Jacob exited the garage.
+6 Aria entered the garage.
+7 Emma dislikes the pumpkin.
+8 Jacob likes the underclothes.
+9 Aria exited the garage.
+10 Emma moved the underclothes to the suitcase.
+11 The suitcase is in the garage.",Where will Jacob look for the underclothes?,box,"suitcase,box"
+"1 William likes the scarf.
+2 Jacob entered the kitchen.
+3 Nathan entered the TV_room.
+4 William entered the TV_room.
+5 Nathan loves the tie.
+6 The broccoli is in the bottle.
+7 The bottle is in the TV_room.
+8 Jacob exited the kitchen.
+9 Nathan exited the TV_room.
+10 William moved the broccoli to the envelope.
+11 The envelope is in the TV_room.",Where will Nathan look for the broccoli?,bottle,"envelope,bottle"
+"1 Jayden entered the patio.
+2 Olivia hates the sweater.
+3 Isabella entered the patio.
+4 Olivia entered the patio.
+5 The green_pepper is in the pantry.
+6 The pantry is in the patio.
+7 Isabella exited the patio.
+8 Jayden moved the green_pepper to the bottle.
+9 The bottle is in the patio.",Where will Isabella look for the green_pepper?,pantry,"bottle,pantry"
+"1 James entered the living_room.
+2 Evelyn entered the living_room.
+3 The jeans is in the container.
+4 The container is in the living_room.
+5 Evelyn exited the living_room.
+6 Evelyn entered the living_room.
+7 James moved the jeans to the box.
+8 The box is in the living_room.",Where will Evelyn look for the jeans?,box,"box,container"
+"1 Emily entered the porch.
+2 Avery entered the porch.
+3 The pumpkin is in the treasure_chest.
+4 The treasure_chest is in the porch.
+5 Avery moved the pumpkin to the pantry.
+6 The pantry is in the porch.
+7 Emily exited the porch.
+8 Avery exited the porch.
+9 Emily entered the back_yard.",Where will Emily look for the pumpkin?,pantry,"treasure_chest,pantry"
+"1 Ava entered the TV_room.
+2 Hannah entered the living_room.
+3 Ella entered the TV_room.
+4 The strawberry is in the basket.
+5 The basket is in the TV_room.
+6 Ava exited the TV_room.
+7 Ella moved the strawberry to the cupboard.
+8 The cupboard is in the TV_room.",Where will Ava look for the strawberry?,basket,"basket,cupboard"
+"1 Lily entered the patio.
+2 Mia entered the patio.
+3 The pear is in the container.
+4 The container is in the patio.
+5 Mia exited the patio.
+6 Hunter entered the patio.
+7 Hunter exited the patio.
+8 Lily moved the pear to the crate.
+9 The crate is in the patio.",Where will Mia look for the pear?,container,"crate,container"
+"1 James entered the office.
+2 Nathan hates the beans.
+3 Owen entered the office.
+4 The shoes is in the bottle.
+5 The bottle is in the office.
+6 James moved the shoes to the envelope.
+7 The envelope is in the office.
+8 Owen exited the office.
+9 James exited the office.
+10 Owen entered the workshop.
+11 Nathan entered the office.",Where will Owen look for the shoes?,envelope,"envelope,bottle"
+"1 Lucas entered the garage.
+2 Benjamin entered the garage.
+3 The plum is in the bathtub.
+4 The bathtub is in the garage.
+5 Benjamin likes the suit.
+6 Lucas exited the garage.
+7 Benjamin moved the plum to the crate.
+8 The crate is in the garage.
+9 Lucas entered the garage.",Where will Lucas look for the plum?,crate,"crate,bathtub"
+"1 Chloe entered the garage.
+2 Hunter entered the garage.
+3 The plum is in the drawer.
+4 The drawer is in the garage.
+5 Hunter exited the garage.
+6 Chloe moved the plum to the bathtub.
+7 The bathtub is in the garage.
+8 Chloe hates the suit.
+9 Chloe exited the garage.
+10 Hunter dislikes the stockings.
+11 Hunter entered the porch.",Where will Hunter look for the plum?,drawer,"drawer,bathtub"
+"1 Jacob entered the cellar.
+2 Chloe entered the cellar.
+3 The pajamas is in the bucket.
+4 The bucket is in the cellar.
+5 Chloe moved the pajamas to the bottle.
+6 The bottle is in the cellar.
+7 Jacob exited the cellar.
+8 Mason loves the melon.
+9 Mason hates the trousers.
+10 Chloe exited the cellar.
+11 Jacob entered the sunroom.",Where will Chloe look for the pajamas?,bottle,"bucket,bottle"
+"1 Ethan entered the office.
+2 Ethan exited the office.
+3 Carter entered the office.
+4 Emily entered the office.
+5 The undershirt is in the crate.
+6 The crate is in the office.
+7 Carter exited the office.
+8 Carter entered the pantry.
+9 Emily loves the grapes.
+10 Emily moved the undershirt to the pantry.
+11 The pantry is in the office.",Where will Carter look for the undershirt?,crate,"pantry,crate"
+"1 Oliver entered the bathroom.
+2 Alexander entered the bathroom.
+3 The orange is in the crate.
+4 The crate is in the bathroom.
+5 Oliver exited the bathroom.
+6 Alexander moved the orange to the pantry.
+7 The pantry is in the bathroom.
+8 Oliver entered the bathroom.
+9 Alexander likes the cap.",Where will Alexander look for the orange?,pantry,"pantry,crate"
+"1 James entered the den.
+2 Mila entered the den.
+3 Abigail entered the garden.
+4 Abigail exited the garden.
+5 The onion is in the cupboard.
+6 The cupboard is in the den.
+7 Abigail hates the gloves.
+8 James exited the den.
+9 Mila moved the onion to the pantry.
+10 The pantry is in the den.",Where will James look for the onion?,cupboard,"pantry,cupboard"
+"1 William entered the front_yard.
+2 Nathan entered the front_yard.
+3 The grapefruit is in the box.
+4 The box is in the front_yard.
+5 Jack entered the basement.
+6 Nathan moved the grapefruit to the envelope.
+7 The envelope is in the front_yard.
+8 Jack exited the basement.
+9 William exited the front_yard.
+10 William entered the front_yard.",Where will William look for the grapefruit?,envelope,"envelope,box"
+"1 Jacob entered the attic.
+2 Aria entered the attic.
+3 Jacob dislikes the hat.
+4 James entered the attic.
+5 Jacob exited the attic.
+6 The undershirt is in the treasure_chest.
+7 The treasure_chest is in the attic.
+8 Aria loves the carrot.
+9 James exited the attic.
+10 Aria moved the undershirt to the envelope.
+11 The envelope is in the attic.
+12 Aria exited the attic.
+13 James entered the living_room.",Where will James look for the undershirt?,treasure_chest,"treasure_chest,envelope"
+"1 Owen entered the study.
+2 James entered the study.
+3 Noah hates the cap.
+4 The scarf is in the container.
+5 The container is in the study.
+6 James moved the scarf to the envelope.
+7 The envelope is in the study.
+8 Owen exited the study.
+9 Owen entered the back_yard.",Where will Owen look for the scarf?,envelope,"container,envelope"
+"1 William entered the lounge.
+2 Emma entered the lounge.
+3 Emily entered the lounge.
+4 The peach is in the bucket.
+5 The bucket is in the lounge.
+6 William moved the peach to the treasure_chest.
+7 The treasure_chest is in the lounge.
+8 Emily exited the lounge.
+9 William exited the lounge.
+10 Emily entered the playroom.",Where will Emily look for the peach?,treasure_chest,"treasure_chest,bucket"
+"1 Oliver entered the hall.
+2 Owen entered the hall.
+3 The sweater is in the treasure_chest.
+4 The treasure_chest is in the hall.
+5 Owen likes the shirt.
+6 Owen likes the peach.
+7 Owen exited the hall.
+8 Oliver moved the sweater to the drawer.
+9 The drawer is in the hall.",Where will Owen look for the sweater?,treasure_chest,"drawer,treasure_chest"
+"1 Jayden entered the crawlspace.
+2 Jackson entered the attic.
+3 Jayden exited the crawlspace.
+4 Emma entered the attic.
+5 The beans is in the envelope.
+6 The envelope is in the attic.
+7 Emma exited the attic.
+8 Jackson moved the beans to the drawer.
+9 The drawer is in the attic.
+10 Jackson exited the attic.
+11 Emma entered the crawlspace.",Where will Emma look for the beans?,envelope,"envelope,drawer"
+"1 Carter entered the back_yard.
+2 Mason entered the back_yard.
+3 The green_pepper is in the crate.
+4 The crate is in the back_yard.
+5 Carter exited the back_yard.
+6 Carter entered the pantry.
+7 Mason moved the green_pepper to the bathtub.
+8 The bathtub is in the back_yard.",Where will Carter look for the green_pepper?,crate,"crate,bathtub"
+"1 James entered the den.
+2 Evelyn loves the scarf.
+3 Evelyn entered the den.
+4 Evelyn hates the celery.
+5 The cap is in the box.
+6 The box is in the den.
+7 James moved the cap to the bottle.
+8 The bottle is in the den.
+9 Evelyn exited the den.",Where will James look for the cap?,bottle,"box,bottle"
+"1 Alexander entered the kitchen.
+2 Emily entered the kitchen.
+3 The eggplant is in the drawer.
+4 The drawer is in the kitchen.
+5 Alexander moved the eggplant to the container.
+6 The container is in the kitchen.
+7 Owen entered the kitchen.
+8 Owen exited the kitchen.
+9 Emily exited the kitchen.",Where will Emily look for the eggplant?,container,"container,drawer"
+"1 Amelia hates the radish.
+2 Sophia entered the patio.
+3 Evelyn entered the patio.
+4 Amelia entered the patio.
+5 The carrot is in the container.
+6 The container is in the patio.
+7 Evelyn moved the carrot to the envelope.
+8 The envelope is in the patio.
+9 Sophia exited the patio.
+10 Evelyn exited the patio.
+11 Sophia entered the patio.",Where will Sophia look for the carrot?,envelope,"envelope,container"
+"1 Oliver entered the pantry.
+2 Aiden entered the pantry.
+3 The tangerine is in the suitcase.
+4 The suitcase is in the pantry.
+5 Aiden exited the pantry.
+6 Aiden entered the cellar.
+7 Oliver moved the tangerine to the pantry.
+8 The pantry is in the pantry.
+9 Mia likes the lime.",Where will Aiden look for the tangerine?,suitcase,"pantry,suitcase"
+"1 Elizabeth entered the sunroom.
+2 Ethan hates the corn.
+3 Ethan likes the sweater.
+4 Ethan entered the sunroom.
+5 Logan entered the sunroom.
+6 Logan exited the sunroom.
+7 The lemon is in the bottle.
+8 The bottle is in the sunroom.
+9 Ethan exited the sunroom.
+10 Ethan entered the sunroom.
+11 Elizabeth moved the lemon to the treasure_chest.
+12 The treasure_chest is in the sunroom.",Where will Elizabeth look for the lemon?,treasure_chest,"treasure_chest,bottle"
+"1 Logan entered the staircase.
+2 Isla entered the staircase.
+3 The persimmon is in the container.
+4 The container is in the staircase.
+5 Benjamin entered the staircase.
+6 Benjamin exited the staircase.
+7 Isla exited the staircase.
+8 Isla likes the boots.
+9 Logan moved the persimmon to the box.
+10 The box is in the staircase.
+11 Isla entered the playroom.",Where will Isla look for the persimmon?,container,"box,container"
+"1 Elizabeth entered the closet.
+2 Carter entered the closet.
+3 The spinach is in the container.
+4 The container is in the closet.
+5 Carter exited the closet.
+6 Carter entered the sunroom.
+7 Elizabeth moved the spinach to the envelope.
+8 The envelope is in the closet.",Where will Carter look for the spinach?,container,"envelope,container"
+"1 Emma entered the office.
+2 Jayden entered the office.
+3 The onion is in the suitcase.
+4 The suitcase is in the office.
+5 Jayden likes the peas.
+6 Jayden moved the onion to the envelope.
+7 The envelope is in the office.
+8 Emma exited the office.
+9 Jayden exited the office.
+10 Emma entered the office.",Where will Jayden look for the onion?,envelope,"suitcase,envelope"
+"1 Owen entered the pantry.
+2 Elizabeth entered the laundry.
+3 Elizabeth exited the laundry.
+4 Avery entered the pantry.
+5 The stockings is in the suitcase.
+6 The suitcase is in the pantry.
+7 Avery moved the stockings to the drawer.
+8 The drawer is in the pantry.
+9 Owen exited the pantry.
+10 Avery dislikes the strawberry.",Where will Avery look for the stockings?,drawer,"drawer,suitcase"
+"1 Ella loves the tomato.
+2 Aria entered the attic.
+3 Ella entered the office.
+4 Isla entered the office.
+5 The pineapple is in the container.
+6 The container is in the office.
+7 Ella hates the belt.
+8 Isla moved the pineapple to the crate.
+9 The crate is in the office.
+10 Ella exited the office.
+11 Aria exited the attic.
+12 Isla exited the office.
+13 Ella entered the attic.",Where will Ella look for the pineapple?,crate,"container,crate"
+"1 Benjamin entered the bedroom.
+2 Nathan entered the basement.
+3 Evelyn entered the bedroom.
+4 Nathan exited the basement.
+5 The hat is in the treasure_chest.
+6 The treasure_chest is in the bedroom.
+7 Benjamin exited the bedroom.
+8 Evelyn loves the peas.
+9 Benjamin entered the bedroom.
+10 Evelyn moved the hat to the container.
+11 The container is in the bedroom.",Where will Benjamin look for the hat?,container,"treasure_chest,container"
+"1 Mia entered the workshop.
+2 James loves the skirt.
+3 James entered the workshop.
+4 The banana is in the container.
+5 The container is in the workshop.
+6 Mia moved the banana to the pantry.
+7 The pantry is in the workshop.
+8 Lucas entered the workshop.
+9 Lucas exited the workshop.
+10 James exited the workshop.
+11 Lucas dislikes the lettuce.",Where will Mia look for the banana?,pantry,"pantry,container"
+"1 Aiden entered the dining_room.
+2 Nathan entered the dining_room.
+3 The eggplant is in the basket.
+4 The basket is in the dining_room.
+5 Aiden moved the eggplant to the bucket.
+6 The bucket is in the dining_room.
+7 Nathan exited the dining_room.
+8 Lucas entered the dining_room.
+9 Lucas exited the dining_room.
+10 Nathan entered the dining_room.",Where will Aiden look for the eggplant?,bucket,"basket,bucket"
+"1 Alexander entered the study.
+2 Aria entered the study.
+3 The grapefruit is in the drawer.
+4 The drawer is in the study.
+5 Aria exited the study.
+6 Alexander moved the grapefruit to the box.
+7 The box is in the study.",Where will Aria look for the grapefruit?,drawer,"drawer,box"
+"1 Mason entered the hallway.
+2 Nathan likes the raincoat.
+3 Nathan entered the hallway.
+4 The underpants is in the drawer.
+5 The drawer is in the hallway.
+6 Mason exited the hallway.
+7 Nathan moved the underpants to the pantry.
+8 The pantry is in the hallway.
+9 Mason dislikes the shirt.
+10 Mason entered the hallway.",Where will Nathan look for the underpants?,pantry,"drawer,pantry"
+"1 Avery entered the hallway.
+2 Amelia entered the hallway.
+3 Emily entered the hallway.
+4 The sweet_potato is in the box.
+5 The box is in the hallway.
+6 Amelia exited the hallway.
+7 Emily loves the skirt.
+8 Emily exited the hallway.
+9 Emily entered the garden.
+10 Avery moved the sweet_potato to the bathtub.
+11 The bathtub is in the hallway.",Where will Emily look for the sweet_potato?,box,"bathtub,box"
+"1 Chloe entered the garden.
+2 Aria entered the crawlspace.
+3 Alexander entered the crawlspace.
+4 The persimmon is in the bucket.
+5 The bucket is in the crawlspace.
+6 Alexander dislikes the sweet_potato.
+7 Chloe exited the garden.
+8 Alexander exited the crawlspace.
+9 Alexander entered the crawlspace.
+10 Aria moved the persimmon to the container.
+11 The container is in the crawlspace.",Where will Aria look for the persimmon?,container,"bucket,container"
+"1 Isla entered the garden.
+2 Liam entered the garden.
+3 The gloves is in the crate.
+4 The crate is in the garden.
+5 Isla moved the gloves to the bottle.
+6 The bottle is in the garden.
+7 Emily entered the basement.
+8 Liam exited the garden.
+9 Isla exited the garden.
+10 Emily exited the basement.
+11 Liam entered the basement.",Where will Isla look for the gloves?,bottle,"crate,bottle"
+"1 Ella entered the kitchen.
+2 Olivia is in the kitchen.
+3 The eggplant is in the bottle.
+4 The bottle is in the kitchen.
+5 Chloe entered the kitchen.
+6 Olivia exited the kitchen.
+7 Ella moved the eggplant to the envelope.
+8 The envelope is in the kitchen.
+9 Ella exited the kitchen.
+10 Olivia hates the jeans.
+11 Chloe exited the kitchen.
+12 Olivia entered the playroom.",Where will Olivia look for the eggplant?,bottle,"envelope,bottle"
+"1 Owen entered the workshop.
+2 William entered the workshop.
+3 The sweatshirt is in the treasure_chest.
+4 The treasure_chest is in the workshop.
+5 William exited the workshop.
+6 Owen moved the sweatshirt to the basket.
+7 The basket is in the workshop.
+8 Owen exited the workshop.
+9 Logan entered the workshop.
+10 William entered the pantry.",Where will William look for the sweatshirt?,treasure_chest,"treasure_chest,basket"
+"1 Sophia entered the closet.
+2 Logan entered the closet.
+3 Ava entered the closet.
+4 Logan loves the shoes.
+5 The lemon is in the drawer.
+6 The drawer is in the closet.
+7 Ava hates the skirt.
+8 Sophia moved the lemon to the pantry.
+9 The pantry is in the closet.
+10 Logan exited the closet.
+11 Ava exited the closet.",Where will Ava look for the lemon?,pantry,"pantry,drawer"
+"1 Owen entered the study.
+2 James entered the study.
+3 Noah hates the cap.
+4 The scarf is in the container.
+5 The container is in the study.
+6 James moved the scarf to the envelope.
+7 The envelope is in the study.
+8 Owen exited the study.
+9 Owen entered the back_yard.",Where will James look for the scarf?,envelope,"container,envelope"
+"1 James entered the patio.
+2 Emma entered the patio.
+3 The grapefruit is in the envelope.
+4 The envelope is in the patio.
+5 Emma exited the patio.
+6 James moved the grapefruit to the bathtub.
+7 The bathtub is in the patio.
+8 Evelyn hates the banana.
+9 Emma entered the den.",Where will Emma look for the grapefruit?,envelope,"envelope,bathtub"
+"1 Owen entered the workshop.
+2 Aiden entered the workshop.
+3 The pajamas is in the drawer.
+4 The drawer is in the workshop.
+5 Aiden moved the pajamas to the envelope.
+6 The envelope is in the workshop.
+7 Owen exited the workshop.
+8 Chloe loves the carrot.
+9 Chloe entered the basement.",Where will Aiden look for the pajamas?,envelope,"drawer,envelope"
+"1 Aiden entered the porch.
+2 Aiden exited the porch.
+3 Aiden loves the lettuce.
+4 Lily entered the porch.
+5 Owen entered the porch.
+6 The lettuce is in the bottle.
+7 The bottle is in the porch.
+8 Owen exited the porch.
+9 Aiden loves the asparagus.
+10 Lily moved the lettuce to the treasure_chest.
+11 The treasure_chest is in the porch.",Where will Owen look for the lettuce?,bottle,"treasure_chest,bottle"
+"1 Hannah entered the kitchen.
+2 Aiden entered the kitchen.
+3 Aiden dislikes the corn.
+4 The coat is in the bucket.
+5 The bucket is in the kitchen.
+6 Aiden exited the kitchen.
+7 William hates the carrot.
+8 Hannah moved the coat to the pantry.
+9 The pantry is in the kitchen.",Where will Aiden look for the coat?,bucket,"bucket,pantry"
+"1 James entered the master_bedroom.
+2 Benjamin entered the back_yard.
+3 Ethan entered the back_yard.
+4 The sweet_potato is in the cupboard.
+5 The cupboard is in the back_yard.
+6 Ethan exited the back_yard.
+7 Benjamin moved the sweet_potato to the box.
+8 The box is in the back_yard.",Where will Ethan look for the sweet_potato?,cupboard,"box,cupboard"
+"1 Mia entered the hallway.
+2 Oliver entered the den.
+3 Jackson entered the hallway.
+4 The plum is in the bucket.
+5 The bucket is in the hallway.
+6 Jackson exited the hallway.
+7 Jackson entered the hallway.
+8 Oliver exited the den.
+9 Mia moved the plum to the container.
+10 The container is in the hallway.",Where will Jackson look for the plum?,container,"container,bucket"
+"1 Logan entered the office.
+2 Lily loves the slacks.
+3 Lily entered the office.
+4 The beans is in the bottle.
+5 The bottle is in the office.
+6 Lily moved the beans to the basket.
+7 The basket is in the office.
+8 Logan exited the office.",Where will Lily look for the beans?,basket,"bottle,basket"
+"1 Isla entered the TV_room.
+2 Isla exited the TV_room.
+3 Ethan entered the staircase.
+4 Hannah entered the staircase.
+5 The potato is in the bathtub.
+6 The bathtub is in the staircase.
+7 Ethan moved the potato to the box.
+8 The box is in the staircase.
+9 Hannah exited the staircase.
+10 Hannah entered the staircase.",Where will Ethan look for the potato?,box,"box,bathtub"
+"1 Isabella entered the hall.
+2 Elizabeth entered the hall.
+3 Elizabeth dislikes the corn.
+4 Jacob entered the hall.
+5 The sweet_potato is in the drawer.
+6 The drawer is in the hall.
+7 Jacob exited the hall.
+8 Elizabeth exited the hall.
+9 Isabella moved the sweet_potato to the treasure_chest.
+10 The treasure_chest is in the hall.",Where will Elizabeth look for the sweet_potato?,drawer,"drawer,treasure_chest"
+"1 Nathan entered the staircase.
+2 Chloe is in the staircase.
+3 Hannah entered the staircase.
+4 Hannah exited the staircase.
+5 The undershirt is in the treasure_chest.
+6 The treasure_chest is in the staircase.
+7 Chloe loves the cabbage.
+8 Nathan exited the staircase.
+9 Chloe moved the undershirt to the drawer.
+10 The drawer is in the staircase.",Where will Nathan look for the undershirt?,treasure_chest,"drawer,treasure_chest"
+"1 Ava entered the closet.
+2 Mason entered the closet.
+3 Aria entered the office.
+4 The green_pepper is in the bucket.
+5 The bucket is in the closet.
+6 Ava moved the green_pepper to the basket.
+7 The basket is in the closet.
+8 Mason exited the closet.
+9 Mason likes the peach.
+10 Ava exited the closet.
+11 Mason entered the closet.",Where will Ava look for the green_pepper?,basket,"bucket,basket"
+"1 Mila entered the crawlspace.
+2 Charlotte entered the crawlspace.
+3 The persimmon is in the crate.
+4 The crate is in the crawlspace.
+5 Mila moved the persimmon to the treasure_chest.
+6 The treasure_chest is in the crawlspace.
+7 Alexander entered the pantry.
+8 Alexander exited the pantry.
+9 Charlotte exited the crawlspace.",Where will Charlotte look for the persimmon?,treasure_chest,"crate,treasure_chest"
+"1 Nathan is in the cellar.
+2 Owen entered the cellar.
+3 The grapes is in the bathtub.
+4 The bathtub is in the cellar.
+5 Nathan exited the cellar.
+6 Owen moved the grapes to the container.
+7 The container is in the cellar.
+8 Nathan entered the hall.",Where will Nathan look for the grapes?,bathtub,"container,bathtub"
+"1 Amelia entered the garden.
+2 Owen likes the tangerine.
+3 Owen entered the garden.
+4 Elizabeth entered the garden.
+5 The belt is in the cupboard.
+6 The cupboard is in the garden.
+7 Owen moved the belt to the bottle.
+8 The bottle is in the garden.
+9 Elizabeth exited the garden.
+10 Owen exited the garden.
+11 Elizabeth entered the dining_room.",Where will Owen look for the belt?,bottle,"bottle,cupboard"
+"1 Noah entered the basement.
+2 Amelia entered the basement.
+3 Evelyn entered the basement.
+4 The shirt is in the bathtub.
+5 The bathtub is in the basement.
+6 Noah exited the basement.
+7 Amelia exited the basement.
+8 Evelyn moved the shirt to the drawer.
+9 The drawer is in the basement.",Where will Amelia look for the shirt?,bathtub,"drawer,bathtub"
+"1 Ella entered the laundry.
+2 Oliver entered the laundry.
+3 The peach is in the suitcase.
+4 The suitcase is in the laundry.
+5 Ella exited the laundry.
+6 Oliver moved the peach to the basket.
+7 The basket is in the laundry.
+8 Emma hates the trousers.",Where will Ella look for the peach?,suitcase,"basket,suitcase"
+"1 Olivia entered the study.
+2 Jacob entered the study.
+3 The boots is in the cupboard.
+4 The cupboard is in the study.
+5 Jacob moved the boots to the bottle.
+6 The bottle is in the study.
+7 Olivia exited the study.
+8 Jacob dislikes the shirt.
+9 Jacob exited the study.
+10 Aiden entered the living_room.
+11 Aiden exited the living_room.
+12 Olivia entered the living_room.",Where will Jacob look for the boots?,bottle,"bottle,cupboard"
+"1 Jackson likes the belt.
+2 Jackson entered the porch.
+3 Elizabeth entered the porch.
+4 Elizabeth hates the skirt.
+5 The slacks is in the container.
+6 The container is in the porch.
+7 Jackson exited the porch.
+8 Elizabeth moved the slacks to the bottle.
+9 The bottle is in the porch.",Where will Jackson look for the slacks?,container,"bottle,container"
+"1 Ava entered the cellar.
+2 Alexander entered the cellar.
+3 The tomato is in the container.
+4 The container is in the cellar.
+5 Alexander exited the cellar.
+6 Alexander entered the cellar.
+7 Ava moved the tomato to the treasure_chest.
+8 The treasure_chest is in the cellar.",Where will Ava look for the tomato?,treasure_chest,"treasure_chest,container"
+"1 Evelyn entered the hall.
+2 Olivia entered the hall.
+3 The boots is in the bottle.
+4 The bottle is in the hall.
+5 Evelyn dislikes the undershirt.
+6 Evelyn exited the hall.
+7 Olivia moved the boots to the basket.
+8 The basket is in the hall.",Where will Evelyn look for the boots?,bottle,"basket,bottle"
+"1 Amelia entered the office.
+2 Sophia entered the office.
+3 The sweatshirt is in the container.
+4 The container is in the office.
+5 Amelia exited the office.
+6 Logan entered the office.
+7 Sophia moved the sweatshirt to the bottle.
+8 The bottle is in the office.",Where will Amelia look for the sweatshirt?,container,"bottle,container"
+"1 Chloe entered the patio.
+2 Aiden entered the patio.
+3 The beans is in the bottle.
+4 The bottle is in the patio.
+5 Chloe exited the patio.
+6 Aiden moved the beans to the crate.
+7 The crate is in the patio.
+8 Chloe entered the patio.",Where will Chloe look for the beans?,crate,"bottle,crate"
+"1 Chloe entered the closet.
+2 Lily entered the closet.
+3 The celery is in the bottle.
+4 The bottle is in the closet.
+5 Chloe exited the closet.
+6 Chloe dislikes the peas.
+7 Chloe entered the cellar.
+8 Lily moved the celery to the crate.
+9 The crate is in the closet.",Where will Chloe look for the celery?,bottle,"crate,bottle"
+"1 Mason entered the attic.
+2 Logan entered the attic.
+3 Mila entered the den.
+4 The melon is in the crate.
+5 The crate is in the attic.
+6 Mila exited the den.
+7 Mason exited the attic.
+8 Logan moved the melon to the envelope.
+9 The envelope is in the attic.
+10 Logan dislikes the raincoat.
+11 Mason entered the attic.",Where will Mason look for the melon?,envelope,"envelope,crate"
+"1 Jayden entered the closet.
+2 Isabella entered the closet.
+3 The tie is in the bottle.
+4 The bottle is in the closet.
+5 Isabella exited the closet.
+6 Jayden moved the tie to the box.
+7 The box is in the closet.
+8 Lily entered the closet.
+9 Jayden exited the closet.
+10 Isabella entered the bedroom.",Where will Isabella look for the tie?,bottle,"box,bottle"
+"1 Chloe entered the sunroom.
+2 Charlotte entered the sunroom.
+3 The melon is in the bottle.
+4 The bottle is in the sunroom.
+5 Charlotte exited the sunroom.
+6 Chloe moved the melon to the bathtub.
+7 The bathtub is in the sunroom.
+8 Chloe exited the sunroom.
+9 Mia entered the closet.
+10 Mia exited the closet.
+11 Charlotte entered the closet.",Where will Charlotte look for the melon?,bottle,"bottle,bathtub"
+"1 Carter entered the lounge.
+2 Mia entered the lounge.
+3 The banana is in the pantry.
+4 The pantry is in the lounge.
+5 Owen hates the pajamas.
+6 Mia moved the banana to the crate.
+7 The crate is in the lounge.
+8 Carter exited the lounge.",Where will Mia look for the banana?,crate,"crate,pantry"
+"1 Mia entered the office.
+2 Olivia entered the office.
+3 Mia loves the pajamas.
+4 The banana is in the bottle.
+5 The bottle is in the office.
+6 Olivia exited the office.
+7 Mia moved the banana to the cupboard.
+8 The cupboard is in the office.
+9 Mia exited the office.
+10 Olivia entered the bathroom.",Where will Olivia look for the banana?,bottle,"cupboard,bottle"
+"1 Charlotte entered the porch.
+2 Aiden entered the porch.
+3 Charlotte loves the socks.
+4 The shoes is in the bottle.
+5 The bottle is in the porch.
+6 Charlotte exited the porch.
+7 Aiden moved the shoes to the box.
+8 The box is in the porch.
+9 Charlotte entered the lounge.",Where will Charlotte look for the shoes?,bottle,"bottle,box"
+"1 Alexander entered the laundry.
+2 Sophia entered the laundry.
+3 The banana is in the cupboard.
+4 The cupboard is in the laundry.
+5 Sophia moved the banana to the drawer.
+6 The drawer is in the laundry.
+7 Alexander exited the laundry.",Where will Sophia look for the banana?,drawer,"cupboard,drawer"
+"1 Abigail entered the office.
+2 Aiden entered the office.
+3 The coat is in the bathtub.
+4 The bathtub is in the office.
+5 Jacob entered the office.
+6 Abigail exited the office.
+7 Jacob exited the office.
+8 Aiden moved the coat to the bottle.
+9 The bottle is in the office.
+10 Aiden exited the office.
+11 Abigail entered the front_yard.",Where will Abigail look for the coat?,bathtub,"bathtub,bottle"
+"1 Benjamin entered the garage.
+2 Amelia entered the garage.
+3 William entered the garage.
+4 The sweet_potato is in the bathtub.
+5 The bathtub is in the garage.
+6 Amelia exited the garage.
+7 William moved the sweet_potato to the bottle.
+8 The bottle is in the garage.",Where will Amelia look for the sweet_potato?,bathtub,"bathtub,bottle"
+"1 Ava entered the garage.
+2 Ava dislikes the pumpkin.
+3 Elizabeth entered the garage.
+4 The shirt is in the treasure_chest.
+5 The treasure_chest is in the garage.
+6 Nathan likes the coat.
+7 Nathan entered the garage.
+8 Ava exited the garage.
+9 Nathan exited the garage.
+10 Elizabeth moved the shirt to the container.
+11 The container is in the garage.",Where will Ava look for the shirt?,treasure_chest,"container,treasure_chest"
+"1 Chloe entered the basement.
+2 Ethan entered the basement.
+3 The peas is in the pantry.
+4 The pantry is in the basement.
+5 Chloe likes the cabbage.
+6 Chloe exited the basement.
+7 Ethan moved the peas to the crate.
+8 The crate is in the basement.",Where will Chloe look for the peas?,pantry,"pantry,crate"
+"1 Logan entered the laundry.
+2 Oliver entered the laundry.
+3 The hat is in the basket.
+4 The basket is in the laundry.
+5 William entered the playroom.
+6 William exited the playroom.
+7 Oliver hates the banana.
+8 Logan moved the hat to the envelope.
+9 The envelope is in the laundry.
+10 Oliver exited the laundry.",Where will Oliver look for the hat?,envelope,"envelope,basket"
+"1 Aria entered the workshop.
+2 Mia entered the workshop.
+3 Lily hates the peas.
+4 The lime is in the suitcase.
+5 The suitcase is in the workshop.
+6 Aria moved the lime to the cupboard.
+7 The cupboard is in the workshop.
+8 Mia loves the apple.
+9 Mia exited the workshop.",Where will Mia look for the lime?,cupboard,"cupboard,suitcase"
+"1 Ava entered the garden.
+2 Mia entered the playroom.
+3 Amelia entered the garden.
+4 The peach is in the envelope.
+5 The envelope is in the garden.
+6 Mia exited the playroom.
+7 Amelia exited the garden.
+8 Ava moved the peach to the bucket.
+9 The bucket is in the garden.
+10 Ava exited the garden.
+11 Ava loves the skirt.
+12 Ava hates the pear.
+13 Amelia entered the playroom.",Where will Amelia look for the peach?,envelope,"envelope,bucket"
+"1 Hannah entered the workshop.
+2 Aiden entered the workshop.
+3 Hannah dislikes the cabbage.
+4 The sweatshirt is in the bottle.
+5 The bottle is in the workshop.
+6 Sophia entered the workshop.
+7 Hannah moved the sweatshirt to the drawer.
+8 The drawer is in the workshop.
+9 Hannah loves the undershirt.
+10 Aiden exited the workshop.
+11 Hannah exited the workshop.
+12 Aiden entered the hall.",Where will Aiden look for the sweatshirt?,drawer,"drawer,bottle"
+"1 Amelia entered the kitchen.
+2 Oliver entered the kitchen.
+3 Emily entered the pantry.
+4 The pants is in the envelope.
+5 The envelope is in the kitchen.
+6 Oliver moved the pants to the treasure_chest.
+7 The treasure_chest is in the kitchen.
+8 Amelia exited the kitchen.
+9 Amelia entered the kitchen.",Where will Oliver look for the pants?,treasure_chest,"envelope,treasure_chest"
+"1 Emma entered the lounge.
+2 Alexander entered the lounge.
+3 The peas is in the crate.
+4 The crate is in the lounge.
+5 Alexander moved the peas to the bathtub.
+6 The bathtub is in the lounge.
+7 Emma loves the lime.
+8 Emma exited the lounge.
+9 Alexander exited the lounge.
+10 Emma entered the playroom.",Where will Alexander look for the peas?,bathtub,"crate,bathtub"
+"1 Emma entered the patio.
+2 Logan entered the patio.
+3 Chloe hates the strawberry.
+4 The scarf is in the treasure_chest.
+5 The treasure_chest is in the patio.
+6 Emma moved the scarf to the pantry.
+7 The pantry is in the patio.
+8 Logan exited the patio.
+9 Emma likes the trousers.",Where will Emma look for the scarf?,pantry,"pantry,treasure_chest"
+"1 Emily entered the garage.
+2 Noah entered the garage.
+3 The sweet_potato is in the drawer.
+4 The drawer is in the garage.
+5 Emily loves the stockings.
+6 Noah moved the sweet_potato to the crate.
+7 The crate is in the garage.
+8 Noah likes the cabbage.
+9 Emily exited the garage.",Where will Emily look for the sweet_potato?,crate,"crate,drawer"
+"1 Amelia entered the kitchen.
+2 Noah entered the kitchen.
+3 The slacks is in the envelope.
+4 The envelope is in the kitchen.
+5 Noah moved the slacks to the treasure_chest.
+6 The treasure_chest is in the kitchen.
+7 Amelia exited the kitchen.
+8 Noah exited the kitchen.
+9 Amelia entered the kitchen.
+10 Amelia likes the carrot.",Where will Noah look for the slacks?,treasure_chest,"treasure_chest,envelope"
+"1 Emma entered the kitchen.
+2 Aiden entered the kitchen.
+3 The broccoli is in the bottle.
+4 The bottle is in the kitchen.
+5 Emma moved the broccoli to the crate.
+6 The crate is in the kitchen.
+7 Aiden exited the kitchen.",Where will Aiden look for the broccoli?,crate,"bottle,crate"
+"1 Sophia entered the attic.
+2 Mia entered the crawlspace.
+3 Ava entered the attic.
+4 The banana is in the crate.
+5 The crate is in the attic.
+6 Mia exited the crawlspace.
+7 Sophia exited the attic.
+8 Sophia entered the attic.
+9 Ava moved the banana to the cupboard.
+10 The cupboard is in the attic.",Where will Ava look for the banana?,cupboard,"cupboard,crate"
