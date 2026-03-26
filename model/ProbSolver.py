@@ -72,7 +72,8 @@ class ProblemSolver:
         predefined_belief_hypotheses=None,
         rational_agent_statement=False,
         seed=42,
-        approximate=False
+        approximate=False,
+        use_pawm=False
     ):
         self.world_rules = (
             ""  # we do not use this value and keep it constant for all datasets
@@ -145,6 +146,7 @@ class ProblemSolver:
         self.init_belief = init_belief
         self.rational_agent_statement = rational_agent_statement
         self.approximate = approximate
+        self.use_pawm = use_pawm
         # import tracker and helper functions
         self.clear_current_nodes = NodeResultTracker.clear_current_nodes
         self.translate_and_add_node_results = (
@@ -638,6 +640,14 @@ class ProblemSolver:
                 time_variables[-1]["State"].possible_values[0], self.choices, self.llm
             )
 
+        # PAWM: Perspective-Aware World Model preprocessing
+        # Detects information asymmetry and constrains State + story context
+        if self.use_pawm and self.inf_var_name == "Belief":
+            import pawm
+            result = pawm.apply_pawm(time_variables, self.story, self.inf_agent_name, self.llm)
+            if isinstance(result, str):
+                self.story = result  # update story context for Initial Belief computation
+
         previous_belief = Variable("Previous Belief", True, False, ["None"], np.ones(1))
         all_probs = []
 
@@ -963,7 +973,8 @@ def main(args):
             no_model_adjustment=no_model_adjustment,
             recursion_depth=order,
             use_all_timesteps=use_all_timesteps,
-            seed=args.seed
+            seed=args.seed,
+            use_pawm=args.use_pawm
         )
 
         final_probs, model_record = solver.solve()
@@ -1134,6 +1145,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--nested", default=None, help="If None, the model will figure out the order itself.")
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
+    parser.add_argument("--use_pawm", action="store_true", help="Enable PAWM: Perspective-Aware World Model preprocessing for false-belief correction.")
     args = parser.parse_args()
     args.assigned_model = eval(args.assigned_model)
     args.back_inference = not args.no_back_inference
