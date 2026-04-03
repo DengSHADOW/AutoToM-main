@@ -204,56 +204,56 @@ def load_full_dataset(dataset_name):
     elif "FANToM" in dataset_name:
         if dataset_name == "FANToM-1st_TB_short":
             with open(
-                "../benchmarks/full_data_formatted/FANToM_tom:belief:accessible_short_context_first-order.csv",
+                "../benchmarks/full_data_formatted/FANToM_tom_belief_accessible_short_context_first-order.csv",
                 "r",
             ) as f:
                 reader = csv.reader(f, delimiter=",")
                 rows = list(reader)
         elif dataset_name == "FANToM-1st_TB_full":
             with open(
-                "../benchmarks/full_data_formatted/FANToM_tom:belief:accessible_full_context_first-order.csv",
+                "../benchmarks/full_data_formatted/FANToM_tom_belief_accessible_full_context_first-order.csv",
                 "r",
             ) as f:
                 reader = csv.reader(f, delimiter=",")
                 rows = list(reader)
         elif dataset_name == "FANToM-1st_FB_short":
             with open(
-                "../benchmarks/full_data_formatted/FANToM_tom:belief:inaccessible_short_context_first-order.csv",
+                "../benchmarks/full_data_formatted/FANToM_tom_belief_inaccessible_short_context_first-order.csv",
                 "r",
             ) as f:
                 reader = csv.reader(f, delimiter=",")
                 rows = list(reader)
         elif dataset_name == "FANToM-1st_FB_full":
             with open(
-                "../benchmarks/full_data_formatted/FANToM_tom:belief:inaccessible_full_context_first-order.csv",
+                "../benchmarks/full_data_formatted/FANToM_tom_belief_inaccessible_full_context_first-order.csv",
                 "r",
             ) as f:
                 reader = csv.reader(f, delimiter=",")
                 rows = list(reader)
         elif dataset_name == "FANToM-2nd_TB_short":
             with open(
-                "../benchmarks/full_data_formatted/FANToM_tom:belief:accessible_short_context_second-order.csv",
+                "../benchmarks/full_data_formatted/FANToM_tom_belief_accessible_short_context_second-order.csv",
                 "r",
             ) as f:
                 reader = csv.reader(f, delimiter=",")
                 rows = list(reader)
         elif dataset_name == "FANToM-2nd_TB_full":
             with open(
-                "../benchmarks/full_data_formatted/FANToM_tom:belief:accessible_full_context_second-order.csv",
+                "../benchmarks/full_data_formatted/FANToM_tom_belief_accessible_full_context_second-order.csv",
                 "r",
             ) as f:
                 reader = csv.reader(f, delimiter=",")
                 rows = list(reader)
         elif dataset_name == "FANToM-2nd_FB_short":
             with open(
-                "../benchmarks/full_data_formatted/FANToM_tom:belief:inaccessible_short_context_second-order.csv",
+                "../benchmarks/full_data_formatted/FANToM_tom_belief_inaccessible_short_context_second-order.csv",
                 "r",
             ) as f:
                 reader = csv.reader(f, delimiter=",")
                 rows = list(reader)
         elif dataset_name == "FANToM-2nd_FB_full":
             with open(
-                "../benchmarks/full_data_formatted/FANToM_tom:belief:inaccessible_full_context_second-order.csv",
+                "../benchmarks/full_data_formatted/FANToM_tom_belief_inaccessible_full_context_second-order.csv",
                 "r",
             ) as f:
                 reader = csv.reader(f, delimiter=",")

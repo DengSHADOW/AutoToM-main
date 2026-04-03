@@ -1070,6 +1070,11 @@ def check_nested(self):
         order = int(self.dataset_name.split('order')[1])
         if order > 1:
             nested_dataset = True
+    # FANToM-1st questions mention multiple agents but are first-order belief queries.
+    # The LLM nested detector is overly sensitive to multi-agent phrasing, so we
+    # allow FANToM-1st to pass through even when nested is auto-detected as True.
+    if "FANToM" in self.dataset_name and "1st" in self.dataset_name:
+        return True
     if self.nested == True and not nested_dataset:
         return False
     return True

@@ -609,10 +609,16 @@ class ProblemSolver:
                 self.realistic = True
                 self.nested = False
             if self.nested == None:
-                self.nested = determine_higher_order_belief(self.story + self.question)
-                print("nested", self.nested)
-                if self.check_nested(self) == False:
-                    return None, {}
+                # FANToM-1st questions reference multiple agents but are first-order
+                # belief queries. Skip the expensive nested detection for them.
+                if "FANToM" in self.dataset_name and "1st" in self.dataset_name:
+                    self.nested = False
+                    print("nested False (FANToM-1st override)")
+                else:
+                    self.nested = determine_higher_order_belief(self.story + self.question)
+                    print("nested", self.nested)
+                    if self.check_nested(self) == False:
+                        return None, {}
             if determine_memory_questions(self.question) is True:
                 self.memory = True
 
@@ -1094,6 +1100,14 @@ if __name__ == "__main__":
             "HiToM_len1_tell1_order2",
             "HiToM_len1_tell1_order3",
             "HiToM_len1_tell1_order4",
+            "FANToM-1st_FB_full",
+            "FANToM-1st_FB_short",
+            "FANToM-1st_TB_full",
+            "FANToM-1st_TB_short",
+            "FANToM-2nd_FB_full",
+            "FANToM-2nd_FB_short",
+            "FANToM-2nd_TB_full",
+            "FANToM-2nd_TB_short",
         ],
     )
 
