@@ -11,8 +11,27 @@ Usage:
 import sys, os, csv, argparse, random
 import numpy as np
 from copy import deepcopy
+from datetime import datetime
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+
+class Tee:
+    """Write to both terminal and a log file simultaneously."""
+    def __init__(self, filepath):
+        self.terminal = sys.stdout
+        self.log = open(filepath, "w", encoding="utf-8", buffering=1)
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
+
+    def close(self):
+        self.log.close()
 
 
 def argmax(lst):
@@ -21,7 +40,7 @@ def argmax(lst):
 
 def load_fantom(subset="inaccessible_full_context_first-order"):
     path = f"../benchmarks/full_data_formatted/FANToM_tom_belief_{subset}.csv"
-    with open(path, "r") as f:
+    with open(path, "r", encoding="utf-8") as f:
         rows = list(csv.reader(f))[1:]
     data = []
     for row in rows:
@@ -44,6 +63,17 @@ def main():
     parser.add_argument("--prev_total", type=int, default=0)
     args = parser.parse_args()
 
+    mode_str = "pawm_on" if args.use_pawm else "baseline"
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    subset_short = args.subset.replace("_full_context_", "_").replace("_short_context_", "_short_")
+    log_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        f"../results/log_fantom_{subset_short}_{mode_str}_{timestamp}.txt"
+    )
+    os.makedirs(os.path.dirname(log_path), exist_ok=True)
+    tee = Tee(log_path)
+    sys.stdout = tee
+
     from ProbSolver import ProblemSolver
     import utils, probs as probs_module
 
@@ -59,6 +89,7 @@ def main():
     print(f"FANToM Baseline Evaluation: {args.subset}")
     print(f"Questions {args.start_idx} to {end_idx-1} (total {end_idx - args.start_idx})")
     print(f"PAWM: {'ON' if args.use_pawm else 'OFF'}")
+    print(f"Log: {os.path.abspath(log_path)}")
     print("=" * 60)
 
     correct = args.prev_correct
@@ -113,8 +144,8 @@ def main():
             errors.append({"idx": idx, "error": str(e)})
             continue
 
-        if final_probs is None:
-            print(f"  SKIPPED (None result)")
+        if not final_probs:
+            print(f"  SKIPPED (None or empty result)")
             total += 1
             continue
 
@@ -152,6 +183,10 @@ def main():
                 print(f"  idx={e['idx']}: {e['error']}")
             else:
                 print(f"  idx={e['idx']}: predicted='{e['predicted'][:60]}...' gt='{e['gt'][:60]}...'")
+
+    sys.stdout = tee.terminal
+    tee.close()
+    print(f"\nLog saved to: {os.path.abspath(log_path)}")
 
 
 if __name__ == "__main__":

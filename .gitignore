@@ -4,4 +4,5 @@ model/__pycache__/
 model/.env
 cache/
 __pycache__/
-*.pycOpen_ai_key.txt
+*.pyc
+Open_ai_key.txt
