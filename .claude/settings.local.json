@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(grep -E \"^\\\\[|✓|✗|SKIPPED\" \"c:/Users/shado/Desktop/26spring/MSI/Project/AutoToM-main/results/log_fantom_inaccessible_first-order_pawm_on_\"*.txt)",
+      "Bash(ls \"c:/Users/shado/Desktop/26spring/MSI/Project/AutoToM-main/results/\"log_fantom*.txt)"
+    ]
+  }
+}
