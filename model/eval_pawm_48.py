@@ -14,6 +14,25 @@ import os
 import argparse
 import numpy as np
 from copy import deepcopy
+from datetime import datetime
+
+
+class Tee:
+    """Write to both terminal and a log file simultaneously."""
+    def __init__(self, filepath):
+        self.terminal = sys.stdout
+        self.log = open(filepath, "w", encoding="utf-8", buffering=1)
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
+
+    def close(self):
+        self.log.close()
 
 # The 48 wrong case indices from analysis_results.txt
 ERROR_INDICES = [
@@ -42,9 +61,20 @@ def main():
     args = parser.parse_args()
 
     use_pawm = not args.no_pawm
+    mode_str = "pawm_on" if use_pawm else "baseline"
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        f"../results/log_pawm48_{mode_str}_{timestamp}.txt"
+    )
+    os.makedirs(os.path.dirname(log_path), exist_ok=True)
+    tee = Tee(log_path)
+    sys.stdout = tee
+
     print(f"{'='*60}")
     print(f"PAWM Evaluation on 48 Error Cases")
     print(f"Mode: {'PAWM ON' if use_pawm else 'Baseline (no PAWM)'}")
+    print(f"Log: {os.path.abspath(log_path)}")
     print(f"{'='*60}\n")
 
     # Import here so we're in the right working directory context
@@ -137,6 +167,10 @@ def main():
     if results_log:
         print(f"Accuracy: {100*correct/len(results_log):.1f}%")
     print(f"Baseline (AutoToM alone): 0 / 48 = 0.0%")
+
+    sys.stdout = tee.terminal
+    tee.close()
+    print(f"\nLog saved to: {os.path.abspath(log_path)}")
 
 
 if __name__ == "__main__":

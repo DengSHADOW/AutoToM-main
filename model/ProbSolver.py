@@ -650,7 +650,7 @@ class ProblemSolver:
         # Detects information asymmetry and constrains State + story context
         if self.use_pawm and self.inf_var_name == "Belief":
             import pawm
-            result = pawm.apply_pawm(time_variables, self.story, self.inf_agent_name, self.llm)
+            result = pawm.apply_pawm(time_variables, self.story, self.inf_agent_name, self.llm, dataset_name=self.dataset_name)
             if isinstance(result, str):
                 self.story = result  # update story context for Initial Belief computation
 

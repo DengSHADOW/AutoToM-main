@@ -1,27 +1,38 @@
 """
 PAWM: Perspective-Aware World Model
-A lightweight preprocessing module that fixes AutoToM's false-belief reasoning failure.
+A unified preprocessing module that fixes AutoToM's false-belief reasoning failure
+across both narrative (BigToM) and conversational (FANToM) benchmarks.
 
-Root cause being fixed:
-    In AutoToM's BayesianInference pipeline, the State variable is set is_observed=True
-    with possible_values=[S_final] (true world state). When a focal agent was absent
-    during a state change, S_final contaminates belief inference — BIP "knows" the true
-    state and incorrectly infers the agent also knows it.
+Unified principle:
+    Both benchmarks share the same information asymmetry structure — a focal agent
+    misses information while absent. PAWM corrects the extracted time_variables to
+    only reflect what the focal agent could have perceived, then passes the corrected
+    variables to BIP.
 
-Fix:
-    Detect if the focal agent missed a state change (information asymmetry / fork).
-    If yes, replace State.possible_values at affected timesteps with S_fork
-    (the state as the agent last observed it), not S_final.
+Two modes, one interface:
+    Narrative mode (BigToM): detects the fork timestep where the agent stops
+        observing, then replaces State.possible_values with S_fork (the agent's
+        last known state) and prepends a perspective header to the story.
+    Conversational mode (FANToM): detects which timestep indices correspond to
+        the agent's absence period, overwrites those timesteps' Observation
+        variables to mark non-presence, and prepends a perspective header to
+        the story.
 
 Design:
-    - Single LLM call per episode (cheap: ~1 API call overhead)
+    - Single LLM call per episode in both modes (~1 API call overhead)
+    - Both modes operate on time_variables directly (variable-level correction)
     - No changes to core BIP algorithm
-    - No-op when no fork is detected (true-belief cases pass through unchanged)
+    - No-op when no absence is detected (true-belief cases pass through unchanged)
+    - Dispatcher auto-selects mode from dataset_name
 """
 
 import json
 from utils import llm_request
 
+
+# ---------------------------------------------------------------------------
+# Narrative mode (BigToM) — fork detection in physical-state stories
+# ---------------------------------------------------------------------------
 
 FORK_DETECTION_PROMPT = """Analyze this story to detect information asymmetry for a specific agent.
 
@@ -63,22 +74,10 @@ Respond in JSON only (no other text):
 }}"""
 
 
-def apply_pawm(time_variables, story, inf_agent_name, llm):
+def _apply_narrative_pawm(time_variables, story, inf_agent_name, llm):
     """
-    Apply PAWM preprocessing to time_variables in-place.
-
-    Detects if inf_agent_name was absent during a state change, then replaces
-    State.possible_values at all post-fork timesteps with S_fork (the agent's
-    last known state) instead of S_final (the true world state).
-
-    Args:
-        time_variables: list of dicts (one per timestep), each containing Variable objects
-        story: the story text (str)
-        inf_agent_name: name of the focal agent whose belief is being inferred (str)
-        llm: LLM model name string (e.g. "gpt-4o")
-
-    Returns:
-        True if fork detected and correction applied, False otherwise.
+    Narrative PAWM (BigToM): detect fork timestep, correct State variables in-place,
+    and return a perspective-filtered story string. Returns False if no fork detected.
     """
     if not time_variables:
         return False
@@ -204,3 +203,163 @@ def apply_pawm(time_variables, story, inf_agent_name, llm):
     print(f"[PAWM] Perspective header prepended to story.")
 
     return corrected_story
+
+
+# ---------------------------------------------------------------------------
+# Conversational mode (FANToM) — absence detection in multi-party dialogues
+# ---------------------------------------------------------------------------
+
+CONV_FORK_DETECTION_PROMPT = """You are analyzing extracted timesteps from a multi-party conversation.
+
+Original conversation:
+{story}
+
+Focal agent: {agent}
+
+The conversation has been parsed into {num_timesteps} timestep(s).
+The extracted variables at each timestep:
+{timestep_summary}
+
+Task: Determine whether {agent} was absent from the conversation at any timestep(s).
+
+Signs of absence:
+- The observation variable says {agent} is NOT in the conversation / did not hear the exchange
+- The state indicates {agent} has left or has not yet joined
+- The story narration says "{agent} left", "stepped away", "joined later", etc.
+
+If {agent} was absent during some timesteps, list the 0-based TIMESTEP indices (matching
+the list above) where {agent} could NOT hear the conversation.
+
+Respond in JSON only (no other text):
+{{
+    "absence_detected": true or false,
+    "reasoning": "one sentence explanation",
+    "absent_timestep_indices": [list of 0-based integers, empty list if no absence]
+}}"""
+
+
+def _apply_conv_pawm(time_variables, story, inf_agent_name, llm):
+    """
+    Conversational PAWM (FANToM): detect which extracted timesteps correspond to
+    the agent's absence, overwrite those timesteps' Observation variables to mark
+    non-presence, and return a perspective-annotated story string.
+    Returns False if no absence detected.
+
+    Mirrors _apply_narrative_pawm but for conversational structure:
+      BigToM: corrects State variables  (agent missed a physical state change)
+      FANToM: corrects Observation vars (agent was absent from the conversation)
+    """
+    if not time_variables:
+        return False
+
+    obs_key = f"{inf_agent_name}'s Observation"
+
+    # Build a timestep summary from time_variables for the LLM prompt
+    timestep_lines = []
+    for i, tv in enumerate(time_variables):
+        state_val = tv["State"].possible_values[0] if "State" in tv else "(no state extracted)"
+        obs_val = tv[obs_key].possible_values[0] if obs_key in tv else "(no observation extracted)"
+        timestep_lines.append(f"  Timestep {i}: State={state_val} | {obs_key}={obs_val}")
+
+    prompt = CONV_FORK_DETECTION_PROMPT.format(
+        story=story,
+        agent=inf_agent_name,
+        num_timesteps=len(time_variables),
+        timestep_summary="\n".join(timestep_lines),
+    )
+
+    resp, _ = llm_request(prompt, temperature=0.0, hypo=True, model=llm)
+
+    try:
+        resp_clean = resp.strip()
+        if "```" in resp_clean:
+            parts = resp_clean.split("```")
+            for part in parts:
+                if "{" in part:
+                    resp_clean = part.lstrip("json").strip()
+                    break
+        result = json.loads(resp_clean)
+    except Exception as e:
+        print(f"[PAWM-Conv] Failed to parse LLM response: {e}\nResponse was: {resp}")
+        return False
+
+    if not result.get("absence_detected", False):
+        print(f"[PAWM-Conv] No absence detected for {inf_agent_name} — passing through.")
+        return False
+
+    absent_indices = set(result.get("absent_timestep_indices", []))
+    reasoning = result.get("reasoning", "")
+    print(f"[PAWM-Conv] Absence detected! Reasoning: {reasoning}")
+    print(f"[PAWM-Conv] Absent timestep indices: {sorted(absent_indices)}")
+
+    # Correct Observation variables for absent timesteps — parallel to how
+    # _apply_narrative_pawm corrects State variables for post-fork timesteps.
+    absence_marker = (
+        f"{inf_agent_name} was not present in the conversation at this point "
+        f"and did not hear these utterances."
+    )
+    obs_corrected = 0
+    for t in sorted(absent_indices):
+        if not (0 <= t < len(time_variables)):
+            continue
+        if obs_key in time_variables[t]:
+            original = time_variables[t][obs_key].possible_values[0]
+            if original == absence_marker:
+                print(f"[PAWM-Conv] Timestep {t}: Observation already marks absence, no change.")
+                continue
+            time_variables[t][obs_key].possible_values = [absence_marker]
+            print(f"[PAWM-Conv] Timestep {t}: Observation '{original[:60]}' → absence marker")
+            obs_corrected += 1
+        else:
+            print(f"[PAWM-Conv] Timestep {t}: no Observation variable found, skipping.")
+
+    if obs_corrected == 0:
+        print("[PAWM-Conv] No Observation variables were changed.")
+        return False
+
+    print(f"[PAWM-Conv] Applied absence marker to {obs_corrected} timestep(s).")
+
+    # Prepend perspective header to story for the Initial Belief computation path.
+    # (BIP uses self.story directly for Initial Belief, so the header steers it
+    # to reason from the focal agent's limited vantage point.)
+    perspective_header = (
+        f"[IMPORTANT — Belief inference for {inf_agent_name}: "
+        f"{inf_agent_name} was absent from this conversation during timestep(s) "
+        f"{sorted(absent_indices)}. "
+        f"Infer {inf_agent_name}'s belief based only on what they could have heard — "
+        f"do NOT use information from turns {inf_agent_name} could not have observed.]\n"
+    )
+    corrected_story = perspective_header + story
+    print(f"[PAWM-Conv] Perspective header prepended to story.")
+
+    return corrected_story
+
+
+# ---------------------------------------------------------------------------
+# Unified entry point — auto-dispatches based on dataset_name
+# ---------------------------------------------------------------------------
+
+def apply_pawm(time_variables, story, inf_agent_name, llm, dataset_name=""):
+    """
+    Unified PAWM entry point.
+
+    Dispatches to the appropriate mode based on dataset_name:
+      - FANToM datasets  → conversational mode (_apply_conv_pawm)
+      - All other datasets → narrative mode (_apply_narrative_pawm)
+
+    Both modes return a perspective-filtered story string on success,
+    or False if no information asymmetry is detected.
+
+    Args:
+        time_variables: list of dicts (one per timestep) with Variable objects
+        story:          raw story/conversation text (str)
+        inf_agent_name: focal agent whose belief is being inferred (str)
+        llm:            LLM model name string (e.g. "gpt-4o")
+        dataset_name:   dataset identifier used to select the mode (str)
+    """
+    if "FANToM" in dataset_name:
+        print(f"[PAWM] Conversational mode (dataset: {dataset_name})")
+        return _apply_conv_pawm(time_variables, story, inf_agent_name, llm)
+    else:
+        print(f"[PAWM] Narrative mode (dataset: {dataset_name})")
+        return _apply_narrative_pawm(time_variables, story, inf_agent_name, llm)
