@@ -633,6 +633,16 @@ class ProblemSolver:
                 self.story, self.question, self.choices, self.llm
             )
 
+        # PAWM story-level pre-filter for FANToM: remove absent turns BEFORE
+        # variable extraction so all downstream variables reflect agent's perspective.
+        # parse_story_and_question() must run first to populate inf_agent_name.
+        if self.use_pawm and "FANToM" in self.dataset_name and "_FB_" in self.dataset_name:
+            import pawm
+            filtered = pawm.filter_story_for_agent(self.story, self.inf_agent_name, self.llm)
+            if filtered != self.story:
+                print(f"[PAWM-StoryFilter] Story pre-filtered for {self.inf_agent_name}.")
+                self.story = filtered
+
         ### Extract states, actions, and other assigned variables ###
         (
             time_variables,
@@ -983,7 +993,11 @@ def main(args):
             use_pawm=args.use_pawm
         )
 
-        final_probs, model_record = solver.solve()
+        try:
+            final_probs, model_record = solver.solve()
+        except (ValueError, IndexError) as e:
+            print(f"[Error] solver.solve() raised {type(e).__name__}: {e} — skipping question {i}.")
+            final_probs, model_record = None, {}
         model_records[f"Question {i}"] = model_record
 
         end_time = time.time()

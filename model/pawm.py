@@ -336,6 +336,66 @@ def _apply_conv_pawm(time_variables, story, inf_agent_name, llm):
 
 
 # ---------------------------------------------------------------------------
+# Story-level filter for FANToM (pre-extraction hook)
+# ---------------------------------------------------------------------------
+
+STORY_FILTER_PROMPT = """You are given a multi-party conversation and a focal agent.
+
+Conversation:
+{story}
+
+Focal agent: {agent}
+
+Task:
+1. Determine whether {agent} left and later rejoined the conversation.
+2. If yes, remove from the conversation all turns that occurred WHILE {agent} was absent
+   (from the moment they left until the moment they rejoined).
+3. Return the filtered conversation — only the turns {agent} could have heard.
+
+Rules:
+- Keep all turns BEFORE {agent} leaves and AFTER {agent} returns.
+- Remove all turns BETWEEN their departure and return.
+- Keep {agent}'s own departure statement if they explicitly said goodbye.
+- Keep {agent}'s own return statement when they come back.
+- If {agent} never left, return the original conversation unchanged.
+- Return ONLY the filtered conversation text, no explanations or extra text.
+
+Filtered conversation:"""
+
+
+def filter_story_for_agent(story, inf_agent_name, llm):
+    """
+    Story-level perspective filter for FANToM (pre-extraction).
+
+    Removes conversation turns that occurred while the focal agent was absent,
+    so that all downstream AutoToM variable extraction only sees agent-accessible
+    information.
+
+    Returns filtered story string, or the original story if no absence detected.
+    """
+    prompt = STORY_FILTER_PROMPT.format(story=story, agent=inf_agent_name)
+    filtered, _ = llm_request(prompt, temperature=0.0, hypo=False, model=llm)
+    filtered = filtered.strip()
+
+    if not filtered or len(filtered) < 20:
+        print(f"[PAWM-StoryFilter] LLM returned empty response, keeping original story.")
+        return story
+
+    # Sanity check: filtered should be shorter or equal (never longer)
+    if len(filtered) > len(story) * 1.05:
+        print(f"[PAWM-StoryFilter] Filtered story longer than original — keeping original.")
+        return story
+
+    reduction = 1.0 - len(filtered) / len(story)
+    if reduction < 0.01:
+        print(f"[PAWM-StoryFilter] No turns removed (story unchanged).")
+    else:
+        print(f"[PAWM-StoryFilter] Removed {reduction*100:.1f}% of story text for {inf_agent_name}.")
+
+    return filtered
+
+
+# ---------------------------------------------------------------------------
 # Unified entry point — auto-dispatches based on dataset_name
 # ---------------------------------------------------------------------------
 
@@ -358,8 +418,15 @@ def apply_pawm(time_variables, story, inf_agent_name, llm, dataset_name=""):
         dataset_name:   dataset identifier used to select the mode (str)
     """
     if "FANToM" in dataset_name:
-        print(f"[PAWM] Conversational mode (dataset: {dataset_name})")
-        return _apply_conv_pawm(time_variables, story, inf_agent_name, llm)
+        # Story was already pre-filtered by filter_story_for_agent() before extraction.
+        # Just prepend a perspective header to steer Initial Belief computation.
+        print(f"[PAWM] Conversational mode — adding perspective header (dataset: {dataset_name})")
+        perspective_header = (
+            f"[IMPORTANT — Belief inference for {inf_agent_name}: "
+            f"the conversation below shows only what {inf_agent_name} could have heard. "
+            f"Infer {inf_agent_name}'s belief based solely on this filtered view.]\n"
+        )
+        return perspective_header + story
     else:
         print(f"[PAWM] Narrative mode (dataset: {dataset_name})")
         return _apply_narrative_pawm(time_variables, story, inf_agent_name, llm)
