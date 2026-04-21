@@ -48,7 +48,8 @@ def get_likelihood(
         variable,
         inf_agent,
         action_exponent,
-        rational_agent_statement=rational_agent_statement
+        rational_agent_statement=rational_agent_statement,
+        dataset_name=dataset_name,
     )
     return likelihood
 
@@ -62,7 +63,8 @@ def get_likelihood_general(
     variable=None,
     inf_agent=None,
     action_exponent=None,
-    rational_agent_statement=False
+    rational_agent_statement=False,
+    dataset_name="",
 ):
 
     if "Observation" in variable:
@@ -73,15 +75,39 @@ Determine if the following statement is likely: {statement}
 A) Likely.
 B) Unlikely."""
     elif "Initial Belief" in variable:
-        prompt = f"""Determine if the statement is likely, respond with only either A or B. If it's not certain but it's possible, it's considered likely.
-    Here is a statement of the story and {inf_agent}' initial belief. 
-    
-    There is an action that causes the state of the main object to change. Based on {inf_agent}'s observations determine if {inf_agent} perceives the state of the object change. 
-    If it is not clearly stated that {inf_agent} perceives it then we do not assume that {inf_agent} perceived the change of state. 
-    If {inf_agent} perceives this change then it is highly likely that {inf_agent}'s belief aligns with the change of state of the object. 
-    If {inf_agent} does not perceive this change or if it is unknown if {inf_agent} perceives this change then it is highly likely that {inf_agent}'s belief does not align with the change of state of the object. 
+        if "FANToM" in dataset_name:
+            # PAWM FANToM-specific Initial Belief prompt: content-presence check.
+            # The story here is the PAWM-filtered view (what {inf_agent} could have heard).
+            # A belief claiming specific content is likely iff that content is in the filtered story.
+            prompt = f"""Determine if the statement is likely, respond with only either A or B.
 
-    
+The story below represents ONLY what {inf_agent} could have heard or witnessed (turns that occurred while {inf_agent} was absent have already been removed).
+
+Story (from {inf_agent}'s perspective): {info}
+
+Belief statement: {statement}
+
+Judge the belief statement using this rule:
+- If the statement claims {inf_agent} BELIEVES/KNOWS specific content (a topic, fact, or detail), check whether that content appears or is discussed in the story above.
+    * If the content IS present in the story -> A) Likely.
+    * If the content is NOT present in the story -> B) Unlikely.
+- If the statement claims {inf_agent} IS UNAWARE / DOES NOT KNOW about specific content, check whether that content appears in the story.
+    * If the content is NOT present in the story -> A) Likely (agent is genuinely unaware).
+    * If the content IS present in the story -> B) Unlikely (agent would have heard it).
+
+Only consider what is literally in the story. Do not speculate about outside knowledge.
+A) Likely.
+B) Unlikely."""
+        else:
+            prompt = f"""Determine if the statement is likely, respond with only either A or B. If it's not certain but it's possible, it's considered likely.
+    Here is a statement of the story and {inf_agent}' initial belief.
+
+    There is an action that causes the state of the main object to change. Based on {inf_agent}'s observations determine if {inf_agent} perceives the state of the object change.
+    If it is not clearly stated that {inf_agent} perceives it then we do not assume that {inf_agent} perceived the change of state.
+    If {inf_agent} perceives this change then it is highly likely that {inf_agent}'s belief aligns with the change of state of the object.
+    If {inf_agent} does not perceive this change or if it is unknown if {inf_agent} perceives this change then it is highly likely that {inf_agent}'s belief does not align with the change of state of the object.
+
+
     Story: {info}
     Think about the state of the world and others actions. {inf_agent}' belief can change throughout time through other's actions and what {inf_agent} can observe. It is also important to think about if {inf_agent} can observe other's actions. If {inf_agent} can observe the same then their belief will change and if not then their belief will remain constant. Use this to determine {inf_agent}'s beliefs.
     Determine if the following statement is likely: {statement}

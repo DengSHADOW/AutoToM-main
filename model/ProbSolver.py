@@ -633,6 +633,23 @@ class ProblemSolver:
                 self.story, self.question, self.choices, self.llm
             )
 
+        # PAWM FANToM focal agent override: the upstream LLM-based find_inferred_agent
+        # is confused by multi-agent FANToM questions (e.g. "What does Joaquin believe
+        # about who raised Alayna?" returns "Alayna"). Parse the subject after
+        # "does/did/do" from the question text instead — unambiguous for FANToM.
+        if "FANToM" in self.dataset_name:
+            import re
+            m = re.search(
+                r"(?:what|who|how|where|when|why)\s+(?:does|did|do|is|are|was|were)\s+([A-Z][a-zA-Z]+)",
+                self.question,
+                re.IGNORECASE,
+            )
+            if m:
+                parsed_agent = m.group(1)
+                if parsed_agent != self.inf_agent_name:
+                    print(f"[PAWM-FocalAgent] Override: {self.inf_agent_name} -> {parsed_agent}")
+                    self.inf_agent_name = parsed_agent
+
         # PAWM story-level pre-filter for FANToM: remove absent turns BEFORE
         # variable extraction so all downstream variables reflect agent's perspective.
         # parse_story_and_question() must run first to populate inf_agent_name.

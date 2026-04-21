@@ -363,35 +363,112 @@ Rules:
 Filtered conversation:"""
 
 
-def filter_story_for_agent(story, inf_agent_name, llm):
+_DEPARTURE_PATTERNS = [
+    r"\bcatch you (?:all )?later\b",
+    r"\bi'?ll be back\b",
+    r"\bi have to (?:go|leave|run|head)\b",
+    r"\bi need to (?:go|leave|run|head)\b",
+    r"\bgot to (?:go|run)\b",
+    r"\bgotta (?:go|run)\b",
+    r"\bsee you (?:all |guys )?(?:later|soon)\b",
+    r"\btalk to you later\b",
+    r"\bbbl\b",
+    r"\bbrb\b",
+    r"\bexcuse me\b.*\b(?:moment|minute|second)\b",
+    r"\bbe right back\b",
+    r"\bstep (?:out|away)\b",
+]
+
+
+def _segment_turns(story):
+    """Split conversation into (speaker, content, raw_turn) tuples.
+
+    Handles both newline-separated and space-separated formats by splitting
+    at every "Name:" or "Name1 & Name2:" token that looks like a speaker tag.
     """
-    Story-level perspective filter for FANToM (pre-extraction).
+    import re
+    # Find start index of every speaker tag
+    speaker_re = re.compile(
+        r"(?:(?<=\n)|(?<=^)|(?<=[\.\?\!]\s))"
+        r"([A-Z][a-zA-Z]+(?:\s*&\s*[A-Z][a-zA-Z]+)?)\s*:",
+        re.MULTILINE,
+    )
+    matches = list(speaker_re.finditer(story))
+    if not matches:
+        return []
+    turns = []
+    for i, m in enumerate(matches):
+        speaker = m.group(1).strip()
+        start = m.start()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(story)
+        raw = story[start:end].rstrip()
+        content = raw[m.end() - m.start():].strip()
+        turns.append((speaker, content, raw))
+    return turns
 
-    Removes conversation turns that occurred while the focal agent was absent,
-    so that all downstream AutoToM variable extraction only sees agent-accessible
-    information.
 
-    Returns filtered story string, or the original story if no absence detected.
+def filter_story_for_agent(story, inf_agent_name, llm=None):
+    """Mechanical perspective filter for FANToM (pre-extraction).
+
+    Uses deterministic rules instead of an LLM call:
+      1. Keep only turns within [first_utterance, last_utterance] of the focal agent.
+         Turns before their first utterance = they hadn't arrived yet.
+         Turns after their last utterance = they had already left.
+      2. Inside that window, if the agent explicitly signals a departure
+         ("catch you later", "have to go", etc.) and then speaks again later,
+         drop the turns strictly between those two points (treated as absence).
+
+    Returns filtered story string (possibly the full story if the agent is
+    present throughout) or the original story if parsing fails.
     """
-    prompt = STORY_FILTER_PROMPT.format(story=story, agent=inf_agent_name)
-    filtered, _ = llm_request(prompt, temperature=0.0, hypo=False, model=llm)
-    filtered = filtered.strip()
-
-    if not filtered or len(filtered) < 20:
-        print(f"[PAWM-StoryFilter] LLM returned empty response, keeping original story.")
+    import re
+    turns = _segment_turns(story)
+    if not turns:
+        print(f"[PAWM-StoryFilter] No parsed turns, keeping original story.")
         return story
 
-    # Sanity check: filtered should be shorter or equal (never longer)
-    if len(filtered) > len(story) * 1.05:
-        print(f"[PAWM-StoryFilter] Filtered story longer than original — keeping original.")
+    agent_indices = [
+        i for i, (sp, _, _) in enumerate(turns)
+        if inf_agent_name in [s.strip() for s in sp.split("&")]
+    ]
+
+    if not agent_indices:
+        print(f"[PAWM-StoryFilter] Focal agent {inf_agent_name} never speaks — keeping original story.")
         return story
 
-    reduction = 1.0 - len(filtered) / len(story)
-    if reduction < 0.01:
-        print(f"[PAWM-StoryFilter] No turns removed (story unchanged).")
-    else:
-        print(f"[PAWM-StoryFilter] Removed {reduction*100:.1f}% of story text for {inf_agent_name}.")
+    first_i, last_i = agent_indices[0], agent_indices[-1]
 
+    # Detect inner absence windows from departure markers
+    keep = [False] * len(turns)
+    for i in range(first_i, last_i + 1):
+        keep[i] = True
+
+    # Walk through agent utterances; if one is a departure marker, drop turns
+    # until the next agent utterance.
+    departure_re = re.compile("|".join(_DEPARTURE_PATTERNS), re.IGNORECASE)
+    for idx_pos, i in enumerate(agent_indices):
+        _, content, _ = turns[i]
+        if departure_re.search(content):
+            # find next agent index
+            if idx_pos + 1 < len(agent_indices):
+                j = agent_indices[idx_pos + 1]
+                for k in range(i + 1, j):
+                    keep[k] = False
+
+    filtered_lines = [turns[i][2] for i in range(len(turns)) if keep[i]]
+    filtered = "\n".join(filtered_lines)
+
+    kept = sum(keep)
+    removed = len(turns) - kept
+    if removed == 0:
+        print(f"[PAWM-StoryFilter] {inf_agent_name} present throughout ({kept} turns) — story unchanged.")
+        return story
+
+    print(
+        f"[PAWM-StoryFilter] Mechanical filter for {inf_agent_name}: "
+        f"kept {kept}/{len(turns)} turns, removed {removed} "
+        f"(agent first turn={first_i}, last turn={last_i})."
+    )
     return filtered
 
 
