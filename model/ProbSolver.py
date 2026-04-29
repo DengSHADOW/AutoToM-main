@@ -701,7 +701,7 @@ class ProblemSolver:
         print('Extracted actions:', all_actions)
 
         if self.model_name == "automated":
-            return self.solve_with_automated_model(
+            results = self.solve_with_automated_model(
                 time_variables,
                 all_timesteps,
                 no_observation_hypothesis,
@@ -709,6 +709,26 @@ class ProblemSolver:
                 all_probs,
                 action_likelihood_goal,
             )
+            # PAWM Mode-A fix: reweight tied belief probabilities by an
+            # epistemic prior based on content presence in the filtered story.
+            # Gated to FANToM false-belief; BigToM and other datasets are
+            # unaffected.
+            if (
+                self.use_pawm
+                and "FANToM" in self.dataset_name
+                and "_FB_" in self.dataset_name
+                and self.inf_var_name == "Belief"
+                and isinstance(results, tuple)
+                and len(results) == 2
+            ):
+                final_probs, model_record = results
+                if isinstance(final_probs, (list, tuple)) and len(final_probs) == len(self.choices):
+                    import pawm
+                    final_probs = pawm.epistemic_prior_reweight(
+                        list(final_probs), self.choices, self.story,
+                    )
+                    results = (final_probs, model_record)
+            return results
 
         else:
             if not args.back_inference:

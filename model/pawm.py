@@ -473,6 +473,148 @@ def filter_story_for_agent(story, inf_agent_name, llm=None):
 
 
 # ---------------------------------------------------------------------------
+# Epistemic prior — Mode A fix for FANToM 0.5/0.5 likelihood ties
+# ---------------------------------------------------------------------------
+#
+# Failure mode A (most common in FANToM-1st inaccessible): the perspective
+# filter correctly removes absent-time content, but BIP's Utterance->Belief
+# likelihood ties at ~0.5 because the agent's post-arrival utterances do not
+# discriminate between "believes <concrete content>" and "is unaware".
+#
+# The fix: reweight final belief probabilities by an epistemic prior that
+# checks whether the choice's content actually appears in the agent's
+# perspective-filtered story.
+#
+#   - "X is unaware of Y" is more plausible if Y's keywords are NOT in the
+#     filtered story (the agent literally never heard about Y).
+#   - "X believes <specific Y>" is more plausible if Y's keywords ARE in the
+#     filtered story.
+
+_UNAWARE_PATTERNS = [
+    r"\bis unaware\b",
+    r"\bdoes not know\b",
+    r"\bdoesn'?t know\b",
+    r"\bdid not (?:know|hear|see|witness)\b",
+    r"\bdidn'?t (?:know|hear|see|witness)\b",
+    r"\bnot involved in the conversation\b",
+    r"\bwas not (?:present|involved|aware)\b",
+    r"\bhas no (?:knowledge|idea|information)\b",
+]
+
+_STOP_WORDS = {
+    "a", "an", "the", "and", "or", "but", "so", "of", "in", "on", "at",
+    "to", "for", "with", "by", "from", "as", "is", "are", "was", "were",
+    "be", "been", "being", "do", "does", "did", "doing", "have", "has",
+    "had", "having", "this", "that", "these", "those", "it", "its",
+    "they", "them", "their", "there", "what", "when", "where", "how",
+    "who", "whom", "whose", "which", "why", "about", "his", "her", "him",
+    "she", "he", "we", "us", "our", "you", "your", "i", "me", "my",
+    "would", "could", "should", "will", "shall", "may", "might", "must",
+    "can", "not", "no", "yes", "than", "then", "if", "because",
+    "believe", "believes", "believed", "knows", "know", "known",
+    "unaware", "involved", "conversation", "discussed", "discussion",
+    "group", "people", "person", "thing", "things", "way", "ways",
+}
+
+
+def _content_keywords(text):
+    """Extract content keywords (3+ char alphabetic tokens, not stop words)."""
+    import re
+    tokens = re.findall(r"[A-Za-z][A-Za-z\-']{2,}", text)
+    return [t.lower() for t in tokens if t.lower() not in _STOP_WORDS]
+
+
+def _is_unaware_choice(choice_text):
+    import re
+    pattern = re.compile("|".join(_UNAWARE_PATTERNS), re.IGNORECASE)
+    return bool(pattern.search(choice_text))
+
+
+def epistemic_prior_reweight(final_probs, choices, filtered_story,
+                             tie_threshold=0.05, prior_strength=1.0):
+    """Reweight tied belief probabilities by content-presence in filtered story.
+
+    Args:
+        final_probs:    list of probabilities (one per choice)
+        choices:        list of choice strings (same order as final_probs)
+        filtered_story: story after PAWM perspective filter (the agent's view)
+        tie_threshold:  apply prior only if max-min prob spread < threshold
+        prior_strength: in [0, 1]; 0 = no effect, 1 = fully replace prob
+
+    Returns:
+        Reweighted probability list (same order). Returns input unchanged if
+        no tie is detected or no content can be scored.
+    """
+    if not final_probs or len(final_probs) != len(choices):
+        return final_probs
+
+    spread = max(final_probs) - min(final_probs)
+    if spread >= tie_threshold:
+        # BIP was already confident — don't second-guess
+        return final_probs
+
+    story_kw = set(_content_keywords(filtered_story))
+    if not story_kw:
+        return final_probs
+
+    # Identify the believes-vs-unaware pair (only meaningful for binary choices).
+    if len(choices) != 2:
+        return final_probs
+
+    unaware_idx = None
+    for i, c in enumerate(choices):
+        if _is_unaware_choice(c):
+            unaware_idx = i
+            break
+    if unaware_idx is None:
+        return final_probs
+    concrete_idx = 1 - unaware_idx
+
+    # Distinctive keywords = words that appear in the CONCRETE choice but not
+    # in the UNAWARE choice. These are the actual content claims being made.
+    concrete_kw = set(_content_keywords(choices[concrete_idx]))
+    unaware_kw  = set(_content_keywords(choices[unaware_idx]))
+    distinctive = concrete_kw - unaware_kw
+    if not distinctive:
+        return final_probs
+
+    # How many of the distinctive (content) keywords appear in the agent's
+    # filtered story?
+    presence = sum(1 for k in distinctive if k in story_kw)
+    fraction_present = presence / len(distinctive)
+
+    # Build the prior:
+    #   - high fraction_present  -> concrete-content belief is supported
+    #   - low  fraction_present  -> agent never heard the content, "unaware" wins
+    prior = [0.0, 0.0]
+    prior[concrete_idx] = fraction_present
+    prior[unaware_idx]  = 1.0 - fraction_present
+
+    total = sum(prior)
+    if total == 0:
+        return final_probs
+    prior = [p / total for p in prior]
+
+    # Mix prior with BIP probabilities
+    mixed = [
+        (1 - prior_strength) * p + prior_strength * pr
+        for p, pr in zip(final_probs, prior)
+    ]
+    z = sum(mixed)
+    if z == 0:
+        return final_probs
+    mixed = [m / z for m in mixed]
+
+    # Telemetry
+    print(
+        f"[PAWM-EpistemicPrior] tie detected (spread={spread:.2f}); "
+        f"prior={[round(x,3) for x in prior]}, "
+        f"BIP={[round(x,3) for x in final_probs]} -> mixed={[round(x,3) for x in mixed]}"
+    )
+    return mixed
+
+
+# ---------------------------------------------------------------------------
 # Unified entry point — auto-dispatches based on dataset_name
 # ---------------------------------------------------------------------------
 
